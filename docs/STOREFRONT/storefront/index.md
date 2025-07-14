@@ -1,5 +1,5 @@
 ---
-title: Storefront
+title: 'Overview: Storefront'
 excerpt: >-
   High-level navigation for all Recurly Commerce storefront resources, including
   setup, customization, and API reference.
