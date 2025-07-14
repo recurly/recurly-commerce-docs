@@ -1,5 +1,5 @@
 ---
-title: Settings
+title: 'Overview: Settings'
 excerpt: >-
   A central hub to configure your account settings—manage payment retries with
   dunning and switch your Commerce plan without leaving the app.
