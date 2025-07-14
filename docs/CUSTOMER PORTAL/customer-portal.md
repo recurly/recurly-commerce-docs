@@ -1,5 +1,5 @@
 ---
-title: Customer portal
+title: 'Overview: Customer portal'
 excerpt: >-
   Enable self-service for your subscribers with a fully customizable
   portal—letting them skip, swap, pause, gift, and manage billing details
