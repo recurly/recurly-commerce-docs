@@ -1,5 +1,5 @@
 ---
-title: Recurly Commerce analytics
+title: 'Overview: Recurly Commerce analytics'
 excerpt: >-
   Explore the full suite of analytics in Recurly Commerce—track performance,
   drill into cohorts, forecast growth, and export detailed data.
