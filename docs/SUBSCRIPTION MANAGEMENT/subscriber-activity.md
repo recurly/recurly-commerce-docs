@@ -37,7 +37,7 @@ Recurly Commerce logs each renewal or one-off invoice as its own line item, disp
 * **Date** of the transaction
 * **Subtotal**, **Tax**, **Shipping**, and **Total**
 
-Click the order number to jump straight to Shopify’s Orders page and perform further actions like [refunds](https://docs.recurly.com/docs/refund-a-subscription-in-shopify#/) or [fulfillments](https://docs.recurly.com/docs/fulfill-a-subscription-in-shopify#/).
+Click the order number to jump straight to Shopify’s Orders page and perform further actions like [refunds](https://docs.recurly.com/recurly-docs-commerce/docs/refund-a-subscription-in-shopify#/) or [fulfillments](fulfill-a-subscription-in-shopify) .
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/9d7b3e15528d56e95fcbef09ae84f56fe5c22bddf018c6e94d33ca778690b121-image.png" />
 
