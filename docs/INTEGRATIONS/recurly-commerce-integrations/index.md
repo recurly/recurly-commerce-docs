@@ -1,5 +1,5 @@
 ---
-title: Integrations
+title: 'Overview: Integrations'
 excerpt: >-
   A central hub to discover and connect all available Recurly Commerce
   integrations, from email & SMS tools to support platforms.
