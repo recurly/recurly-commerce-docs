@@ -1,5 +1,5 @@
 ---
-title: Advanced features
+title: 'Overview: Advanced features'
 excerpt: >-
   Discover powerful enhancements—automations, gifting, and bulk updates—that
   help you scale and personalize your subscription business.
