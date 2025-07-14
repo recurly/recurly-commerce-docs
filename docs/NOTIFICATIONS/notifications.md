@@ -1,5 +1,5 @@
 ---
-title: Notifications
+title: 'Overview: Notifications'
 excerpt: >-
   A central hub for managing all subscriber notifications—email, SMS, and
   integrations—so you can keep customers informed at every stage.
