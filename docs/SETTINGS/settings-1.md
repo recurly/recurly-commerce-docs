@@ -20,5 +20,5 @@ The **Settings** section of the Recurly Commerce app lets you fine-tune your dun
 
 # Key details
 
-* **Dunning management**: Configure how Recurly Commerce handles failed payments—set retry timing, retry count, and whether to pause or cancel contracts after dunning completes. Learn more: <a href="https://docs.recurly.com/docs/dunning-management-in-recurly-commerce#/" target="_blank">Dunning management in Recurly Commerce</a>
+* **Dunning management**: Configure how Recurly Commerce handles failed payments—set retry timing, retry count, and whether to pause or cancel contracts after dunning completes. Learn more: <a href="https://docs.recurly.com/recurly-commerce-docs/docs/dunning-management-in-recurly-commerce#/" target="_blank">Dunning management in Recurly Commerce</a>
 * **Change plan**: View your current Recurly Commerce tier and switch plans to unlock Pro- or Enterprise-only features and support levels. Learn more: <a href="https://docs.recurly.com/docs/change-your-recurly-commerce-plan#/" target="_blank">Change your Recurly Commerce plan</a>
