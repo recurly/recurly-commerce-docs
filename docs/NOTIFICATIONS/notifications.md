@@ -20,5 +20,5 @@ Notifications encompass Recurly Commerce’s built-in transactional emails and S
 
 # Key details
 
-* **Transactional Emails**: Configure and customize automated email notifications for events like order placed, failed payment, upcoming renewal, and more. Learn more in the <a href="https://docs.recurly.com/docs/transactional-emails#/" target="_blank">Transactional Emails</a> guide.
-* **Transactional SMS**: Enable concise SMS alerts—such as payment failures or upcoming orders—to keep subscribers in the loop. Find setup instructions in the <a href="https://docs.recurly.com/docs/transactional-sms#/" target="_blank">Transactional SMS</a> guide.
+* **Transactional Emails**: Configure and customize automated email notifications for events like order placed, failed payment, upcoming renewal, and more. Learn more in the [Transactional Emails](transactional-emails) guide.
+* **Transactional SMS**: Enable concise SMS alerts—such as payment failures or upcoming orders—to keep subscribers in the loop. Find setup instructions in the [Transactional SMS](transactional-sms) guide.
