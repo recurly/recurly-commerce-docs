@@ -23,5 +23,5 @@ This page serves as your starting point for Recurly Commerce, directing you to t
 
 # Key details
 
-* **Installing and onboarding to Recurly Commerce**: Get up and running with our step-by-step setup guide. <a href="https://docs.recurly.com/docs/installing-and-onboarding-to-recurly-commerce#/" target="_blank">Learn more</a>.
-* **Migrating to Recurly Commerce**: Seamlessly transfer your existing subscription contracts into Recurly Commerce. <a href="https://docs.recurly.com/docs/migrating-to-recurly-commerce#/" target="_blank">Learn more</a>.
+* **Installing and onboarding to Recurly Commerce**: Get up and running with our step-by-step setup guide. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/installing-and-onboarding-to-recurly-commerce#/" target="_blank">Learn more</a>.
+* **Migrating to Recurly Commerce**: Seamlessly transfer your existing subscription contracts into Recurly Commerce. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/migrating-to-recurly-commerce#/" target="_blank">Learn more</a>.
