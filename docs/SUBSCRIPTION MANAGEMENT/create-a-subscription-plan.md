@@ -94,8 +94,6 @@ Once your products are chosen, select how they’ll be offered to customers:
 
 Toggle **Add Gift Option** on to include an “Is this a gift?” prompt below the subscription choices. This adds a radio button customers can select to flag their order as a gift.
 
-[Learn more about gifting](https://www.tryprive.com/blog/gifting)
-
 ***
 
 ## Product swaps and add-ons
