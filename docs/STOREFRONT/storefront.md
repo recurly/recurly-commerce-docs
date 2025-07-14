@@ -20,6 +20,6 @@ The “Storefront” section brings together everything you need to install, cus
 
 # Key details
 
-* **Storefront setup**: Step-by-step guide to install and publish the subscription widget via the Recurly Commerce app. <a href="https://docs.recurly.com/docs/storefront-setup#/" target="_blank">Learn more</a>
-* **Storefront management**: Instructions on editing, styling, and updating your live subscription widget through the Shopify Theme Editor. <a href="https://docs.recurly.com/docs/storefront-management#/" target="_blank">Learn more</a>
-* **Widget API**: Complete REST endpoints and JSON schemas to retrieve product, selling plan, and theme settings for custom integrations. <a href="https://docs.recurly.com/docs/widget-api#/" target="_blank">Learn more</a>
+* **Storefront setup**: Step-by-step guide to install and publish the subscription widget via the Recurly Commerce app. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/storefront-setup#/" target="_blank">Learn more</a>
+* **Storefront management**: Instructions on editing, styling, and updating your live subscription widget through the Shopify Theme Editor. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/storefront-management#/" target="_blank">Learn more</a>
+* **Widget API**: Complete REST endpoints and JSON schemas to retrieve product, selling plan, and theme settings for custom integrations. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/widget-api#/" target="_blank">Learn more</a>
