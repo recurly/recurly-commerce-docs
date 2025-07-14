@@ -22,4 +22,4 @@ The Customer Portal is the self-service area where subscribers can view and mana
 # Key details
 
 * **Customer Portal Management**: Configure what subscribers can do in their portal. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/customer-portal-management#/" target="_blank">Learn more</a>.
-* **Cancellation & Churn Prevention Flows**: Tailor the onscreen experience when subscribers attempt to cancel. <a href="https://docs.recurly.com/docs/cancellation-and-churn-prevention-flows#/" target="_blank">Learn more</a>.
+* **Cancellation & Churn Prevention Flows**: Tailor the onscreen experience when subscribers attempt to cancel. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/cancellation-and-churn-prevention-flows#/" target="_blank">Learn more</a>.
