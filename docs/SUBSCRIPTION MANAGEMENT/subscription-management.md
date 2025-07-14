@@ -1,5 +1,5 @@
 ---
-title: Subscription management
+title: 'Overview: Subscription management'
 excerpt: >-
   Navigate all subscriber management workflows in Recurly Commerce: plan
   creation, plan editing, contract updates, and activity logs.
