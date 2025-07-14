@@ -1,5 +1,5 @@
 ---
-title: Revenue recovery
+title: 'Overview: Revenue recovery'
 excerpt: >-
   A unified suite of tools to maximize involuntary revenue recovery and reduce
   churn for Shopify merchants.
