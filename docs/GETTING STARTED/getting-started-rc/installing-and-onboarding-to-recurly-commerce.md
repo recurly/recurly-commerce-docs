@@ -42,16 +42,16 @@ The Installing & Onboarding workflow guides you through adding the Recurly Comme
 
   <Card title="Create Subscription Plan" icon="fa-plus-circle" target="_blank" href="https://docs.recurly.com/recurly-commerce-docs/docs/create-a-subscription-plan#/">
     Define your subscription offers—these feed directly into your storefront widget.<br />
-    [Create a subscription plan](https://docs.recurly.com/docs/create-a-subscription-plan#/)
+    [Create a subscription plan](https://docs.recurly.com/recurly-commerce-docs/docs/create-a-subscription-plan#/)
   </Card>
 
   <Card title="Set Up Storefront" icon="fa-store" target="_blank" href="https://docs.recurly.com/recurly-commerce-docs/docs/storefront-setup#/">
     Ensure the subscription purchase widget displays on your product pages.<br />
-    [Storefront setup guide](https://docs.recurly.com/docs/storefront-setup#/)
+    [Storefront setup guide](https://docs.recurly.com/recurly-commerce-docs/storefront-setup#/)
   </Card>
 
   <Card title="Configure Comms" icon="fa-envelope" target="_blank" href="https://docs.recurly.com/recurly-commerce-docs/docs/transactional-emails">
     Free transactional email & SMS keep subscribers informed at every stage.<br />
-    [Configure transactional emails](https://docs.recurly.com/docs/transactional-emails)
+    [Configure transactional emails](https://docs.recurly.com/recurly-commerce-docs/docs/transactional-emails)
   </Card>
 </Cards>
