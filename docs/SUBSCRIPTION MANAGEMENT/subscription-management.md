@@ -20,7 +20,7 @@ Subscriber Management in Recurly Commerce centralizes everything you need to lau
 
 # Key details
 
-* **Create a subscription plan**: Build new subscription offers in minutes—select products, set pricing options, discounts, add-ons, gifting, and shipping rules. <a href="https://docs.recurly.com/docs/create-a-subscription-plan#/" target="_blank">Learn more</a>
-* **Edit a subscription plan**: Modify any existing plan’s products, purchase options, discounts, swaps/add-ons, or shipping configuration. <a href="https://docs.recurly.com/docs/edit-a-subscription-plan#/" target="_blank">Learn more</a>
-* **Edit a customer subscription**: Update individual subscriber contracts—change delivery dates, frequency, price, pause, skip, swap products, apply coupons, and more. <a href="https://docs.recurly.com/docs/edit-a-subscription#/" target="_blank">Learn more</a>
-* **Subscriber activity**: Review the full order history and audit trail for any subscription contract to resolve questions and support customers. <a href="https://docs.recurly.com/docs/subscriber-activity#/" target="_blank">Learn more</a>
+* **Create a subscription plan**: Build new subscription offers in minutes—select products, set pricing options, discounts, add-ons, gifting, and shipping rules. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/create-a-subscription-plan#/" target="_blank">Learn more</a>
+* **Edit a subscription plan**: Modify any existing plan’s products, purchase options, discounts, swaps/add-ons, or shipping configuration. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/edit-a-subscription-plan#/" target="_blank">Learn more</a>
+* **Edit a customer subscription**: Update individual subscriber contracts—change delivery dates, frequency, price, pause, skip, swap products, apply coupons, and more. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/edit-a-subscription#/" target="_blank">Learn more</a>
+* **Subscriber activity**: Review the full order history and audit trail for any subscription contract to resolve questions and support customers. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/subscriber-activity#/" target="_blank">Learn more</a>
