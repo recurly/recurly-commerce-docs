@@ -20,7 +20,7 @@ The Shopify settings section outlines how to fulfill and refund subscription ord
 
 # Key details
 
-* **Fulfill a subscription in Shopify**: Learn how to process delivery of subscription orders via the Shopify Orders page. <a href="https://docs.recurly.com/revrec-docs/docs/fulfill-a-subscription-in-shopify#/" target="_blank">Learn more</a>.
+* **Fulfill a subscription in Shopify**: Learn how to process delivery of subscription orders via the Shopify Orders page. <a href="https://docs.recurly.com/recurly-commerce-docs/docs/fulfill-a-subscription-in-shopify#/" target="_blank">Learn more</a>.
 * **Refund a subscription in Shopify**: Step-by-step refund flows for subscription orders in Shopify. <a href="https://docs.recurly.com/docs/refund-a-subscription-in-shopify#/" target="_blank">Learn more</a>.
 * **Discount codes**: Create and apply Shopify discount codes to subscriber contracts. <a href="https://docs.recurly.com/docs/discount-codes#/" target="_blank">Learn more</a>.
 * **Manage shipping profiles**: Configure free-shipping rules for subscriptions via Shopify shipping profiles. <a href="https://docs.recurly.com/docs/manage-shipping-profiles#/" target="_blank">Learn more</a>.
