@@ -21,7 +21,7 @@ Recurly Commerce integrations let you extend your subscription workflows by conn
 # Key details
 
 * **Email & SMS Integrations**: Connect messaging platforms like Klaviyo, Postscript, and Attentive to automate transactional comms and marketing campaigns.\
-  Learn more: <a href="https://docs.recurly.com/docs/email-and-sms-integration#/" target="_blank">Email & SMS integration</a>
+  Learn more: <a href="https://docs.recurly.com/recurly-commerce-docs/docs/email-and-sms-integration#/" target="_blank">Email & SMS integration</a>
 
 * **Gorgias Integration**: Surface subscriber profiles and subscription controls directly in your Gorgias helpdesk for faster, more informed support.\
-  Learn more: <a href="https://docs.recurly.com/docs/gorgias-integration#/" target="_blank">Gorgias integration</a>
+  Learn more: <a href="https://docs.recurly.com/recurly-commerce-docs/docs/gorgias-integration#/" target="_blank">Gorgias integration</a>
