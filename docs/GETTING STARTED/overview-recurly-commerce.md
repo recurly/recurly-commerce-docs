@@ -29,7 +29,7 @@ Recurly Commerce is an end-to-end subscription commerce platform that combines g
 
 Kick off your Recurly Commerce journey with our core setup and migration guides:
 
-* [Installing and onboarding to Recurly Commerce](https://docs.recurly.com/docs/installing-and-onboarding-to-recurly-commerce#/)
+* [Installing and onboarding to Recurly Commerce](installing-and-onboarding-to-recurly-commerce)
 * [Migrating to Recurly Commerce](https://docs.recurly.com/docs/migrating-to-recurly-commerce#/)
 * [Creating a subscription plan](https://docs.recurly.com/docs/create-a-subscription-plan#/)
 
