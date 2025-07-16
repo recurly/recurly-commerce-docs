@@ -61,13 +61,27 @@ Editing a subscription contract lets you tailor an individual customer’s upcom
 
 ***
 
-<br />
+## Edit email
 
-## Edit Email
+Change a subscriber’s email address.
 
-Email addresses are locked to the contract and power the one-time-password portal. If you need to update a subscriber’s email, our support team can guide you through the process.
+1. **Navigate** to **Subscribers**.
 
-> **Note**: Email changes require support assistance. Contact [support@recurly.com](mailto:support@recurly.com).
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/550f1d8edbe55ffb87782d9af99b95a223e6e46d14c4f6f3a172983959f32c9b-image.png" />
+
+2. **Locate** and **select** the subscriber.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/dad537371948e469a21491c1d3ff8e817b20c4d87597d0fc9f0f70c31a44269c-image.png" />
+
+3. **Click** **Change** beside the email field.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/b43754ffc82fde0ebc8207ba95c6820dd505435edb7e9119cdf3774ec8778b77-image.png" />
+
+4. **Enter** the new email address and **click** **Update**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a2b5ac87ba923e98c85913535c1a65328347d57fd27104fc02aa23d0735df584-image.png" />
+
+5. The change is applied immediately.
 
 ***
 
@@ -304,7 +318,7 @@ When a customer needs to change their payment method on file, trigger a secure r
 
 ***
 
-## Create a New Subscription Contract
+## Create a new subscription contract
 
 Use this flow to add a brand-new contract for a customer who already has at least one active subscription under their email:
 
