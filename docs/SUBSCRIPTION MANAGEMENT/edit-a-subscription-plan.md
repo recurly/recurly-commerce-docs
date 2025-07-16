@@ -61,7 +61,7 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 
 ***
 
-## Edit Purchase Options & Discounts
+## Edit purchase options and discounts
 
 1. In the **Options** section, **click** **Edit**.
 2. **View** each purchase mode (e.g., One-time & Subscribe & Save, Subscription Only, Pre-Paid). You’ll see delivery cadence and current subscriber counts.
@@ -98,7 +98,7 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 
 ***
 
-## Edit Special Discounts
+## Edit special discounts
 
 1. Find the **Special Discounts** section and click **Edit**.
 
@@ -119,7 +119,7 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 
 ***
 
-## Edit Free Shipping
+## Edit free shipping
 
 1. **Scroll** to the **Free Shipping** section and click **Edit**.
 
@@ -143,7 +143,7 @@ Editing a subscription plan allows you to modify all live offer settings—produ
 
 ***
 
-## Archive a Subscription Plan
+## Archive a subscription plan
 
 1. On the plan’s card, **click** the **⋮** menu and **select** **Archive**.
 
