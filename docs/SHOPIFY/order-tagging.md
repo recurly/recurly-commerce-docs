@@ -44,6 +44,8 @@ Recurly Commerce applies these five standard tags to subscription orders:
 | **First time subscriber**        | Marks a customer’s very first subscription order. (Migrated subscribers will not receive this tag.)                                             |
 | **Recurring subscription order** | Applied to all renewal orders after the first—signifies returning subscribers.                                                                  |
 | **Shipping Profile**             | Reflects the Shopify shipping profile selected for that order (e.g., economy, free shipping), enabling fulfillment or reporting logic.          |
+| **Gift subscription order**      | When the order is a gifted subscription, initial and recurring orders will have this tag.                                                       |
+| **Prepaid subscription order**   | If the contract is a prepaid contract initial and recurring orders will have this tag.                                                          |
 
 > **Note**: Pro/Enterprise merchants can request custom tagging—reach out to <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
 
