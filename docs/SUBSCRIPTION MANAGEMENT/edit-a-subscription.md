@@ -28,7 +28,7 @@ Editing a subscription contract lets you tailor an individual customer’s upcom
 * **Subscriber retention**: Pause, skip, or modify schedules to keep customers engaged and satisfied.
 * **Personalized service**: Offer one-off add-ons, custom discounts, and gifting directly on their contract.
 
-# Key detail
+# Key details
 
 ## Accessing a subscriber’s contract
 
