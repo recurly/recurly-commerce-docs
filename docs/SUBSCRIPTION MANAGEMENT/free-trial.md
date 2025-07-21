@@ -34,10 +34,12 @@ metadata:
 
 ## Create your Shopify product with two variants
 
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ae53127094a4e18304aaeb2f335cd727296deb20f88619063a9b78609cdcda58-image.png" />
+
 * One variant for the free trial (e.g., $0)
 * One variant for the paid subscription
 
-*Tip: Label the variants clearly for internal reference*
+> **Note:** Label the variants clearly for internal reference.
 
 ## Set up the free trial offer in Recurly Commerce
 
