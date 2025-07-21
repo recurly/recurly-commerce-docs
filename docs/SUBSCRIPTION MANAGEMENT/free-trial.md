@@ -131,16 +131,34 @@ Engineering will:
 
 ## Create the automation
 
-1. Go to **Automations**, create a new one using **Swap Automation**
-2. Name the automation (e.g., *Culinary Crate – Free Trial Swap*)
-3. Set trigger: Initial purchase of the **free variant**
-4. In **Conditions**:
+1. **Go** to **Automations**, **create** a new one using **Swap Automation**.
 
-   * Set **On renewal** = 1
-   * Select the **paid variant**
-   * Check **Use this product’s plan** to apply the cadence from the paid offer
-   * Leave discount at 0%
-   * Save
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/137619fe64cd6595a1b54f81b1ccef02f2e86093b9db71d2474a4765a61cf320-image.png" />
+
+2. **Name** the automation (e.g., *Coconut Water – Free Trial Swap*)
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6588763059453ba5289e114232781047c31d99b34f94cd75ca5444249b91502d-image.png" />
+
+2. **Set** trigger: Initial purchase of the **free variant**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5fd77c1716a865dcc1510d5e50f794c0646ad6a19033808438415d6946d8c0b4-image.png" />
+
+3. In **Conditions**:
+
+* Set **On renewal** = 1.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/62fb1ff6170e10d0e9cc25b731eeda8c7fef751465e974f9471cc1e6022ce626-image.png" />
+
+* Select the **paid variant**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8118148fbd26d0c11029168ab59e388e8c57a01f98184234b289b08769895b83-image.png" />
+
+* **Check** **Use this product’s plan** to apply the cadence from the paid offer.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0df305b2a3db46011f1df571bd4132c9f23f3617f87fba1cbea18b49a63dce34-image.png" />
+
+* **Leave** discount at 0%.
+* **Save**.
 
 ## Test the full experience
 
