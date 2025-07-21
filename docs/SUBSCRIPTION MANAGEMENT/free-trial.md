@@ -116,11 +116,11 @@ metadata:
 
 Provide the following to Support:
 
-* Your Shopify store URL prefix (from **Settings > top-left**)
+* Your Shopify store URL prefix (from **Settings > top-left**).
 
 <Image align="center" className="border" border={true} width="40% " src="https://files.readme.io/7f6f59ab21ab9d74a62eefba707c299fef437b0e436b97327e452d9fdfe89efe-image.png" />
 
-* The name of the paid offer
+* The name of the paid offer.
 
 Engineering will:
 
