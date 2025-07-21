@@ -36,7 +36,7 @@ metadata:
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/940afd3a77f7a02cd3b09f50998807db90c56a9cdd58ef93c147b85e36036ff0-image.png" />
 
-* One variant for the free trial (e.g., $0). The trial price will be $0 due to the 100% discount, regardless of how it's configured. However, whether the variant itself is priced at $0 or not depends on how the merchant wants the pricing to appear on the product display page.
+* One variant for the free trial (e.g., $0). The trial price will be $0 due to the 100% discount, regardless of how it's configured. However, whether the variant itself is priced at $0 or not depends on how you want the pricing to appear on the product display page.
 * One variant for the paid subscription.
 
 > **Note:** Label the variants clearly for internal reference.
@@ -45,17 +45,39 @@ metadata:
 
 ## Set up the free trial offer in Recurly Commerce
 
-1. Go to **Subscription Offers**
-2. Create a new offer for the **free** variant
+1. Go to **Subscription Plans** and **press** **Create offer**.
 
-   * Name the offer group
-   * Select the free product variant
-   * Choose **Subscription Only**
-   * Set up one cadence/option with **100% off** (this defines the trial length)
-   * In **Product Swap and Add-ons**, choose the paid variant and click **Swap**
-   * Set **Special Discounts** to **None**
-   * Publish the offer
-3. Edit the offer in **Subscription Plans**
+<Image align="center" className="border" border={true} src="https://files.readme.io/48c12fe99d37b541f093cae58c5cd0a96c1ccac1fd6c1d2a669d8482a7486ded-image.png" />
+
+2. **Create** a new offer for the **free** variant.
+
+* Name and add a description for the offer group
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5af3d65a8c8f52dd2db4e9ccca6560a70d7a6f7d67e5b07f8e3eb1e056f12308-image.png" />
+
+* Select **ONLY** the free product variant and **press** **Confirm**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a8bd70c93774a20a5f941e1a3c06e84c2c77df8339e4beb827d340056c1cd357-image.png" />
+
+* **Choose** **Subscription Only**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/dce7707d7e70f4e4c0636340a02d7c7635d8e9d75f0804dc41f7c75ee9bd8e29-image.png" />
+
+* Set up one cadence/option with **100% off** (this defines the trial length)
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5882df6acb38198d0dd9872ba516f18a4e78427e993608732df47a36b1753279-image.png" />
+
+* In **Product Swap and Add-ons**, **choose** the paid variant, **click** **Swap** and **confirm.**
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d063f124f7ed8c249bc97c873e0153489b6077a800766dac9991686d5e49ec84-image.png" />
+
+* Set **Special Discounts** to **None**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/96294f07acea29a8ddfe0a945520b6c21af6f6cd2b12c875045e01bd4930d7e4-image.png" />
+
+* **Publish** the offer.
+
+2. Edit the offer in **Subscription Plans**
 
    * Under **Options**, change the text to something like. :*“Delivered monthly for $24.99 after trial”*.
    * This is what customers will see in Shopify
