@@ -129,7 +129,7 @@ Engineering will:
 
 ***
 
-## Create the automation
+## Step 5: Create the automation
 
 1. **Go** to **Automations**, **create** a new one using **Swap Automation**.
 
@@ -160,7 +160,7 @@ Engineering will:
 * **Leave** discount at 0%.
 * **Save**.
 
-## Test the full experience
+## Step 6: Test the full experience
 
 1. **Complete** a test subscription from your Shopify store using the **free variant**.
 2. In Recurly Commerce:
