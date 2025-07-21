@@ -165,12 +165,22 @@ Engineering will:
 1. **Complete** a test subscription from your Shopify store using the **free variant**.
 2. In Recurly Commerce:
 
-   * Go to **Subscribers**, open the subscriber
-   * Check **Manage Subscription Contracts**
-   * Note the current frequency (e.g., every 7 days) and price ($0.00)
-3. Click **Process Now** to trigger the renewal
-4. After a few seconds, verify the swap:
+* **Go** to **Subscribers**, **open** the subscriber.
 
-   * Subscription cadence and price should update to the paid version
-   * No refresh needed
-   * Example: “Every month for $24.99”
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/bf887d8f285754a1d2a8be29bbea32149b00e23b23e658bef038ea7926e4b557-image.png" />
+
+* **Note** the current frequency (e.g., every 7 days) and price ($0.00)
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8be2836e769cb700f671f898c327e3c4a03648a2ca39a09e19358006668fe15c-image.png" />
+
+3. **Click** **Process Now** to trigger the renewal.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/79cc26870ad8250ee1fae9af56ea15a80470904c98ad26e9bf4f3fbb442eb9f5-image.png" />
+
+3. After a few seconds, **verify** the swap:
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/28942df1f347d827b995c621794a709250fdb0161082dc91f6388e484105de21-image.png" />
+
+* Subscription cadence and price should update to the paid version.
+* No refresh needed.
+* Example: “Every month for $3.99”.
