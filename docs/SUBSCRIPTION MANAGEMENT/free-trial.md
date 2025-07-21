@@ -43,7 +43,7 @@ metadata:
 
 ***
 
-## Set up the free trial offer in Recurly Commerce
+## Step 2: Set up the free trial offer in Recurly Commerce
 
 1. Go to **Subscription Plans** and **press** **Create offer**.
 
@@ -79,10 +79,15 @@ metadata:
 
 2. Edit the offer in **Subscription Plans**
 
-   * Under **Options**, change the text to something like. :*“Delivered monthly for $24.99 after trial”*.
-   * This is what customers will see in Shopify
+* Under **Options**, change the text to something like. :*“Delivered monthly for $3.99 after trial”*.
 
-## Set up the paid offer
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/5291788666ebb86200f9a3d1c47d2fd705825615fc477b6fdddb34f559acd1b8-image.png" />
+
+* This is what customers will see in Shopify.
+
+***
+
+## Step 3: Set up the paid offer
 
 1. Create another subscription offer for the **paid** variant
 
