@@ -32,14 +32,16 @@ metadata:
 
 # Key details
 
-## Create your Shopify product with two variants
+## Step 1: Create your Shopify product with two variants
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ae53127094a4e18304aaeb2f335cd727296deb20f88619063a9b78609cdcda58-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/940afd3a77f7a02cd3b09f50998807db90c56a9cdd58ef93c147b85e36036ff0-image.png" />
 
-* One variant for the free trial (e.g., $0)
-* One variant for the paid subscription
+* One variant for the free trial (e.g., $0). The trial price will be $0 due to the 100% discount, regardless of how it's configured. However, whether the variant itself is priced at $0 or not depends on how the merchant wants the pricing to appear on the product display page.
+* One variant for the paid subscription.
 
 > **Note:** Label the variants clearly for internal reference.
+
+***
 
 ## Set up the free trial offer in Recurly Commerce
 
@@ -55,8 +57,7 @@ metadata:
    * Publish the offer
 3. Edit the offer in **Subscription Plans**
 
-   * Under **Options**, change the text to something like\
-     *“Delivered monthly for $24.99 after trial”*
+   * Under **Options**, change the text to something like. :*“Delivered monthly for $24.99 after trial”*.
    * This is what customers will see in Shopify
 
 ## Set up the paid offer
@@ -70,9 +71,9 @@ metadata:
    * No product swap required
    * Set **Special Discounts** to **None**
 
-## Request Engineering assistance
+## Request engineering assistance
 
-Provide the following to Engineering:
+Provide the following to Support:
 
 * Your Shopify store URL prefix (from **Settings > top-left**)
 * The name of the paid offer
