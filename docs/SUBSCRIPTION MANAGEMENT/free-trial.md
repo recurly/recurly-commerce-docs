@@ -162,7 +162,7 @@ Engineering will:
 
 ## Test the full experience
 
-1. Complete a test subscription from your Shopify store using the **free variant**
+1. **Complete** a test subscription from your Shopify store using the **free variant**.
 2. In Recurly Commerce:
 
    * Go to **Subscribers**, open the subscriber
