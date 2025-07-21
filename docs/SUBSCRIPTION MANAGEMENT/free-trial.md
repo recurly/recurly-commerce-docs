@@ -34,7 +34,7 @@ metadata:
 
 ## Step 1: Create your Shopify product with two variants
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/940afd3a77f7a02cd3b09f50998807db90c56a9cdd58ef93c147b85e36036ff0-image.png" />
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/940afd3a77f7a02cd3b09f50998807db90c56a9cdd58ef93c147b85e36036ff0-image.png" />
 
 * One variant for the free trial (e.g., $0). The trial price will be $0 due to the 100% discount, regardless of how it's configured. However, whether the variant itself is priced at $0 or not depends on how you want the pricing to appear on the product display page.
 * One variant for the paid subscription.
@@ -47,7 +47,7 @@ metadata:
 
 1. Go to **Subscription Plans** and **press** **Create offer**.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/48c12fe99d37b541f093cae58c5cd0a96c1ccac1fd6c1d2a669d8482a7486ded-image.png" />
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/48c12fe99d37b541f093cae58c5cd0a96c1ccac1fd6c1d2a669d8482a7486ded-image.png" />
 
 2. **Create** a new offer for the **free** variant.
 
