@@ -89,16 +89,30 @@ metadata:
 
 ## Step 3: Set up the paid offer
 
-1. Create another subscription offer for the **paid** variant
+1. **Create** another subscription offer for the **paid** variant.
 
-   * Name the offer group
-   * Select the paid product variant
-   * Choose **Subscription Only**
-   * Define the cadence (e.g., 1 month)
-   * No product swap required
-   * Set **Special Discounts** to **None**
+* **Name** the offer group.
 
-## Request engineering assistance
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/863b48ee023d55d025909126f76bcec0e8198bf722ea021e80a4d270e497abd9-image.png" />
+
+* **Select** the paid product variant.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/8c4d182d7ef8b2ff41058c8692b92be9af7e9930b556c3657b8dbdfe82c00935-image.png" />
+
+* Choose **Subscription Only**.
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/892b7a1f4015561e4429b9a57ce75c7053f506377cafd879530d1a2aca08ea77-image.png" />
+
+* Define the cadence (e.g., 1 month)
+
+<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/ff6b546323edcbdc4947a2f140c0b6f7e21d206080798e45660ab01b70aa3cd1-image.png" />
+
+* **No product swap required**.
+* **No Special Discounts required**
+
+***
+
+## Step 4: Request support assistance
 
 Provide the following to Support:
 
@@ -109,6 +123,8 @@ Engineering will:
 
 * **Hide the paid offer** from the Shopify product display page (set visibility to `MERCHANT_PORTAL`)
 * **Enable`swapOfferEnabled`** to allow cadence to update during the swap
+
+***
 
 ## Create the automation
 
