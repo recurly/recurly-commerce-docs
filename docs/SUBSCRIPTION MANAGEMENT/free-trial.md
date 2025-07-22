@@ -32,7 +32,7 @@ export const PrerequisitesLimitations = ({ header }) => {
   );
 };
 
-<PrerequisitesLimitations header="Prerequisites & Limitations" />
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
