@@ -4,7 +4,7 @@ excerpt: >-
   Use Recurly Commerce to configure a free trial experience using product
   variants, subscription offers, and automation for product swaps.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
