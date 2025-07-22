@@ -122,11 +122,6 @@ Provide the following to Support:
 
 * The name of the paid offer.
 
-Engineering will:
-
-* **Hide the paid offer** from the Shopify product display page (set visibility to `MERCHANT_PORTAL`)
-* **Enable`swapOfferEnabled`** to allow cadence to update during the swap
-
 ***
 
 ## Step 5: Create the automation
@@ -145,7 +140,7 @@ Engineering will:
 
 3. In **Conditions**:
 
-* Set **On renewal** = 1.
+* Set **On renewal** = 1. This ensures the automation triggers **after the first renewal cycle**, which marks the end of the free trial. At that point, the system will automatically swap the trial product for the standard, paid plan—updating the subscription accordingly.
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/62fb1ff6170e10d0e9cc25b731eeda8c7fef751465e974f9471cc1e6022ce626-image.png" />
 
