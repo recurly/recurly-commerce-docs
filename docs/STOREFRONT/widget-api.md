@@ -10,8 +10,6 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
-
 export const PrerequisitesLimitations = ({ header }) => {
   return (
     <div className="flex justify-start">
