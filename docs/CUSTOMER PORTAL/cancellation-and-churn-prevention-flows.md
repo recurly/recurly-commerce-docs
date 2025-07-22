@@ -16,11 +16,26 @@ metadata:
 
 This feature or setting in Recurly Commerce requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          <strong>Beta feature</strong>: Intelligent cancellation flow enhancements are currently in beta.
+        </p>
+        <blockquote className="mt-4 pl-4 border-l-4 border-gray-300 italic">
+          <p>
+            <strong>Note</strong>: To unlock additional cancellation-flow controls, reach out to your CSM.
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  );
+};
 
-* **Beta feature**: Intelligent cancellation flow enhancements are currently in beta.
-
-> **Note**: To unlock additional cancellation-flow controls, reach out to your CSM.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Required plan
 
