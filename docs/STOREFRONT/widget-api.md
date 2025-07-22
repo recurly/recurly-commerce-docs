@@ -12,8 +12,25 @@ metadata:
 
 ### Prerequisites & limitations
 
-* Requires a live Recurly Commerce integration on Shopify with storefront widget enabled.
-* Only available for stores using Recurly Commerce Subscription Offers.
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Requires a live Recurly Commerce integration on Shopify with storefront widget enabled.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Only available for stores using Recurly Commerce Subscription Offers.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
