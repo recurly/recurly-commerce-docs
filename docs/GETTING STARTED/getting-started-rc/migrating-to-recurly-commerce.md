@@ -15,10 +15,25 @@ metadata:
 
 A one-time migration fee applies. Please reach out to your Recurly account manager or <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a> for pricing details.
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Your store must be hosted on Shopify or Shopify Plus.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Migration supports up to <strong>100,000</strong> subscribers per day.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* Your store must be hosted on Shopify or Shopify Plus.
-* Migration supports up to **100,000** subscribers per day.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
