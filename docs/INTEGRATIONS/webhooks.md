@@ -10,11 +10,29 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          A `webhookSigningKey` must be generated and stored for each merchant before they can subscribe to webhook events.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Merchants must verify webhook request signatures using the shared key.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Currently, there is no standalone Retool for creating a webhook key entry—one must be created manually or via a separate mechanism.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* A `webhookSigningKey` must be generated and stored for each merchant before they can subscribe to webhook events.
-* Merchants must verify webhook request signatures using the shared key.
-* Currently, there is no standalone Retool for creating a webhook key entry—one must be created manually or via a separate mechanism.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 ## Definition
 
