@@ -15,10 +15,25 @@ metadata:
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/898c9b96d39a42f9921285096bd21e97" href="https://www.loom.com/embed/898c9b96d39a42f9921285096bd21e97" html="false" iframe="true" />
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          You must have at least one live subscription plan to edit.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Only products not already tied to another subscription offer will appear when selecting SKUs.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* You must have at least one live subscription plan to edit.
-* Only products not already tied to another subscription offer will appear when selecting SKUs.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
