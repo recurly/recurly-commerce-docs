@@ -13,10 +13,25 @@ metadata:
 
 The **Edit a Customer Subscription** screen in Recurly Commerce empowers you to manage every facet of an individual subscriber’s contract in real time: update their status, contact details, next-billing date, frequency, pricing, discounts, add-ons, shipping and more, or pause, skip, cancel, and even re-activate—all without code.
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          The subscriber must already have an active contract.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Email address changes require Recurly support intervention.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* The subscriber must already have an active contract.
-* Email address changes require Recurly support intervention.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
