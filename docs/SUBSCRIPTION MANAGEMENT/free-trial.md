@@ -16,6 +16,36 @@ metadata:
 * If multiple free trial durations are needed (e.g., 7, 14, or 21 days), you must create **separate subscription offers** for each.
 * This setup requires support from the Engineering team to complete the backend configuration.
 
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-center">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Node.js &gt;= 14
+        </p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          ReadMe CLI installed
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Not supported on IE11
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Requires internet connection
+        </p>
+      </div>
+    </div>
+  );
+};
+
+<PrerequisitesLimitations header="Prerequisites & limitations" />
+
+<br />
+
 # Definition
 
 **Free trial**: A promotional subscription period where the user is not charged before being automatically enrolled in a paid plan.
