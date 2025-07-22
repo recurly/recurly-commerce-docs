@@ -17,15 +17,7 @@ export const PrerequisitesLimitations = ({ header }) => {
         <p className="text-lg font-bold">{header}</p>
         <p>
           <i className="fa-solid fa-check mr-2" />
-          Each <strong>subscription offer</strong> can only have one option/cadence if using a product swap for free trials.
-        </p>
-        <p>
-          <i className="fa-solid fa-check mr-2" />
-          If multiple free trial durations are needed (e.g., 7, 14, or 21 days), you must create <strong>separate subscription offers</strong> for each.
-        </p>
-        <p>
-          <i className="fa-solid fa-exclamation-triangle mr-4" />
-          This setup requires support from the Engineering team to complete the backend configuration.
+          A Shopify or Shopify Plus store is required.
         </p>
       </div>
     </div>
