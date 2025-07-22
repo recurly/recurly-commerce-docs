@@ -37,7 +37,7 @@ To allow merchants to subscribe to webhooks:
 
 > **Note:** Avoid generating a public API token solely to create a webhook key. Instead, we recommend using a dedicated internal tool or new Retool component.
 
-Once the signing key is in place, merchants can subscribe to webhooks using our [public API](https://developers.recurly.com/reference/webhooks).
+Once the signing key is in place, merchants can subscribe to webhooks using our [public API](https://docs.recurly.com/recurly-commerce/reference/publicapicontroller_createwebhook#/).
 
 ### Webhook topics
 
