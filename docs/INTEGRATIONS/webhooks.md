@@ -4,7 +4,7 @@ excerpt: >-
   Enable real-time event syncing between Recurly Commerce and merchant systems
   using secure outbound webhooks.
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
