@@ -12,7 +12,7 @@ metadata:
 
 export const PrerequisitesLimitations = ({ header }) => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-start">
       <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
         <p className="text-lg font-bold">{header}</p>
         <p>
