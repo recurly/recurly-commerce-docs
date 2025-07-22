@@ -155,6 +155,8 @@ Provide the following to Support:
 * **Leave** discount at 0%.
 * **Save**.
 
+***
+
 ## Step 6: Test the full experience
 
 1. **Complete** a test subscription from your Shopify store using the **free variant**.
