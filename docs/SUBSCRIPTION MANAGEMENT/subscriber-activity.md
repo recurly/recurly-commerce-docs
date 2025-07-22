@@ -10,9 +10,21 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Requires that your Shopify store is connected to Recurly Commerce.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* Requires that your Shopify store is connected to Recurly Commerce.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
