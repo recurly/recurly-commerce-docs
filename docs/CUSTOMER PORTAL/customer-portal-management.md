@@ -48,20 +48,13 @@ Navigate to **Customer Portal** in the Recurly Commerce app to toggle subscriber
 
 <Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/94504e4d299d29c56018307a441a38174bb6d9f175aa55c48f8d7e35a2eb323f-image.png" />
 
-1. **Shoppers can skip**\
-   Allow customers to skip their next delivery without canceling their subscription—perfect for vacations or paused usage.
-2. **Shoppers can change renewal date**\
-   Let customers move their next charge/delivery date up to their upcoming shipment.
-3. **Shoppers can change quantity**\
-   Enable quantity adjustments—special discounts recalc automatically.
-4. **Shoppers can change cadence**\
-   Allow delivery frequency changes within the plan’s available options, so customers adapt to their lifestyle.
-5. **Shoppers can swap products**\
-   Give subscribers the ability to swap SKUs within the same subscription plan, driving experimentation without churn.
-6. **Shoppers can pause / un-pause**\
-   Offer indefinite or limited-cycle pause functionality, configured by you, to retain customers during gaps in need.
-7. **Shoppers can gift next delivery**\
-   Turn on gifting so subscribers can send an upcoming order to a friend instead of themselves.
+1. **Shoppers can skip**: Allow customers to skip their next delivery without canceling their subscription—perfect for vacations or paused usage.
+2. **Shoppers can change renewal date**:Let customers move their next charge/delivery date up to their upcoming shipment.
+3. **Shoppers can change quantity**: Enable quantity adjustments—special discounts recalc automatically.
+4. **Shoppers can change cadence**: Allow delivery frequency changes within the plan’s available options, so customers adapt to their lifestyle.
+5. **Shoppers can swap products**: Give subscribers the ability to swap SKUs within the same subscription plan, driving experimentation without churn.
+6. **Shoppers can pause / un-pause**: Offer indefinite or limited-cycle pause functionality, configured by you, to retain customers during gaps in need.
+7. **Shoppers can gift next delivery**: Turn on gifting so subscribers can send an upcoming order to a friend instead of themselves.
 
 ## Stylize the Customer Portal
 
