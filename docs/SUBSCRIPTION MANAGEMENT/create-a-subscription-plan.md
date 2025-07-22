@@ -15,8 +15,6 @@ metadata:
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" href="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" html="false" iframe="true" />
 
-<br />
-
 export const PrerequisitesLimitations = ({ header }) => {
   return (
     <div className="flex justify-start">
