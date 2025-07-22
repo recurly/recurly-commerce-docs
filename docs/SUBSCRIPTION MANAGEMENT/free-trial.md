@@ -34,7 +34,7 @@ metadata:
 
 ## Step 1: Create your Shopify product with two variants
 
-<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/bac5f194b7987c280bda6fa8f1cb5b85765a8c26c1d37698d4648607c8fe4604-image.png" />
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/c8042b4ef5c3d37dde2990384a53f19f93eb5645a44175dd84130eeb6305d54a-image.png" />
 
 * One variant for the free trial (e.g., $0). The trial price will be $0 due to the 100% discount, regardless of how it's configured. However, whether the variant itself is priced at $0 or not depends on how you want the pricing to appear on the product display page.
 * One variant for the paid subscription.
