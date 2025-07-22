@@ -16,7 +16,7 @@ export const PrerequisitesLimitations = ({ header }) => {
       <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
         <p className="text-lg font-bold">{header}</p>
         <p>
-          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          <i className="fa-solid fa-check mr-2" />
           You’ll need a Shopify store to install the Recurly Commerce app.
         </p>
         <p>
