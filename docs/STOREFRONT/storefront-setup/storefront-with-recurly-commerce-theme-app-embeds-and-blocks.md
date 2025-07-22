@@ -14,9 +14,29 @@ Use Shopify’s Theme Editor to enable the mandatory Recurly Commerce Subscripti
 
 ### Prerequisites & limitations
 
-* **Embed block** is required on **all** themes.
-* **Inline app blocks** are only available on Shopify Operating System 2.0 themes.
-* Customization options for both embed and app blocks are coming soon.
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          <strong>Embed block</strong> is required on <strong>all</strong> themes.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          <strong>Inline app blocks</strong> are only available on Shopify Operating System 2.0 themes.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Customization options for both embed and app blocks are coming soon.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
