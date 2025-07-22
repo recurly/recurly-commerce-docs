@@ -10,10 +10,25 @@ metadata:
 
 The Customer Portal is where your subscribers manage and view their subscription contracts. From here, merchants can control which self-service actions are available and customize the look and feel of the portal.
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          You must have the Customer Portal feature enabled in your Recurly Commerce plan.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Permissions toggles apply immediately—double-check your settings before saving.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* You must have the Customer Portal feature enabled in your Recurly Commerce plan.
-* Permissions toggles apply immediately—double-check your settings before saving.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
