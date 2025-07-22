@@ -10,7 +10,7 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & Limitations
+### Prerequisites & limitations
 
 * A `webhookSigningKey` must be generated and stored for each merchant before they can subscribe to webhook events.
 * Merchants must verify webhook request signatures using the shared key.
