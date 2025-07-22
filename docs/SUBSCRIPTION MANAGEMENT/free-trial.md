@@ -10,12 +10,6 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
-
-* Each **subscription offer** can only have one option/cadence if using a product swap for free trials.
-* If multiple free trial durations are needed (e.g., 7, 14, or 21 days), you must create **separate subscription offers** for each.
-* This setup requires support from the Engineering team to complete the backend configuration.
-
 export const PrerequisitesLimitations = ({ header }) => {
   return (
     <div className="flex justify-center">
@@ -23,28 +17,22 @@ export const PrerequisitesLimitations = ({ header }) => {
         <p className="text-lg font-bold">{header}</p>
         <p>
           <i className="fa-solid fa-check mr-2" />
-          Node.js &gt;= 14
+          Each <strong>subscription offer</strong> can only have one option/cadence if using a product swap for free trials.
         </p>
         <p>
           <i className="fa-solid fa-check mr-2" />
-          ReadMe CLI installed
+          If multiple free trial durations are needed (e.g., 7, 14, or 21 days), you must create <strong>separate subscription offers</strong> for each.
         </p>
         <p>
           <i className="fa-solid fa-exclamation-triangle mr-4" />
-          Not supported on IE11
-        </p>
-        <p>
-          <i className="fa-solid fa-exclamation-triangle mr-4" />
-          Requires internet connection
+          This setup requires support from the Engineering team to complete the backend configuration.
         </p>
       </div>
     </div>
   );
 };
 
-<PrerequisitesLimitations header="Prerequisites & limitations" />
-
-<br />
+<PrerequisitesLimitations header="Prerequisites & Limitations" />
 
 # Definition
 
