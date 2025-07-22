@@ -15,10 +15,27 @@ metadata:
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" href="https://www.loom.com/embed/6d76a0c604b2499788f2d7c398f989da" html="false" iframe="true" />
 
-### Prerequisites & limitations
+<br />
 
-* Only products without an existing subscription offer can be selected.
-* Your Shopify catalog must be synced to Recurly Commerce.
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Only products without an existing subscription offer can be selected.
+        </p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Your Shopify catalog must be synced to Recurly Commerce.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
