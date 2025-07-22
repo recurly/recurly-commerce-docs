@@ -10,10 +10,25 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          You’ll need a Shopify store to install the Recurly Commerce app.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Migration services are available for merchants with 500+ subscribers (smaller merchants may incur a one-time migration fee).
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* You’ll need a Shopify store to install the Recurly Commerce app.
-* Migration services are available for merchants with 500+ subscribers (smaller merchants may incur a one-time migration fee).
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
