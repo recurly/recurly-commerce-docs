@@ -14,10 +14,25 @@ metadata:
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/1f8b9b9e05584c87bf8665fa4f42e47d" href="https://www.loom.com/embed/1f8b9b9e05584c87bf8665fa4f42e47d" html="false" iframe="true" />
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Requires a Gorgias account with API access and a Recurly Commerce subscription.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Subscription data refreshes only when a ticket is updated (e.g., by sending a message or toggling a tag).
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* Requires a Gorgias account with API access and a Recurly Commerce subscription.
-* Subscription data refreshes only when a ticket is updated (e.g., by sending a message or toggling a tag).
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
