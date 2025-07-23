@@ -12,12 +12,34 @@ metadata:
 
 Easily keep your analytics, BI, and data science teams in sync by piping all your Recurly Commerce objects—accounts, subscriptions, transactions, invoices—straight into Snowflake, BigQuery, Redshift, and more.
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          A Fivetran account with a destination warehouse (Snowflake, BigQuery, Redshift, Azure Synapse, etc.)
+        </p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          “Read-only” API credentials for your Recurly Commerce site
+        </p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Access to the Fivetran dashboard to configure connectors
+        </p>
+        <blockquote className="mt-4 pl-4 border-l-4 border-gray-300 italic">
+          <p>
+            <strong>Note:</strong> Data sync frequency and retention depend on your Fivetran plan and warehouse capacity
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  );
+};
 
-* A Fivetran account with a destination warehouse (Snowflake, BigQuery, Redshift, Azure Synapse, etc.)
-* “Read-only” API credentials for your Recurly Commerce site
-* Access to the Fivetran dashboard to configure connectors
-* **Note:** Data sync frequency and retention depend on your Fivetran plan and warehouse capacity
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
