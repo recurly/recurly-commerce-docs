@@ -14,10 +14,6 @@ metadata:
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/a16340030ac94c289ec11b565c53047c" href="https://www.loom.com/embed/a16340030ac94c289ec11b565c53047c" html="false" iframe="true" />
 
-### Prerequisites & limitations
-
-This feature is available for merchants on the Recurly Commerce Pro and Enterprise plans.
-
 ## Definition
 
 Automations in Recurly Commerce let you design event- or time-based workflows—like free trials, product swaps, or gifting—to run automatically against your subscribers’ contracts, reducing manual work and boosting engagement.
