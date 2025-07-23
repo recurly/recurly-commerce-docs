@@ -10,11 +10,29 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          A Postscript account with Admin access.
+        </p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Recurly Commerce merchant admin access to configure the integration.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          No limitations on subscriber volume; tags and triggers fire in real time.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* A Postscript account with Admin access.
-* Recurly Commerce merchant admin access to configure the integration.
-* No limitations on subscriber volume; tags and triggers fire in real time.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
@@ -59,8 +77,8 @@ Use these Subscriber Tags in Postscript to segment your audience:
 
 Fire these Postscript triggers in real time to power automations:
 
-| Trigger Name                  | Description                                                                                   |
-| ----------------------------- | --------------------------------------------------------------------------------------------- |
+| Trigger Name                             | Description                                                                                   |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------- |
 | Recurly Commerce: Subscription Started   | Fires when a subscription is created/purchased by the shopper.                                |
 | Recurly Commerce: Subscription Canceled  | Fires when a subscription is canceled in the merchant admin or by the customer in the portal. |
 | Recurly Commerce: Billing Attempt Failed | Fires when a billing attempt fails for a renewal order.                                       |
