@@ -12,12 +12,27 @@ metadata:
 
 Seamlessly integrate Klaviyo, Postscript, or Attentive with Recurly Commerce to power your email and SMS messaging workflows—no developer required.
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          A valid account with the tool you wish to connect (Klaviyo, Postscript, or Attentive).
+        </p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Admin access to the Recurly Commerce app.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* A valid account with the tool you wish to connect (Klaviyo, Postscript, or Attentive).
-* Admin access to the Recurly Commerce app.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
-# Definition
+Definition
 
 Email & SMS integrations let you forward Recurly Commerce subscription events and subscriber data into third-party platforms. Once connected, you can build tailored automations, segments, and campaigns based on real-time subscription lifecycle events.
 
