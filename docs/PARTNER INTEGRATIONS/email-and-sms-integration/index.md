@@ -32,7 +32,7 @@ export const PrerequisitesLimitations = ({ header }) => {
 
 <PrerequisitesLimitations header="Prerequisites & limitations" />
 
-Definition
+# Definition
 
 Email & SMS integrations let you forward Recurly Commerce subscription events and subscriber data into third-party platforms. Once connected, you can build tailored automations, segments, and campaigns based on real-time subscription lifecycle events.
 
