@@ -10,10 +10,25 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Requires Shopify shipping profiles to be properly configured under <strong>Settings → Shipping and delivery</strong>.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          If your Shopify profile already covers subscriptions, <strong>do not</strong> enable free shipping in Recurly Commerce to avoid rule conflicts.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* Requires Shopify shipping profiles to be properly configured under **Settings → Shipping and delivery**.
-* If your Shopify profile already covers subscriptions, **do not** enable free shipping in Recurly Commerce to avoid rule conflicts.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
