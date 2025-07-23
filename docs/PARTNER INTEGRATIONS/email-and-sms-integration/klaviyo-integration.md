@@ -11,10 +11,25 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          You must have an active Klaviyo account and the Recurly Commerce (Prive) Klaviyo integration enabled in your merchant admin.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Data backfill populates historical customer properties but does <strong>not</strong> retroactively fire subscription events—only new events after integration will trigger metrics.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* You must have an active Klaviyo account and the Recurly Commerce (Prive) Klaviyo integration enabled in your merchant admin.
-* Data backfill populates historical customer properties but does **not** retroactively fire subscription events—only new events after integration will trigger metrics.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
@@ -32,8 +47,8 @@ The Klaviyo integration pushes Prive-specific metrics (e.g., subscription starte
 
 Below is the complete list of Recurly Commerce metrics/events that will be sent to Klaviyo in real time:
 
-| Prive Metric in Klaviyo      | When is it triggered?                                                                                                            |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Prive Metric in Klaviyo                 | When is it triggered?                                                                                                            |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | Recurly Commerce Subscription Started   | This metric is triggered when a subscription is created/purchased by the shopper.                                                |
 | Recurly Commerce Subscription Cancelled | This metric is triggered when a subscription is canceled by you in the merchant admin or by the customer in the customer portal. |
 | Recurly Commerce Subscription Paused    | This metric is triggered when a subscription is paused by you in the merchant admin or by the customer in the customer portal.   |
@@ -48,21 +63,21 @@ Below is the complete list of Recurly Commerce metrics/events that will be sent 
 
 Each event is accompanied by a rich set of properties for granular segmentation:
 
-| Metric(s)                      | Property                      | Type             | Description                                                                           |
-| ------------------------------ | ----------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
+| Metric(s)                                 | Property                      | Type             | Description                                                                           |
+| ----------------------------------------- | ----------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
 | Recurly Commerce Subscription Started     | charge\_amount                | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
-| …                              | product\_title                | String           | Shopify product title.                                                                |
-| …                              | product\_id                   | Number           | Shopify product ID.                                                                   |
-| …                              | variant\_id                   | Number           | Shopify variant ID.                                                                   |
-| …                              | variant\_title                | String           | Shopify variant title.                                                                |
-| …                              | line\_items                   | Array\<object>   | Subscription contract line items.                                                     |
-| …                              | next\_billing\_date           | String           | Subscription contract next billing date.                                              |
-| …                              | order\_interval\_frequency    | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
-| …                              | order\_interval\_unit         | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
-| …                              | order\_interval\_days         | Number           | Number of days between renewals.                                                      |
-| …                              | is\_prepaid                   | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
-| …                              | value                         | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
-| …                              | price                         | Number           | Subscription contract price before discounts.                                         |
+| …                                         | product\_title                | String           | Shopify product title.                                                                |
+| …                                         | product\_id                   | Number           | Shopify product ID.                                                                   |
+| …                                         | variant\_id                   | Number           | Shopify variant ID.                                                                   |
+| …                                         | variant\_title                | String           | Shopify variant title.                                                                |
+| …                                         | line\_items                   | Array\<object>   | Subscription contract line items.                                                     |
+| …                                         | next\_billing\_date           | String           | Subscription contract next billing date.                                              |
+| …                                         | order\_interval\_frequency    | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
+| …                                         | order\_interval\_unit         | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
+| …                                         | order\_interval\_days         | Number           | Number of days between renewals.                                                      |
+| …                                         | is\_prepaid                   | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
+| …                                         | value                         | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
+| …                                         | price                         | Number           | Subscription contract price before discounts.                                         |
 | – Recurly Commerce Subscription Cancelled | cancel\_reason                | String           | Reason captured from the cancellation survey.                                         |
 | – Recurly Commerce Billing Attempt Failed | total\_retries                | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
 | – Recurly Commerce Upcoming Order         | is\_prepaid\_upcoming\_charge | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
