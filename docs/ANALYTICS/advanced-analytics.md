@@ -12,7 +12,21 @@ metadata:
 
 ### Prerequisites & limitations
 
-* Exports may include large volumes of data—consider filtering by date where possible.
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Exports may include large volumes of data—consider filtering by date where possible.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
