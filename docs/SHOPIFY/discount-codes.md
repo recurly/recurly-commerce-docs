@@ -16,10 +16,25 @@ Recurly Commerce reads in your existing Shopify discount codes so you can apply 
 
 <Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/e6c87287c23d4411b59c333f985623ed" href="https://www.loom.com/embed/e6c87287c23d4411b59c333f985623ed" html="false" iframe="true" />
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          Discount codes must be created and managed in Shopify.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Recurly Commerce cannot generate new codes—only import and apply existing ones.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* Discount codes must be created and managed in Shopify.
-* Recurly Commerce cannot generate new codes—only import and apply existing ones.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
