@@ -22,10 +22,6 @@ export const PrerequisitesLimitations = ({ header }) => {
           <i className="fa-solid fa-check mr-2" />
           The subscriber must already have an active contract.
         </p>
-        <p>
-          <i className="fa-solid fa-exclamation-triangle mr-4" />
-          Email address changes require Recurly support intervention.
-        </p>
       </div>
     </div>
   );
