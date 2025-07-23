@@ -10,11 +10,29 @@ metadata:
 ---
 # Overview
 
-### Prerequisites & limitations
+export const PrerequisitesLimitations = ({ header }) => {
+  return (
+    <div className="flex justify-start">
+      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
+        <p className="text-lg font-bold">{header}</p>
+        <p>
+          <i className="fa-solid fa-check mr-2" />
+          You must have a valid mobile number on file for each subscriber.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          If a subscriber opts out of SMS, they cannot opt back in unless you update their phone number on the subscription contract.
+        </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          Limit to three active SMS notifications per subscriber to avoid over-messaging.
+        </p>
+      </div>
+    </div>
+  );
+};
 
-* You must have a valid mobile number on file for each subscriber.
-* If a subscriber opts out of SMS, they cannot opt back in unless you update their phone number on the subscription contract.
-* Limit to three active SMS notifications per subscriber to avoid over-messaging.
+<PrerequisitesLimitations header="Prerequisites & limitations" />
 
 # Definition
 
