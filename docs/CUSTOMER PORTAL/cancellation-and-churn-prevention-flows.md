@@ -50,7 +50,3 @@ With intelligent cancellation flows, your brand has complete control over what c
 * **Dynamic alternatives**: Suggest plan swaps, frequency changes, or payment deferrals as retention levers.
 
 By strategically presenting these options at the moment of cancellation, you can reduce churn and stabilize your MRR, all without writing a single line of code.
-
-## Create a cancellation flow
-
-1. **Navigate** to **Customer Portal**.
