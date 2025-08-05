@@ -8,14 +8,6 @@ metadata:
 ---
 # Overview
 
-### Video
-
-<Embed typeOfEmbed="iframe" url="https://www.loom.com/embed/396d7724793d48f3b7cb2399dcddb803" href="https://www.loom.com/embed/396d7724793d48f3b7cb2399dcddb803" html="false" iframe="true" />
-
-### Additional cost
-
-This feature or setting in Recurly Commerce requires an additional cost. Please reach out to your Recurly account manager or [support@recurly.com](mailto:support@recurly.com) for more pricing details.
-
 export const PrerequisitesLimitations = ({ header }) => {
   return (
     <div className="flex justify-start">
@@ -36,10 +28,6 @@ export const PrerequisitesLimitations = ({ header }) => {
 };
 
 <PrerequisitesLimitations header="Prerequisites & limitations" />
-
-# Required plan
-
-This feature **may not be included** in the Starter or Pro plans. If you are interested, please contact [Recurly Sales](https://recurly.com/demo/contact-sales/) to discuss upgrade options.
 
 # Definition
 
