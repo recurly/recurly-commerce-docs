@@ -49,4 +49,8 @@ With intelligent cancellation flows, your brand has complete control over what c
 * **Targeted incentives**: Offer discounts, free add-ons, or trial extensions tailored to each subscriber segment.
 * **Dynamic alternatives**: Suggest plan swaps, frequency changes, or payment deferrals as retention levers.
 
-By strategically presenting these options at the moment of cancellation, you can reduce churn and stabilize your MRR—all without writing a single line of code.
+By strategically presenting these options at the moment of cancellation, you can reduce churn and stabilize your MRR, all without writing a single line of code.
+
+## Create a cancellation flow
+
+1. **Navigate** to **Customer Portal**.
