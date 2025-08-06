@@ -8,29 +8,6 @@ metadata:
 ---
 # Overview
 
-export const PrerequisitesLimitations = ({ header }) => {
-  return (
-    <div className="flex justify-start">
-      <div className="rounded-md p-6 m-4 max-w-lg shadow-md border border-gray-300 dark:bg-gray-800 dark:border-gray-600">
-        <p className="text-lg font-bold">{header}</p>
-        <p>
-          <i className="fa-solid fa-exclamation-triangle mr-4" />
-          <strong>Beta feature</strong>: Intelligent cancellation flow enhancements are currently in beta.
-        </p>
-        <blockquote className="mt-4 pl-4 border-l-4 border-gray-300 italic">
-          <p>
-            <strong>Note</strong>: To unlock additional cancellation-flow controls, reach out to your CSM.
-          </p>
-        </blockquote>
-      </div>
-    </div>
-  );
-};
-
-<PrerequisitesLimitations header="Prerequisites & limitations" />
-
-# Definition
-
 Cancellation & churn prevention flows let you tailor the onscreen experience when a subscriber attempts to cancel. You decide what messages, incentives, and offers appear—turning a cancellation point into a revenue-recovering opportunity.
 
 # Key benefits
@@ -55,14 +32,12 @@ By strategically presenting these options at the moment of cancellation, you can
 
 1. **Go to** **Customer Portal**, then **scroll down** to **Cancellation flows**.
 
-   <Image align="center" className="border" border={true} width="70%" src="https://files.readme.io/72f6fc9570851d3545c0c6f189a3ac84c1345da13b82654cff4e7c432a736d1a-image.png" />
+<Image align="center" className="border" border={true} width="70%" src="https://files.readme.io/72f6fc9570851d3545c0c6f189a3ac84c1345da13b82654cff4e7c432a736d1a-image.png" />
 
 2. **Click** **Create Flow**.
-
 3. **Provide** a descriptive name and summary for your flow.
 
    <Image align="center" className="border" border={true} width="70%" src="https://files.readme.io/94f4469d9e0853d844578469befe2441243cd8c75716582cd22973fac8448211-image.png" />
-
 4. **Optionally**, link this flow to a specific plan by clicking **Add Plan**, selecting the plan, and confirming.
 
 <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/248b8130b893959b2bfabbef3800137110cf81c9e04839ff18a3f7474a405bd5-image.png" />
@@ -83,4 +58,4 @@ By strategically presenting these options at the moment of cancellation, you can
 
 > **Note:** The cancellation flow must already exist before you can assign it to a new plan.
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/abf035e1a8c867f8b7ec2374ad3a231fd0ebf90895be447dd4208fff7592a1ea-image.png" />
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/abf035e1a8c867f8b7ec2374ad3a231fd0ebf90895be447dd4208fff7592a1ea-image.png" />
