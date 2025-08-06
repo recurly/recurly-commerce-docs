@@ -38,7 +38,7 @@ By strategically presenting these options at the moment of cancellation, you can
 3. **Provide** a descriptive name and summary for your flow.
 
    <Image align="center" className="border" border={true} width="70%" src="https://files.readme.io/94f4469d9e0853d844578469befe2441243cd8c75716582cd22973fac8448211-image.png" />
-4. **Optionally**, link this flow to a specific plan by clicking **Add Plan**, selecting the plan, and confirming.
+4. **Assign** the flow to a plan to activate it. Unassigned flows aren’t used, so **choose** **Add Plan**, **select** your plan, and confirm, either now or shortly after creation, to make the flow live.
 
 <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/248b8130b893959b2bfabbef3800137110cf81c9e04839ff18a3f7474a405bd5-image.png" />
 
@@ -48,7 +48,19 @@ By strategically presenting these options at the moment of cancellation, you can
 
 <Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/aee0ee1f58289e0613634f533dbb30a50e0981b200eb4334eb32efbd707cfd6d-image.png" />
 
-6. **Publish** your cancellation flow.
+**Retention Only**
+
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/9fc786962467bc085bb777435a9ef27192bd3c5f5b36d49abd6566fee607a6ec-image.png" />
+
+**Survey and possible retention**
+
+Configure a multi-step survey to capture why customers choose to cancel. You can make the survey optional or required, and add branching follow-up questions to gather deeper insights.
+
+<Image align="center" className="border" border={true} width="60% " src="https://files.readme.io/92003e1ab8a003086fc630f75d1d342ac027279fa31092825f710476112399e3-image.png" />
+
+For each response, define a tailored retention CTA: offer a discount, suggest pausing rather than cancelling, gift an extended subscription, or invite the customer to contact support. The entire workflow is fully customizable to fit your retention strategy.
+
+<Image align="center" className="border" border={true} width="70% " src="https://files.readme.io/7b85659a821b4809c3519c8c549adc9cee50f7df81f773b78718f8591e878817-image.png" />
 
 ***
 
