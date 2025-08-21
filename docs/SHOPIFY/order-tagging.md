@@ -25,10 +25,6 @@ export const PrerequisitesLimitations = ({ header }) => {
           <i className="fa-solid fa-check mr-2" />
           Only subscription orders are tagged; one-time purchase orders remain untagged.
         </p>
-        <p>
-          <i className="fa-solid fa-exclamation-triangle mr-4" />
-          Pro and Enterprise merchants can request custom tags—contact <a href="mailto:support@recurly.com" target="_blank">support@recurly.com</a>.
-        </p>
       </div>
     </div>
   );
@@ -50,7 +46,7 @@ Order tagging is the automatic assignment of Shopify tags to subscription orders
 
 ## Subscription tag types
 
-Recurly Commerce applies these five standard tags to subscription orders:
+Recurly Commerce applies these standard tags to subscription orders:
 
 | Tag                              | Description                                                                                                                                     |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -61,8 +57,6 @@ Recurly Commerce applies these five standard tags to subscription orders:
 | **Shipping Profile**             | Reflects the Shopify shipping profile selected for that order (e.g., economy, free shipping), enabling fulfillment or reporting logic.          |
 | **Gift subscription order**      | When the order is a gifted subscription, initial and recurring orders will have this tag.                                                       |
 | **Prepaid subscription order**   | If the contract is a prepaid contract initial and recurring orders will have this tag.                                                          |
-
-> **Note**: Pro/Enterprise merchants can request custom tagging—reach out to <a href="mailto:support@recurly.com" target="_blank">[support@recurly.com](mailto:support@recurly.com)</a>.
 
 ## Filter by tags
 
