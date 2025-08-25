@@ -20,4 +20,4 @@ Recurly Commerce’s Revenue Recovery brings together advanced retry logic and a
 
 # Key details
 
-* **Intelligent Retries**: An AI/ML-driven retry engine that analyzes Shopify decline codes and merchant-wide patterns to schedule payment retries at the optimal times, maximizing recovery without shifting renewal dates. [Learn more](recurly-commerce-intelligent-retries)
+* **Intelligent Retries**: An AI/ML-driven retry engine that analyzes Shopify decline codes and merchant-wide patterns to schedule payment retries at the optimal times, maximizing recovery without shifting renewal dates. [Learn more](https://docs.recurly.com/recurly-commerce/docs/intelligent-retries#/)
