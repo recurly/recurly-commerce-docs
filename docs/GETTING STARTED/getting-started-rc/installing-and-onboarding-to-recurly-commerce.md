@@ -22,6 +22,11 @@ export const PrerequisitesLimitations = ({ header }) => {
           <i className="fa-solid fa-exclamation-triangle mr-4" />
           A Shopify or Shopify Plus store is required.
         </p>
+        <p>
+          <i className="fa-solid fa-exclamation-triangle mr-4" />
+          To activate a Recurly Commerce plan, the Shopify user must have <strong>"Approve app charges"</strong> permission.
+          This can be verified in Shopify Admin by reviewing the user’s permissions individually.
+        </p>
       </div>
     </div>
   );
