@@ -1,6 +1,6 @@
 ---
 title: /api/v1/subscriptions/{id}/status
-excerpt: Update the stuatus of the subscription
+excerpt: Update the status of the subscription
 api:
   file: prive-api-documentation.json
   operationId: PublicApiController_updateSubscriptionStatus
