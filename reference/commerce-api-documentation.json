@@ -100,6 +100,15 @@
             }
           },
           {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "variantIds",
             "required": false,
             "in": "query",
@@ -1231,6 +1240,15 @@
               "default": false,
               "type": "boolean"
             }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1729,6 +1747,15 @@
             }
           },
           {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "id",
             "required": false,
             "in": "query",
@@ -2021,6 +2048,7 @@
             "name": "subscriptionId",
             "required": false,
             "in": "query",
+            "description": "The subscription ID",
             "schema": {
               "type": "string"
             }
@@ -2250,6 +2278,15 @@
               "default": false,
               "type": "boolean"
             }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -2402,6 +2439,15 @@
             "schema": {
               "default": false,
               "type": "boolean"
+            }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -2657,6 +2703,15 @@
             }
           },
           {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "productTitle",
             "required": false,
             "in": "query",
@@ -2795,6 +2850,7 @@
             "name": "subscriptionId",
             "required": false,
             "in": "query",
+            "description": "The subscription ID",
             "schema": {
               "type": "string"
             }
@@ -2956,6 +3012,7 @@
             "name": "subscriptionId",
             "required": false,
             "in": "query",
+            "description": "The subscription ID",
             "schema": {
               "type": "string"
             }
@@ -3078,6 +3135,15 @@
               "default": false,
               "type": "boolean"
             }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -3196,6 +3262,15 @@
             "schema": {
               "default": false,
               "type": "boolean"
+            }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -3316,6 +3391,15 @@
               "default": false,
               "type": "boolean"
             }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -3434,6 +3518,15 @@
             "schema": {
               "default": false,
               "type": "boolean"
+            }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -3627,6 +3720,15 @@
               "default": false,
               "type": "boolean"
             }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -3748,6 +3850,15 @@
             "schema": {
               "default": false,
               "type": "boolean"
+            }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
             }
           },
           {
@@ -5193,15 +5304,13 @@
             "description": "The shopify selling plan ID of the subscription offer option. The configured discount will be used to calculated the amount of the line."
           },
           "customAttributes": {
-            "description": "The subscription contract and shopify order line item custom attributes.",
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/CustomAttribute"
-              }
-            ]
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CustomAttribute"
+            }
           }
         },
-        "required": ["variantId", "quantity", "sellingPlanId", "customAttributes"]
+        "required": ["variantId", "quantity", "sellingPlanId"]
       },
       "SubscriptionCreateRequestDTO": {
         "type": "object",
@@ -5542,12 +5651,10 @@
             "description": "The shopify selling plan ID of the subscription offer option. The configured discount will be used to calculated the amount of the line."
           },
           "customAttributes": {
-            "description": "The subscription contract and shopify order line item custom attributes.",
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/CustomAttribute"
-              }
-            ]
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CustomAttribute"
+            }
           },
           "subscriptionId": {
             "type": "string"
@@ -5561,7 +5668,7 @@
             ]
           }
         },
-        "required": ["variantId", "quantity", "sellingPlanId", "customAttributes", "subscriptionId", "schedule"]
+        "required": ["variantId", "quantity", "sellingPlanId", "subscriptionId", "schedule"]
       },
       "SubscriptionLineScheduleUpdateDto": {
         "type": "object",
