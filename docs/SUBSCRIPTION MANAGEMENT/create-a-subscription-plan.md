@@ -58,7 +58,7 @@ With Recurly Commerce, you can create a subscription offer in minutes, which wil
 1. In the Recurly Commerce admin, navigate to **Subscription Plans** and click **+ Create Offer** in the top-right.
 2. In **Subscription Information**, enter:
 
-   * **Name**: an internal label for your team.
+   * **Subscription Offer Group Name**: an internal name for your team to reference.
    * **Description**: internal notes—your customers never see these.
 3. Click **+ Select Products**. Your entire Shopify SKU catalog loads in a modal.
 
@@ -66,7 +66,7 @@ With Recurly Commerce, you can create a subscription offer in minutes, which wil
    * Uncheck to remove. These selections determine which product detail pages (PDPs) display the subscription widget.
 4. Click **Confirm** at the bottom to save your product selection.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/6cbcdd748375a8be4bbcfc74b7e6a5cb1d569b9cf0d657872159ee86a87394c4-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/5c2549766a6b2e0a8dd67f5c7bea1116cef0cc396e5c0b7b0a26a61d4b220a87-Screenshot_2025-09-26_at_9.25.00_AM.png" className="border" />
 
 > **Note:** Only products that do not currently have a subscription offer are available for selection.
 
@@ -89,25 +89,27 @@ Once your products are chosen, select how they’ll be offered to customers:
 
   * All three options appear in the widget, letting customers choose among one-time purchase, recurring billing, or prepaid plans.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/0c3562de13c54df346e4311943672b0b1c76378536ece3c7373ad4b34ce13004-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/dd6d4f1d03626768caf8db315ff226aaca23978fe427df8d65d33cf5e74bf9c8-Screenshot_2025-09-26_at_9.40.21_AM.png" className="border" />
 
 ***
 
 ## Add subscription options & discounts
 
-1. Use the **Offer Discounts** toggle to enable or disable promotional pricing.
-2. Click **+ Add Option** to define each delivery frequency (e.g., every 4 weeks, every 8 weeks).
-3. For each frequency, enter the discount percentage you wish to apply (e.g., 10% off every 4 weeks).
+1. Select **Offer discounts**  or **Do not offer discounts** to enable or disable promotional pricing.
+2. Click **+ Add Option** to define each delivery frequency (e.g., every 1 month, every 2 months).
+3. For each frequency, enter the discount percentage you wish to apply (e.g., 15% off every month, 10% off every 2 months).
 
 > **Note:** Offering larger discounts for more frequent deliveries incentivizes subscriptions and boosts customer retention.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/53b6b70e3476393b720119f426d940765154f9b28a181907d4019b06a0c0ccba-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/c9dd086c9c900a959aaa9d97a47fb5cb2eb70e97a27d8b0f2530f40bab9043f2-Screenshot_2025-09-26_at_9.58.59_AM.png" className="border" />
 
 ***
 
 ## Gifting option
 
-Toggle **Add Gift Option** on to include an “Is this a gift?” prompt below the subscription choices. This adds a radio button customers can select to flag their order as a gift.
+Toggle **Add gift option** on to include an “Is this a gift?” prompt below the subscription choices. This adds a radio button customers can select to flag their order as a gift.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/7e2e3843cf56a7eebe97a26db391251913ef36382bc53e91ccbce1d7d2fe15d8-Screenshot_2025-09-26_at_10.03.26_AM.png" className="border" />
 
 ***
 
@@ -118,14 +120,14 @@ For each product in your plan, you can configure:
 * **Swap**
 
   * Allow subscribers to swap this SKU for any other plan product at renewal.
-* **One-Time Add-On**
+* **One-time Add-on**
 
   * Let subscribers select this (or other store) SKU as an optional extra on a single delivery. Great for accessories like tote bags or water bottles.
 * **Subscription Add-On**
 
   * Automatically include this SKU on every renewal—for staples your subscribers always need.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/a7fa49c9a5894858ec0592e4ec126ba845f1bc15f1b49870b55fbede076018ae-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/523b7050db9899125e33be8aa2f8e576cbd3778af6fff08bd045a091b5c4f04b-Screenshot_2025-09-26_at_10.07.24_AM.png" className="border" />
 
 > **Note:** By default, only the products you selected for this subscription are available to swap or add-on—but you can extend add-on availability to any store product.
 
@@ -140,11 +142,12 @@ In addition to recurring frequency discounts, you can grant one-time promotions 
   * Apply a special discount to the first N deliveries (e.g., 50% off the first 3 orders) to win initial sign-ups.
 * **By Quantity**
 
-  * Discount based on the total quantity of product (e.g., 20% off when ordering 3+ units per delivery) to encourage larger baskets.
+  * Discount based on the total quantity of products (e.g., 10% off when ordering 2 products, 15% off when ordering 3 products) to encourage larger baskets.
+  * Click **+ Add Discount Tier** to add additional discount tiers by quantity.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/de4d7decca07c55fc2b9f8af6b694fe539d1eb3864576f484fb1010511cccb0e-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/c5167b3a17daedc94062642d3eab75436ef7a3f1647b8733cf9a7ba049545dc6-Screenshot_2025-09-26_at_10.12.04_AM.png" className="border" />
 
-> **Note:** Discounts don’t stack. Special discounts override the recurring frequency discount until they expire—for example, a “first 3 orders 50% off” runs first, then the “10% off every 4 weeks” takes over.
+> **Note:** Discounts don’t stack. Special discounts override the recurring frequency discount until they expire—for example, a “first 3 orders 50% off” runs first, then the “10% off every 1 month” takes over.
 
 ***
 
@@ -152,13 +155,30 @@ In addition to recurring frequency discounts, you can grant one-time promotions 
 
 Define your subscription shipping rules:
 
-* **Countries** where free shipping applies.
-* **Minimum spend** or **minimum quantity** threshold.
-* **First-order only** vs. **every renewal** toggle.
+* Toggle **Free shipping** to define the Countries where free shipping applies. 
+* Select **All countries available** or **Selected countries available** to select where free shipping applies.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/97262007e0b799bfa8569cbeb2ecd05bfd50cbb3d17d0b825328afd9c9df40b5-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/338bb146030c9ecf54b839764e33fd7f9567b53f636e50cb201ed274c3d192b6-Screenshot_2025-09-26_at_12.58.06_PM.png" className="border" />
 
 > **Note:** If your Shopify store’s existing shipping profile already handles subscriptions, skip this section to avoid conflicting rules.
+
+***
+
+## Cancellation Flow
+
+Finally, set up your desired Cancellation Flow.  With tailored cancellation flows, you can configure flows that:
+
+* Prevent cancellations with timely incentives or suggesting alternative products
+* Gather critical customer feedback with custom, on-brand surveys and
+* Personalize the subscriber experience with relevant messaging and upsells
+
+Click **None** in the Cancellation Flow drop down to select from your list of Cancellation Flows. 
+
+To learn more about creating a Cancellation Flow, go here [do we have a link for this??]
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/6f7593c5bf4cd59ec2b02af2e0fec8dd8dcfc1be683125938c7e799242ebae8d-Screenshot_2025-09-26_at_1.09.39_PM.png" className="border" />
+
+<br />
 
 ***
 
