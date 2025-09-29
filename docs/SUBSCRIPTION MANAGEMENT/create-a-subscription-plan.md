@@ -58,7 +58,7 @@ With Recurly Commerce, you can create a subscription offer in minutes, which wil
 1. In the Recurly Commerce admin, navigate to **Subscription Plans** and click **+ Create Offer** in the top-right.
 2. In **Subscription Information**, enter:
 
-   * **Subscription Offer Group Name**: an internal name for your team to reference.
+   * **Subscription offer group name**: an internal name for your team to reference.
    * **Description**: internal notes—your customers never see these.
 3. Click **+ Select Products**. Your entire Shopify SKU catalog loads in a modal.
 
@@ -79,13 +79,13 @@ Once your products are chosen, select how they’ll be offered to customers:
 * **One-time & Subscribe & Save**
 
   * Customers can either purchase once or subscribe on a recurring schedule.
-* **Subscription Only**
+* **Subscription only**
 
   * The product is available exclusively as a subscription.
-* **Pre-Paid Subscription Only**
+* **Pre-paid subscription only**
 
   * Customers pay upfront for the entire subscription term (e.g., full year) and receive deliveries at each interval.
-* **One-time, Subscribe & Save, and Prepaid Subscription**
+* **One-time, subscribe & save, and prepaid subscription**
 
   * All three options appear in the widget, letting customers choose among one-time purchase, recurring billing, or prepaid plans.
 
@@ -155,7 +155,7 @@ In addition to recurring frequency discounts, you can grant one-time promotions 
 
 Define your subscription shipping rules:
 
-* Toggle **Free shipping** to define the Countries where free shipping applies. 
+* Toggle **Free shipping** to define the Countries where free shipping applies.
 * Select **All countries available** or **Selected countries available** to select where free shipping applies.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/338bb146030c9ecf54b839764e33fd7f9567b53f636e50cb201ed274c3d192b6-Screenshot_2025-09-26_at_12.58.06_PM.png" className="border" />
@@ -164,7 +164,7 @@ Define your subscription shipping rules:
 
 ***
 
-## Cancellation Flow
+## Cancellation flow
 
 Finally, set up your desired Cancellation Flow.  With tailored cancellation flows, you can configure flows that:
 
@@ -172,7 +172,7 @@ Finally, set up your desired Cancellation Flow.  With tailored cancellation flow
 * Gather critical customer feedback with custom, on-brand surveys and
 * Personalize the subscriber experience with relevant messaging and upsells
 
-Click **None** in the Cancellation Flow drop down to select from your list of Cancellation Flows. 
+Click **None** in the Cancellation Flow drop down to select from your list of Cancellation Flows.
 
 To learn more about creating a Cancellation Flow, go here [do we have a link for this??]
 
