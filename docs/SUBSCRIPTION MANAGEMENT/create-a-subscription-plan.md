@@ -174,7 +174,7 @@ Finally, set up your desired Cancellation Flow.  With tailored cancellation flow
 
 Click **None** in the Cancellation Flow drop down to select from your list of Cancellation Flows.
 
-To learn more about creating a Cancellation Flow, go here [do we have a link for this??]
+To learn more about creating a Cancellation Flow, check out the [Cancellation and churn prevention flows overview.](https://docs.recurly.com/recurly-commerce/docs/cancellation-and-churn-prevention-flows#/intelligent-cancellation-flows) 
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/6f7593c5bf4cd59ec2b02af2e0fec8dd8dcfc1be683125938c7e799242ebae8d-Screenshot_2025-09-26_at_1.09.39_PM.png" className="border" />
 
