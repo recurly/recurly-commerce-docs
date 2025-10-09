@@ -49,6 +49,8 @@ We recommend toggling on at least four notifications to cover the critical touch
 5. **Product out of stock** _(highly recommended)_: Warns customers when one or more subscribed products are unavailable.
 6. **Upcoming order** _(highly recommended)_: Notifies customers 3 days before their next renewal.
 7. **Gift subscription created**: Confirms that a gift subscription order has been processed.
+8. **Revoked payment method**: Notifies customers that their payment method was revoked after checkout.
+9. **Subscription unpause reminder**: Alerts customers that their subscription is about to unpause.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/f97fa96568ec6cd3537191572727535d81d08a6254041b8ad9885ba2e0c8040d-Notifications.png" className="border" />
 
