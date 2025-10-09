@@ -60,4 +60,4 @@ Use our built-in rich text editor to tailor each template:
 * Adjust fonts, colors, and spacing
 * Switch to HTML source view for advanced customizations
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/48c4c5678a2979a9694bce42e285c19536f78e011bad51e266a9f34f925af420-Subsccription_created_email.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/ef227fcb67679aaa66b55464bf35d0077f73849b407c0f1d8334ecc8aca1e4ec-Subscription_create_email_2.png" className="border" />
