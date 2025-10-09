@@ -43,14 +43,14 @@ Transactional emails are automated, event-driven messages sent to subscribers to
 We recommend toggling on at least four notifications to cover the critical touchpoints and minimize support overhead.
 
 1. **Subscription created**: Confirms that a subscription order has been created.
-2. **Order placed** *(highly recommended)*: Confirms that an order has successfully been placed.
-3. **Failed payment method** *(highly recommended)*: Alerts customers when their payment couldn’t be processed.
+2. **Order placed** _(highly recommended)_: Confirms that an order has successfully been placed.
+3. **Failed payment method** _(highly recommended)_: Alerts customers when their payment couldn’t be processed.
 4. **Subscription cancelled**: Confirms that a subscription contract has been cancelled.
-5. **Product out of stock** *(highly recommended)*: Warns customers when one or more subscribed products are unavailable.
-6. **Upcoming order** *(highly recommended)*: Notifies customers 3 days before their next renewal.
+5. **Product out of stock** _(highly recommended)_: Warns customers when one or more subscribed products are unavailable.
+6. **Upcoming order** _(highly recommended)_: Notifies customers 3 days before their next renewal.
 7. **Gift subscription created**: Confirms that a gift subscription order has been processed.
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/4d16a02c6cb381f945ecadf92257dccbbc97fe3b4fc3d665a436f04353b703e3-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/f97fa96568ec6cd3537191572727535d81d08a6254041b8ad9885ba2e0c8040d-Notifications.png" className="border" />
 
 ## Customizing email content
 
@@ -60,4 +60,4 @@ Use our built-in rich text editor to tailor each template:
 * Adjust fonts, colors, and spacing
 * Switch to HTML source view for advanced customizations
 
-<Image align="center" className="border" border={true} width="80% " src="https://files.readme.io/d060475025f85fdee44d0f1010e4c82e4922311e59bb2fe8e8dab4be36cd04d9-image.png" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/48c4c5678a2979a9694bce42e285c19536f78e011bad51e266a9f34f925af420-Subsccription_created_email.png" className="border" />
