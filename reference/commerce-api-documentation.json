@@ -257,6 +257,192 @@
         "tags": ["Subscriptions API"]
       }
     },
+    "/api/v1/subscriptionOffers": {
+      "get": {
+        "operationId": "PublicApiController_listSubscriptionOffers",
+        "summary": "",
+        "description": "Retrieve a list of subscription offers",
+        "parameters": [
+          {
+            "name": "page",
+            "required": true,
+            "in": "query",
+            "description": "Page number",
+            "schema": {
+              "default": 1,
+              "type": "number"
+            }
+          },
+          {
+            "name": "limit",
+            "required": true,
+            "in": "query",
+            "description": "Items per page. Limit must be between 1 and 250.",
+            "schema": {
+              "default": 10,
+              "type": "number"
+            }
+          },
+          {
+            "name": "sort",
+            "required": false,
+            "in": "query",
+            "description": "Sort order. If not set, default is createdAt.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "desc",
+            "required": false,
+            "in": "query",
+            "description": "Sort direction. If not set, default is ASC.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "minCreatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of createdAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "maxCreatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The max date of createdAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "minUpdatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of updatedAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "maxUpdatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of updatedAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "includeDeleted",
+            "required": false,
+            "in": "query",
+            "description": "If true, include deleted lines",
+            "schema": {
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "status",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "enum": ["ACTIVE", "ARCHIVED", "DRAFT"],
+              "type": "string"
+            }
+          },
+          {
+            "name": "statuses",
+            "required": false,
+            "in": "query",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["ACTIVE", "ARCHIVED", "DRAFT"]
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved subscription offers",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubscriptionOffersResultDto"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": ["Subscription Offers API"]
+      }
+    },
+    "/api/v1/subscriptionOffers/{id}": {
+      "get": {
+        "operationId": "PublicApiController_getSubscriptionOffer",
+        "summary": "",
+        "description": "Get subscription offer by id",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "The id of the subscription offer",
+            "example": "subscription-offer-id",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved subscription offer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubscriptionOfferDto"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": ["Subscription Offers API"]
+      }
+    },
     "/api/v1/subscriptions/count": {
       "get": {
         "operationId": "PublicApiController_getSubscriptionsCount",
@@ -1305,6 +1491,71 @@
         "tags": ["SubscriptionLines API"]
       }
     },
+    "/api/v1/subscriptionLines/{id}": {
+      "get": {
+        "operationId": "PublicApiController_getSubscriptionLine",
+        "summary": "",
+        "description": "Get subscription line by id",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "The id of the subscription line",
+            "example": "subscription-line-id",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved subscription line",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubscriptionLineDto"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": ["SubscriptionLines API"]
+      },
+      "delete": {
+        "operationId": "PublicApiController_deleteSubscriptionLine",
+        "summary": "",
+        "description": "Delete a subscription line",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "The id of the subscription subscription line",
+            "example": "subscription-line-id",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully deleted subscription line"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": ["SubscriptionLines API"]
+      }
+    },
     "/api/v1/subscriptionLines/{id}/schedule": {
       "post": {
         "operationId": "PublicApiController_createSubscriptionLineSchedule",
@@ -1568,36 +1819,6 @@
                 }
               }
             }
-          }
-        },
-        "security": [
-          {
-            "bearer": []
-          }
-        ],
-        "tags": ["SubscriptionLines API"]
-      }
-    },
-    "/api/v1/subscriptionLines/{id}": {
-      "delete": {
-        "operationId": "PublicApiController_deleteSubscriptionLine",
-        "summary": "",
-        "description": "Delete a subscription line",
-        "parameters": [
-          {
-            "name": "id",
-            "required": true,
-            "in": "path",
-            "description": "The id of the subscription subscription line",
-            "example": "subscription-line-id",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Successfully deleted subscription line"
           }
         },
         "security": [
@@ -4899,6 +5120,102 @@
           }
         },
         "required": ["page", "limit", "totalItems", "totalPages", "subscriptions"]
+      },
+      "SubscriptionOfferWithProductsDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "updatedAt": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "externalId": {
+            "type": "string",
+            "description": "The shopify selling plan group ID"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "ONETIME_AND_SUBSCRIPTION",
+              "ONE_TIME_AND_PREPAID_SUBSCRIPTION",
+              "SUBSCRIPTION_ONLY",
+              "PREPAID_SUBSCRIPTION_ONLY",
+              "ONETIME_AND_SUBSCRIPTION_AND_PREPAID",
+              "MEMBERSHIP"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["ACTIVE", "ARCHIVED", "DRAFT"]
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "subscriptionOfferOptions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubscriptionOfferOptionDto"
+            }
+          },
+          "products": {
+            "nullable": true,
+            "items": {
+              "type": "array"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "createdAt",
+          "updatedAt",
+          "externalId",
+          "type",
+          "status",
+          "name",
+          "description",
+          "subscriptionOfferOptions",
+          "products"
+        ]
+      },
+      "SubscriptionOffersResultDto": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "number",
+            "description": "Current page number"
+          },
+          "limit": {
+            "type": "number",
+            "description": "Number of items per page"
+          },
+          "totalItems": {
+            "type": "number",
+            "description": "Total number of items"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "Total number of pages"
+          },
+          "subscriptionOffers": {
+            "description": "Array of subscription offers for the current page",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubscriptionOfferWithProductsDto"
+            }
+          }
+        },
+        "required": ["page", "limit", "totalItems", "totalPages", "subscriptionOffers"]
       },
       "CountDto": {
         "type": "object",
