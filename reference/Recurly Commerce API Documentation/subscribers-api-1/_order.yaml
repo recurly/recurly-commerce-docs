@@ -1,0 +1,6 @@
+- publicapicontroller_listsubscriptionsbysubscriber-1
+- publicapicontroller_listsubscribers-1
+- publicapicontroller_getsubscriber-1
+- publicapicontroller_patchsubscriber-1
+- publicapicontroller_getsubscriberpaymentmethods-1
+- publicapicontroller_postsubscriberportaltoken-1

@@ -1,0 +1,10 @@
+- publicapicontroller_listsubscriptionlines-1
+- publicapicontroller_createsubscriptionline-1
+- publicapicontroller_getsubscriptionline
+- publicapicontroller_deletesubscriptionline-1
+- publicapicontroller_createsubscriptionlineschedule-1
+- publicapicontroller_updatesubscriptionlineschedule-1
+- publicapicontroller_updatesubscriptionlinecustomattributes-1
+- publicapicontroller_swapsubscriptionline-1
+- publicapicontroller_updatesubscriptionlineprice-1
+- publicapicontroller_updatesubscriptionlinequantity-1
