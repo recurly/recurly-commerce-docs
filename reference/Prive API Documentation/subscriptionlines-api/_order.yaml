@@ -1,9 +1,0 @@
-- publicapicontroller_listsubscriptionlines
-- publicapicontroller_createsubscriptionline
-- publicapicontroller_updatesubscriptionlinecustomattributes
-- publicapicontroller_swapsubscriptionline
-- publicapicontroller_updatesubscriptionlineprice
-- publicapicontroller_updatesubscriptionlinequantity
-- publicapicontroller_deletesubscriptionline
-- publicapicontroller_createsubscriptionlineschedule
-- publicapicontroller_updatesubscriptionlineschedule
