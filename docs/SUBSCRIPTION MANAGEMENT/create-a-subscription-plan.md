@@ -168,7 +168,7 @@ Define your subscription shipping rules:
 
 ## Contract Type
 
-Choose whether you want to require a term commitment on the plan and charge a cancellation fee.  Select either:  
+The Contract Type determines if the subscription plan requires a term commitment and allows for charging a cancellation fee.  
 
 * **Flexible (default)**
   * No term commitment, the customer can cancel anytime free of charge
@@ -180,33 +180,33 @@ Choose whether you want to require a term commitment on the plan and charge a ca
 
 > **Note:** Contract Terms are not available on Prepaid or Membership Subscription Plans.
 
-If you want a Committed Term, define your Term Commitment Length. This is the total number of delivers your customer agrees to as a part of the Plan.  The Term Commitment Length must be at least 1 delivery.
+To set a term commitment, define the Term Commitment Length. This is the total number of delivers your customer agrees to as a part of the Plan.  The delivery length must be at least 1 delivery.
 
-To change an early cancellation fee, select the checkbox and choose the Fee Product.
+To enable an early cancellation fee:
 
-To set up a Fee Product in Shopify, follow these steps: 
+* Select the corresponding checkbox (e.g., "Charge an early cancellation fee").
+* Choose the Fee Product you have configured in Shopify.
 
-1. In Shopify admin, go to Products > Add Product.  
-2. Set a Title for the Product, such as "Cancellation Fee".
-3. Under Price, ensure the product is not taxable.
-4. (Optional) Under Inventory, disable tracking inventory or ensure adequate stock to charge cancellation fees.
+### Creating the Fee Product in Shopify
 
-<br />
+The Cancellation Fee must be set up as a standard Shopify product. Follow these steps in your Shopify admin:
 
-In your Shopify admin, go to Products > Add Product.
+1. Go to Products > Add Product.
+2. Set a clear Title for the product (e.g., "Cancellation Fee").
+3. Under Price, ensure the product is **not taxable**.
+4. Under Inventory, either disable tracking inventory or ensure you have adequate stock to charge the fee.
+5. Under Publishing, set the "Online Store" sales channel to **Unpublished**.
+6. Finally, set the product Status to Active.
 
-Set a Title, such as “Cancellation Fee”.
+<Image align="center" border={true} width="80% " src="https://files.readme.io/3b559ae9f4dc354acb55cd8c006a7fe3fde56ceda87da1cff7524d20f33552d4-Cancellation_Fee.png" className="border" />
 
-(Optional) Add a description and media.
+> **Note:** Only one cancellation product can be selected per subscription plan
 
-Under Price, ensure the product is not taxable.
+### Prorating the Cancellation Fee
 
-(Optional) Under Inventory, ensure there is enough stock to cover potential cancellation charges.
+Decide if you want the Cancellation Fee to be prorated.
 
-Under Publishing, set the product to Unpublished on the "Online Store" channel.
-
-Under Status, set the product to Active.
-💡 Note: Only one cancellation product can be selected per subscription plan.v
+If selected, the fee will be prorated based on the remainder of the term commitment.  For example, if 40% of the term remains, the customer will be charged only 40% of the maximum defined cancellation fee.
 
 ## Cancellation flow
 
