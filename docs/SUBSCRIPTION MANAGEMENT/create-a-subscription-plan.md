@@ -160,7 +160,7 @@ Define your subscription shipping rules:
 * Toggle **Free shipping** to define the Countries where free shipping applies.
 * Select **All countries available** or **Selected countries available** to select where free shipping applies.
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/338bb146030c9ecf54b839764e33fd7f9567b53f636e50cb201ed274c3d192b6-Screenshot_2025-09-26_at_12.58.06_PM.png" className="border" />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/7550e700b63bc0b0c4449c755e25b23df25a4b5a02f500eb2936d40b82005b62-Free_shipping.png" className="border" />
 
 > **Note:** If your Shopify store’s existing shipping profile already handles subscriptions, skip this section to avoid conflicting rules.
 
@@ -219,9 +219,7 @@ Click **None** in the Cancellation Flow drop down to select from your list of Ca
 
 To learn more about creating a Cancellation Flow, check out the [Cancellation and churn prevention flows overview.](https://docs.recurly.com/recurly-commerce/docs/cancellation-and-churn-prevention-flows#/intelligent-cancellation-flows)
 
-<Image align="center" border={true} width="80% " src="https://files.readme.io/6f7593c5bf4cd59ec2b02af2e0fec8dd8dcfc1be683125938c7e799242ebae8d-Screenshot_2025-09-26_at_1.09.39_PM.png" className="border" />
-
-<br />
+<Image align="center" border={true} width="80% " src="https://files.readme.io/b2cd8adf93541183755ab6744c1931819ad1b5264c576cace6efa358cdada7f6-Cancellation_Flow.png" className="border" />
 
 ***
 
