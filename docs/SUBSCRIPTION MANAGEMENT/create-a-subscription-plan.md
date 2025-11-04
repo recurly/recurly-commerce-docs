@@ -168,7 +168,7 @@ Define your subscription shipping rules:
 
 ## Contract Type
 
-The Contract Type determines if the subscription plan requires a term commitment and allows for charging a cancellation fee.  
+The Contract Type determines if the subscription plan requires a term commitment and allows for charging a cancellation fee.
 
 * **Flexible (default)**
   * No term commitment, the customer can cancel anytime free of charge
@@ -176,15 +176,17 @@ The Contract Type determines if the subscription plan requires a term commitment
 
   * Add a term commitment and cancellation fees
 
+  <br />
+
   <Image align="center" border={true} width="80% " src="https://files.readme.io/c62e8f65cbf229838ab885856829e7aec46a2ffc8901c376324a8f0b07013e17-Contract_Terms.png" className="border" />
 
-> **Note:** Contract Terms are not available on Prepaid or Membership Subscription Plans.
+> **Note:** A Committed Contract Term is not available on Prepaid or Membership Subscription Plans.
 
-To set a term commitment, define the Term Commitment Length. This is the total number of delivers your customer agrees to as a part of the Plan.  The delivery length must be at least 1 delivery.
+To set a term commitment, define the Term Commitment Length. This is the total number of deliveries your customer agrees to as a part of the Plan.  The delivery length must be at least 1 delivery.
 
 To enable an early cancellation fee:
 
-* Select the corresponding checkbox (e.g., "Charge an early cancellation fee").
+* Select the corresponding checkbox. 
 * Choose the Fee Product you have configured in Shopify.
 
 ### Creating the Fee Product in Shopify
@@ -196,17 +198,17 @@ The Cancellation Fee must be set up as a standard Shopify product. Follow these 
 3. Under Price, ensure the product is **not taxable**.
 4. Under Inventory, either disable tracking inventory or ensure you have adequate stock to charge the fee.
 5. Under Publishing, set the "Online Store" sales channel to **Unpublished**.
-6. Finally, set the product Status to Active.
+6. Finally, set the product Status to **Active**.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/3b559ae9f4dc354acb55cd8c006a7fe3fde56ceda87da1cff7524d20f33552d4-Cancellation_Fee.png" className="border" />
 
-> **Note:** Only one cancellation product can be selected per subscription plan
+> **Note:** Only one cancellation product can be selected per subscription plan.
 
 ### Prorating the Cancellation Fee
 
-Decide if you want the Cancellation Fee to be prorated.
+Decide if you want the Cancellation Fee to be prorated.  If selected, the fee will be prorated based on the remainder of the term commitment.  For example, if 40% of the term remains, the customer will be charged only 40% of the maximum defined cancellation fee.
 
-If selected, the fee will be prorated based on the remainder of the term commitment.  For example, if 40% of the term remains, the customer will be charged only 40% of the maximum defined cancellation fee.
+***
 
 ## Cancellation flow
 
