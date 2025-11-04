@@ -186,10 +186,10 @@ To set a term commitment, define the Term Commitment Length. This is the total n
 
 To enable an early cancellation fee:
 
-* Select the corresponding checkbox. 
+* Select the corresponding checkbox.
 * Choose the Fee Product you have configured in Shopify.
 
-### Creating the Fee Product in Shopify
+### Creating the fee product in Shopify
 
 The Cancellation Fee must be set up as a standard Shopify product. Follow these steps in your Shopify admin:
 
@@ -198,15 +198,12 @@ The Cancellation Fee must be set up as a standard Shopify product. Follow these 
 3. Under Price, ensure the product is **not taxable**.
 4. Under Inventory, either disable tracking inventory or ensure you have adequate stock to charge the fee.
 5. Under Publishing, set the "Online Store" sales channel to **Unpublished**.
-6. Finally, set the product Status to **Active**.
+6. Set the product Status to **Active**.
+7. Choose whether the **Cancellation Fee should be prorated**. If yes, the fee is based on the remaining term. For example, if 40% of the term is left, the customer pays 40% of the maximum cancellation fee.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/3b559ae9f4dc354acb55cd8c006a7fe3fde56ceda87da1cff7524d20f33552d4-Cancellation_Fee.png" className="border" />
 
 > **Note:** Only one cancellation product can be selected per subscription plan.
-
-### Prorating the Cancellation Fee
-
-Decide if you want the Cancellation Fee to be prorated.  If selected, the fee will be prorated based on the remainder of the term commitment.  For example, if 40% of the term remains, the customer will be charged only 40% of the maximum defined cancellation fee.
 
 ***
 
