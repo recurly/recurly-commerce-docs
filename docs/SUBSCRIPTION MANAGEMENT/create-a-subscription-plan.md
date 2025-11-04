@@ -88,6 +88,8 @@ Once your products are chosen, select how they’ll be offered to customers:
 * **One-time, subscribe & save, and prepaid subscription**
 
   * All three options appear in the widget, letting customers choose among one-time purchase, recurring billing, or prepaid plans.
+* **Membership**
+  * Offer the product as a membership subscription.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/dd6d4f1d03626768caf8db315ff226aaca23978fe427df8d65d33cf5e74bf9c8-Screenshot_2025-09-26_at_9.40.21_AM.png" className="border" />
 
@@ -139,10 +141,10 @@ In addition to recurring frequency discounts, you can grant one-time promotions 
 
 * **By Order**
 
-  * Apply a special discount to the first N deliveries (e.g., 50% off the first 3 orders) to win initial sign-ups.
+  * Apply a special discount to the first N deliveries, e.g., 50% off the first 3 orders to win initial sign-ups or 100% off the first order to offer a free trial.
 * **By Quantity**
 
-  * Discount based on the total quantity of products (e.g., 10% off when ordering 2 products, 15% off when ordering 3 products) to encourage larger baskets.
+  * Discount based on the total quantity of products (e.g., 10% off when ordering 2 products, 15% off when ordering 3 products) to encourage larger carts.
   * Click **+ Add Discount Tier** to add additional discount tiers by quantity.
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/c5167b3a17daedc94062642d3eab75436ef7a3f1647b8733cf9a7ba049545dc6-Screenshot_2025-09-26_at_10.12.04_AM.png" className="border" />
@@ -164,6 +166,48 @@ Define your subscription shipping rules:
 
 ***
 
+## Contract Type
+
+The Contract Type determines if the subscription plan requires a term commitment and allows for charging a cancellation fee.  
+
+* **Flexible (default)**
+  * No term commitment, the customer can cancel anytime free of charge
+* **Committed**
+
+  * Add a term commitment and cancellation fees
+
+  <Image align="center" border={true} width="80% " src="https://files.readme.io/c62e8f65cbf229838ab885856829e7aec46a2ffc8901c376324a8f0b07013e17-Contract_Terms.png" className="border" />
+
+> **Note:** Contract Terms are not available on Prepaid or Membership Subscription Plans.
+
+To set a term commitment, define the Term Commitment Length. This is the total number of delivers your customer agrees to as a part of the Plan.  The delivery length must be at least 1 delivery.
+
+To enable an early cancellation fee:
+
+* Select the corresponding checkbox (e.g., "Charge an early cancellation fee").
+* Choose the Fee Product you have configured in Shopify.
+
+### Creating the Fee Product in Shopify
+
+The Cancellation Fee must be set up as a standard Shopify product. Follow these steps in your Shopify admin:
+
+1. Go to Products > Add Product.
+2. Set a clear Title for the product (e.g., "Cancellation Fee").
+3. Under Price, ensure the product is **not taxable**.
+4. Under Inventory, either disable tracking inventory or ensure you have adequate stock to charge the fee.
+5. Under Publishing, set the "Online Store" sales channel to **Unpublished**.
+6. Finally, set the product Status to Active.
+
+<Image align="center" border={true} width="80% " src="https://files.readme.io/3b559ae9f4dc354acb55cd8c006a7fe3fde56ceda87da1cff7524d20f33552d4-Cancellation_Fee.png" className="border" />
+
+> **Note:** Only one cancellation product can be selected per subscription plan
+
+### Prorating the Cancellation Fee
+
+Decide if you want the Cancellation Fee to be prorated.
+
+If selected, the fee will be prorated based on the remainder of the term commitment.  For example, if 40% of the term remains, the customer will be charged only 40% of the maximum defined cancellation fee.
+
 ## Cancellation flow
 
 Finally, set up your desired Cancellation Flow.  With tailored cancellation flows, you can configure flows that:
@@ -174,7 +218,7 @@ Finally, set up your desired Cancellation Flow.  With tailored cancellation flow
 
 Click **None** in the Cancellation Flow drop down to select from your list of Cancellation Flows.
 
-To learn more about creating a Cancellation Flow, check out the [Cancellation and churn prevention flows overview.](https://docs.recurly.com/recurly-commerce/docs/cancellation-and-churn-prevention-flows#/intelligent-cancellation-flows) 
+To learn more about creating a Cancellation Flow, check out the [Cancellation and churn prevention flows overview.](https://docs.recurly.com/recurly-commerce/docs/cancellation-and-churn-prevention-flows#/intelligent-cancellation-flows)
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/6f7593c5bf4cd59ec2b02af2e0fec8dd8dcfc1be683125938c7e799242ebae8d-Screenshot_2025-09-26_at_1.09.39_PM.png" className="border" />
 
