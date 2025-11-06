@@ -1012,6 +1012,50 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "Page number",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Items per page. Limit must be between 1 and 250.",
+            "schema": {
+              "type": "integer",
+              "default": 10,
+              "minimum": 1,
+              "maximum": 250
+            }
+          },
+          {
+            "name": "sort",
+            "required": false,
+            "in": "query",
+            "description": "Sort order. If not set, default is createdAt.",
+            "schema": {
+              "type": "string",
+              "default": "createdAt",
+              "enum": ["createdAt", "updatedAt"]
+            }
+          },
+          {
+            "name": "desc",
+            "required": false,
+            "in": "query",
+            "description": "Sort direction. If not set, default is ASC.",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
           }
         ],
         "responses": {
@@ -1646,6 +1690,34 @@
           }
         ],
         "tags": ["SubscriptionLines API"]
+      },
+      "delete": {
+        "operationId": "PublicApiController_deleteSubscriptionLineSchedule",
+        "summary": "",
+        "description": "Delete a schedule from a subscription line. This converts the line back to \"every delivery\" behavior.",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "description": "The id of the subscription line",
+            "example": "subscription-line-id",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully deleted schedule from subscription line"
+          }
+        },
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "tags": ["SubscriptionLines API"]
       }
     },
     "/api/v1/subscriptionLines/{id}/customAttributes": {
@@ -1843,6 +1915,50 @@
             "example": "subscriber-id",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "required": false,
+            "in": "query",
+            "description": "Page number",
+            "schema": {
+              "type": "integer",
+              "default": 1,
+              "minimum": 1
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Items per page. Limit must be between 1 and 250.",
+            "schema": {
+              "type": "integer",
+              "default": 10,
+              "minimum": 1,
+              "maximum": 250
+            }
+          },
+          {
+            "name": "sort",
+            "required": false,
+            "in": "query",
+            "description": "Sort order. If not set, default is createdAt.",
+            "schema": {
+              "type": "string",
+              "default": "createdAt",
+              "enum": ["createdAt", "updatedAt"]
+            }
+          },
+          {
+            "name": "desc",
+            "required": false,
+            "in": "query",
+            "description": "Sort direction. If not set, default is ASC.",
+            "schema": {
+              "type": "boolean",
+              "default": false
             }
           }
         ],
@@ -5941,7 +6057,7 @@
         "properties": {
           "deliveryInterval": {
             "type": "number",
-            "description": "The frequency multiplier that determines how often an add-on product is included with deliveries. Values: 1 (every delivery), 2 (every other delivery), 3 (every third delivery), etc"
+            "description": "The frequency multiplier that determines how often an add-on product is included with deliveries. Must be >= 2. Values: 2 (every other delivery), 3 (every third delivery), etc. Note: interval=1 (every delivery) does not require a schedule."
           },
           "deliveryStartOffset": {
             "type": "number",
@@ -5992,7 +6108,7 @@
         "properties": {
           "deliveryInterval": {
             "type": "number",
-            "description": "The frequency multiplier that determines how often an add-on product is included with deliveries. Values: 1 (every delivery), 2 (every other delivery), 3 (every third delivery), etc"
+            "description": "The frequency multiplier that determines how often an add-on product is included with deliveries. Must be >= 2. Values: 2 (every other delivery), 3 (every third delivery), etc. Note: To convert back to \"every delivery\" (interval=1), use DELETE /subscriptionLines/:id/schedule instead."
           },
           "deliveryStartOffset": {
             "type": "number",
