@@ -154,6 +154,15 @@
             }
           },
           {
+            "name": "friendlyId",
+            "required": false,
+            "in": "query",
+            "description": "The friendly ID of the subscription",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "minNextBillingDate",
             "required": false,
             "in": "query",
