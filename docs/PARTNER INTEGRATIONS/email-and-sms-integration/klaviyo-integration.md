@@ -91,11 +91,31 @@ Each event is accompanied by a rich set of properties for granular segmentation:
 | Additional property for "Prive Billing Attempt Failed" | total_retries              | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
 | Additional property for "Prive Upcoming Order"         | isPrepaidUpcomingCharge    | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
 | Additional property for "Prive Upcoming Order"         | daysBeforeBilling          | Number           | Number of days before the next order                                                  |
-| Prive Gift Confirmation                                | order_number               | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
 | Prive Out of Stock                                     | (same as above properties) | …                | …                                                                                     |
 | Prive Order Placed                                     | order_number               | Number           | The number of completed orders at the time the order placed metric fires.             |
 
-> **Use Case:** Leverage these events to create custom segments in Klaviyo (e.g., “All subscribers with paused subscriptions AND billing failures in the last 7 days”) and trigger tailored flows.
+Gift confirmation has several additional properties, which are shown in the below table
+
+| Metric(s)               | Property             | Type | Description |
+| :---------------------- | :------------------- | :--- | :---------- |
+| Prive Gift Confirmation | sender_email         |      |             |
+| …                       | sender_first_name    |      |             |
+| …                       | sender_last_name     |      |             |
+| …                       | sender_phone         |      |             |
+| …                       | recipient_email      |      |             |
+| …                       | recipient_first_name |      |             |
+| ...                     | recipient_last_name  |      |             |
+| …                       | recipient_phone      |      |             |
+| …                       | number_of_deliveries |      |             |
+| …                       | gift_message         |      |             |
+| …                       | order_number         |      |             |
+| …                       | order_name           |      |             |
+| ...                     | order_internal_id    |      |             |
+| …                       | shipping_method      |      |             |
+| …                       | shipping_price       |      |             |
+| ...                     | shipping_address     |      |             |
+
+**Use Case:** Leverage these events to create custom segments in Klaviyo (e.g., “All subscribers with paused subscriptions AND billing failures in the last 7 days”) and trigger tailored flows.
 
 ## Available Recurly Commerce Customer properties
 
