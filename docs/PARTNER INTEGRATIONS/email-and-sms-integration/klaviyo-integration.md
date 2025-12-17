@@ -118,7 +118,7 @@ Gift confirmation has several additional properties, which are shown in the belo
 
 ## Available Recurly Commerce Customer properties
 
-These properties are written to each Klaviyo profile under **Custom Properties**:
+These properties are written to each Klaviyo profile under **Custom Properties**. These profile properties are updated as new events (e.g., additional subscription) are sent to Klaviyo.
 
 | Recurly Commerce Customer Property   | Type    | Description                                                       |
 | ------------------------------------ | ------- | ----------------------------------------------------------------- |
@@ -133,11 +133,11 @@ These properties are written to each Klaviyo profile under **Custom Properties**
 
 Embed “Quick Action” links in Klaviyo emails to let subscribers self-serve common tasks (skip next order, reactivate subscription, add add-ons, etc.).
 
-1. In the Recurly Commerce merchant admin, configure a quicklink with a **name** and an **action**.
-2. After the next Recurly Commerce metric fires (e.g., upcoming order or cancelled), the quicklink appears in the customer’s Klaviyo profile.
-3. Reference the quicklink in a Klaviyo flow using the variable syntax `{{ event.quicklink_name }}`.
+1. In Recurly Commerce, navigate to `Quick actions`for Klaviyo, and `+Add Quick Action` for each action/event you want to track.
+2. Once configured for each lifecycle event (e.g., subscription cancel), Commerce will start to send the required data to Klaviyo, and update the customer profiles.
+3. The Quick action link is now available for use in a campaign as `{{person|lookup:'actionName'}}` , or a flow as `{{event.actionName }}`. It is common for merchants to include these actions as buttons in e-mails.
 
-   Once clicked, the action executes immediately and the subscriber sees a confirmation message.
+Once clicked, the action executes immediately and the subscriber sees a confirmation message.
 
 ## Data backfill
 
