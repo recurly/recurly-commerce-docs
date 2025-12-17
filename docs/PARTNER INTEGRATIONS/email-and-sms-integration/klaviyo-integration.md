@@ -63,27 +63,29 @@ Below is the complete list of Recurly Commerce metrics/events that will be sent 
 
 Each event is accompanied by a rich set of properties for granular segmentation:
 
-| Metric(s)                                 | Property                      | Type             | Description                                                                           |
-| ----------------------------------------- | ----------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
-| Recurly Commerce Subscription Started     | charge\_amount                | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
-| …                                         | product\_title                | String           | Shopify product title.                                                                |
-| …                                         | product\_id                   | Number           | Shopify product ID.                                                                   |
-| …                                         | variant\_id                   | Number           | Shopify variant ID.                                                                   |
-| …                                         | variant\_title                | String           | Shopify variant title.                                                                |
-| …                                         | line\_items                   | Array\<object>   | Subscription contract line items.                                                     |
-| …                                         | next\_billing\_date           | String           | Subscription contract next billing date.                                              |
-| …                                         | order\_interval\_frequency    | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
-| …                                         | order\_interval\_unit         | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
-| …                                         | order\_interval\_days         | Number           | Number of days between renewals.                                                      |
-| …                                         | is\_prepaid                   | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
-| …                                         | value                         | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
-| …                                         | price                         | Number           | Subscription contract price before discounts.                                         |
-| – Recurly Commerce Subscription Cancelled | cancel\_reason                | String           | Reason captured from the cancellation survey.                                         |
-| – Recurly Commerce Billing Attempt Failed | total\_retries                | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
-| – Recurly Commerce Upcoming Order         | is\_prepaid\_upcoming\_charge | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
-| – Recurly Commerce Gift Confirmation      | order\_number                 | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
-| – Recurly Commerce Out of Stock           | (same as above properties)    | …                | …                                                                                     |
-| – Recurly Commerce Order Placed           | order\_number                 | Number           | The number of completed orders at the time the order placed metric fires.             |
+| Metric(s)                                 | Property                   | Type             | Description                                                                           |
+| ----------------------------------------- | -------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
+| Recurly Commerce Subscription Started     | charge_amount              | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
+| …                                         | product_title              | String           | Shopify product title.                                                                |
+| …                                         | product_id                 | Number           | Shopify product ID.                                                                   |
+| …                                         | variant_id                 | Number           | Shopify variant ID.                                                                   |
+| …                                         | variant_title              | String           | Shopify variant title.                                                                |
+| …                                         | lineItems                  | Array\<object>   | Subscription contract line items.                                                     |
+|                                           | addonItems                 | Array\<object>   | Subscription contract add-on items.                                                   |
+| …                                         | nextBillingDate            | String           | Subscription contract next billing date.                                              |
+| …                                         | order_interval_frequency   | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
+| …                                         | order_interval_unit        | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
+| …                                         | order_interval_days        | Number           | Number of days between renewals.                                                      |
+| …                                         | isPrepaid                  | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
+|                                           | isGift                     | Boolean          | True if the subscription is a gift; false otherwise.                                  |
+| …                                         | $value                     | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
+| …                                         | price                      | Number           | Subscription contract price before discounts.                                         |
+| – Recurly Commerce Subscription Cancelled | cancel_reason              | String           | Reason captured from the cancellation survey.                                         |
+| – Recurly Commerce Billing Attempt Failed | total_retries              | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
+| – Recurly Commerce Upcoming Order         | is_prepaid_upcoming_charge | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
+| – Recurly Commerce Gift Confirmation      | order_number               | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
+| – Recurly Commerce Out of Stock           | (same as above properties) | …                | …                                                                                     |
+| – Recurly Commerce Order Placed           | order_number               | Number           | The number of completed orders at the time the order placed metric fires.             |
 
 > **Use Case:** Leverage these events to create custom segments in Klaviyo (e.g., “All subscribers with paused subscriptions AND billing failures in the last 7 days”) and trigger tailored flows.
 
@@ -91,14 +93,14 @@ Each event is accompanied by a rich set of properties for granular segmentation:
 
 These properties are written to each Klaviyo profile under **Custom Properties**:
 
-| Recurly Commerce Customer Property      | Type    | Description                                                       |
-| --------------------------------------- | ------- | ----------------------------------------------------------------- |
-| prive\_is\_active\_subscriber           | Boolean | True if the customer has ≥1 active subscription; false otherwise. |
-| prive\_active\_subscription\_count      | Number  | Total number of active subscriptions for this customer.           |
-| prive\_status\_active\_subscriptions    | Number  | Alias for active subscription count.                              |
-| prive\_status\_cancelled\_subscriptions | Number  | Total number of cancelled subscriptions for this customer.        |
-| prive\_status\_paused\_subscriptions    | Number  | Total number of paused subscriptions for this customer.           |
-| prive\_status\_skipped\_subscriptions   | Number  | Total number of skipped subscriptions for this customer.          |
+| Recurly Commerce Customer Property   | Type    | Description                                                       |
+| ------------------------------------ | ------- | ----------------------------------------------------------------- |
+| prive_is_active_subscriber           | Boolean | True if the customer has ≥1 active subscription; false otherwise. |
+| prive_active_subscription_count      | Number  | Total number of active subscriptions for this customer.           |
+| prive_status_active_subscriptions    | Number  | Alias for active subscription count.                              |
+| prive_status_cancelled_subscriptions | Number  | Total number of cancelled subscriptions for this customer.        |
+| prive_status_paused_subscriptions    | Number  | Total number of paused subscriptions for this customer.           |
+| prive_status_skipped_subscriptions   | Number  | Total number of skipped subscriptions for this customer.          |
 
 ## Quick actions
 
