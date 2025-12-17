@@ -69,31 +69,31 @@ Below is the complete list of Recurly Commerce metrics/events that will be sent 
 
 Each event is accompanied by a rich set of properties for granular segmentation:
 
-| Metric(s)                    | Property                   | Type             | Description                                                                           |
-| ---------------------------- | -------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
-| Prive Subscription Started   | charge_amount              | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
-| …                            | product_title              | String           | Shopify product title.                                                                |
-| …                            | product_id                 | Number           | Shopify product ID.                                                                   |
-| …                            | variant_id                 | Number           | Shopify variant ID.                                                                   |
-| …                            | variant_title              | String           | Shopify variant title.                                                                |
-| …                            | line_items                 | Array\<object>   | Subscription contract line items.                                                     |
-| ...                          | addonItems                 | Array\<object>   | Subscription contract add-on items.                                                   |
-| …                            | nextBillingDate            | String           | Subscription contract next billing date.                                              |
-| …                            | order_interval_frequency   | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
-| …                            | order_interval_unit        | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
-| …                            | order_interval_days        | Number           | Number of days between renewals.                                                      |
-| …                            | isPrepaid                  | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
-| ...                          | isGift                     | Boolean          | True if the subscription is a gift; false otherwise.                                  |
-| …                            | $value                     | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
-| …                            | price                      | Number           | Subscription contract price before discounts.                                         |
-| Prive Subscription Cancelled | cancel_reason              | String           | Reason captured from the cancellation survey.                                         |
-| Prive Status Update          | new_status                 | String           | The new status of the subscription                                                    |
-| Prive Billing Attempt Failed | total_retries              | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
-| Prive Upcoming Order         | isPrepaidUpcomingCharge    | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
-| ...                          | daysBeforeBilling          | Number           | Number of days before the next order                                                  |
-| Prive Gift Confirmation      | order_number               | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
-| Prive Out of Stock           | (same as above properties) | …                | …                                                                                     |
-| Prive Order Placed           | order_number               | Number           | The number of completed orders at the time the order placed metric fires.             |
+| Metric(s)                                              | Property                   | Type             | Description                                                                           |
+| :----------------------------------------------------- | :------------------------- | :--------------- | :------------------------------------------------------------------------------------ |
+| All metrics include the following properties           | charge_amount              | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
+| …                                                      | product_title              | String           | Shopify product title.                                                                |
+| …                                                      | product_id                 | Number           | Shopify product ID.                                                                   |
+| …                                                      | variant_id                 | Number           | Shopify variant ID.                                                                   |
+| …                                                      | variant_title              | String           | Shopify variant title.                                                                |
+| …                                                      | line_items                 | Array\<object>   | Subscription contract line items.                                                     |
+| ...                                                    | addonItems                 | Array\<object>   | Subscription contract add-on items.                                                   |
+| …                                                      | nextBillingDate            | String           | Subscription contract next billing date.                                              |
+| …                                                      | order_interval_frequency   | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
+| …                                                      | order_interval_unit        | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
+| …                                                      | order_interval_days        | Number           | Number of days between renewals.                                                      |
+| …                                                      | isPrepaid                  | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
+| ...                                                    | isGift                     | Boolean          | True if the subscription is a gift; false otherwise.                                  |
+| …                                                      | $value                     | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
+| …                                                      | price                      | Number           | Subscription contract price before discounts.                                         |
+| Additional property for "Prive Subscription Cancelled" | cancel_reason              | String           | Reason captured from the cancellation survey.                                         |
+| Additional property for "Prive Status Update"          | new_status                 | String           | The new status of the subscription                                                    |
+| Additional property for "Prive Billing Attempt Failed" | total_retries              | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
+| Additional property for "Prive Upcoming Order"         | isPrepaidUpcomingCharge    | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
+| Additional property for "Prive Upcoming Order"         | daysBeforeBilling          | Number           | Number of days before the next order                                                  |
+| Prive Gift Confirmation                                | order_number               | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
+| Prive Out of Stock                                     | (same as above properties) | …                | …                                                                                     |
+| Prive Order Placed                                     | order_number               | Number           | The number of completed orders at the time the order placed metric fires.             |
 
 > **Use Case:** Leverage these events to create custom segments in Klaviyo (e.g., “All subscribers with paused subscriptions AND billing failures in the last 7 days”) and trigger tailored flows.
 
