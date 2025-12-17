@@ -47,45 +47,49 @@ The Klaviyo integration pushes Prive-specific metrics (e.g., subscription starte
 
 Below is the complete list of Recurly Commerce metrics/events that will be sent to Klaviyo in real time:
 
-| Prive Metric in Klaviyo                 | When is it triggered?                                                                                                            |
-| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| Recurly Commerce Subscription Started   | This metric is triggered when a subscription is created/purchased by the shopper.                                                |
-| Recurly Commerce Subscription Cancelled | This metric is triggered when a subscription is canceled by you in the merchant admin or by the customer in the customer portal. |
-| Recurly Commerce Subscription Paused    | This metric is triggered when a subscription is paused by you in the merchant admin or by the customer in the customer portal.   |
-| Recurly Commerce Status Update          | This metric is triggered when a subscription’s status changes.                                                                   |
-| Recurly Commerce Billing Attempt Failed | This metric is triggered when a billing attempt failed.                                                                          |
-| Recurly Commerce Upcoming Order         | This metric is triggered **3 calendar days** before the scheduled upcoming order.                                                |
-| Recurly Commerce Gift Confirmation      | This metric is triggered when a gift subscription is created/purchased by the shopper.                                           |
-| Recurly Commerce Out of Stock           | This metric is triggered when a product variant is deleted or has 0 quantity left.                                               |
-| Recurly Commerce Order Placed           | This metric is triggered when a renewal order has successfully been placed.                                                      |
+| Prive Metric in Klaviyo           | When is it triggered?                                                                            |
+| --------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Prive Billing Attempt Failed      | Billing attempt failed                                                                           |
+| Prive Contract Order Skipped      |                                                                                                  |
+| Prive Gift Confirmation           | Gift subscription is created/purchased by the shopper.                                           |
+| Prive Gift Confirmation Recipient |                                                                                                  |
+| Prive Gift Opened                 |                                                                                                  |
+| Prive Gift Order Placed           |                                                                                                  |
+| Prive One Time Addon Created      |                                                                                                  |
+| Prive One Time Addon Removed      |                                                                                                  |
+| Prive Order Placed                | Renewal order has successfully been placed.                                                      |
+| Prive Out Of Stock                | Product variant is deleted or has 0 quantity left.                                               |
+| Prive Revoked Payment Method      |                                                                                                  |
+| Prive Status Update               | Subscription’s status changes.                                                                   |
+| Prive Subscription Cancelled      | Subscription is canceled by you in the merchant admin or by the customer in the customer portal. |
+| Prive Subscription Started        | Subscription is created/purchased by the shopper.                                                |
+| Prive Upcoming Order              | **3 calendar days** before the scheduled upcoming order.                                         |
 
 ### Recurly Commerce metric / event properties
 
 Each event is accompanied by a rich set of properties for granular segmentation:
 
-| Metric(s)                                 | Property                   | Type             | Description                                                                           |
-| ----------------------------------------- | -------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
-| Recurly Commerce Subscription Started     | charge_amount              | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
-| …                                         | product_title              | String           | Shopify product title.                                                                |
-| …                                         | product_id                 | Number           | Shopify product ID.                                                                   |
-| …                                         | variant_id                 | Number           | Shopify variant ID.                                                                   |
-| …                                         | variant_title              | String           | Shopify variant title.                                                                |
-| …                                         | lineItems                  | Array\<object>   | Subscription contract line items.                                                     |
-|                                           | addonItems                 | Array\<object>   | Subscription contract add-on items.                                                   |
-| …                                         | nextBillingDate            | String           | Subscription contract next billing date.                                              |
-| …                                         | order_interval_frequency   | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
-| …                                         | order_interval_unit        | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
-| …                                         | order_interval_days        | Number           | Number of days between renewals.                                                      |
-| …                                         | isPrepaid                  | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
-|                                           | isGift                     | Boolean          | True if the subscription is a gift; false otherwise.                                  |
-| …                                         | $value                     | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
-| …                                         | price                      | Number           | Subscription contract price before discounts.                                         |
-| – Recurly Commerce Subscription Cancelled | cancel_reason              | String           | Reason captured from the cancellation survey.                                         |
-| – Recurly Commerce Billing Attempt Failed | total_retries              | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
-| – Recurly Commerce Upcoming Order         | is_prepaid_upcoming_charge | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
-| – Recurly Commerce Gift Confirmation      | order_number               | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
-| – Recurly Commerce Out of Stock           | (same as above properties) | …                | …                                                                                     |
-| – Recurly Commerce Order Placed           | order_number               | Number           | The number of completed orders at the time the order placed metric fires.             |
+| Metric(s)                               | Property                   | Type             | Description                                                                           |
+| --------------------------------------- | -------------------------- | ---------------- | ------------------------------------------------------------------------------------- |
+| Recurly Commerce Subscription Started   | charge_amount              | Number (e.g. 50) | Total amount the shopper paid when the subscription started (includes shipping, tax). |
+| …                                       | product_title              | String           | Shopify product title.                                                                |
+| …                                       | product_id                 | Number           | Shopify product ID.                                                                   |
+| …                                       | variant_id                 | Number           | Shopify variant ID.                                                                   |
+| …                                       | variant_title              | String           | Shopify variant title.                                                                |
+| …                                       | line_items                 | Array\<object>   | Subscription contract line items.                                                     |
+| …                                       | next_billing_date          | String           | Subscription contract next billing date.                                              |
+| …                                       | order_interval_frequency   | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
+| …                                       | order_interval_unit        | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
+| …                                       | order_interval_days        | Number           | Number of days between renewals.                                                      |
+| …                                       | is_prepaid                 | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
+| …                                       | value                      | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
+| …                                       | price                      | Number           | Subscription contract price before discounts.                                         |
+| Recurly Commerce Subscription Cancelled | cancel_reason              | String           | Reason captured from the cancellation survey.                                         |
+| Recurly Commerce Billing Attempt Failed | total_retries              | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
+| Recurly Commerce Upcoming Order         | is_prepaid_upcoming_charge | Boolean          | True if the upcoming order is a fulfillment only; false if it includes a charge.      |
+| Recurly Commerce Gift Confirmation      | order_number               | Number           | The number of completed orders at the time the gift confirmation metric fires.        |
+| Recurly Commerce Out of Stock           | (same as above properties) | …                | …                                                                                     |
+| Recurly Commerce Order Placed           | order_number               | Number           | The number of completed orders at the time the order placed metric fires.             |
 
 > **Use Case:** Leverage these events to create custom segments in Klaviyo (e.g., “All subscribers with paused subscriptions AND billing failures in the last 7 days”) and trigger tailored flows.
 
