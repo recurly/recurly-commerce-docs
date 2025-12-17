@@ -77,12 +77,14 @@ Each event is accompanied by a rich set of properties for granular segmentation:
 | …                                       | variant_id                 | Number           | Shopify variant ID.                                                                   |
 | …                                       | variant_title              | String           | Shopify variant title.                                                                |
 | …                                       | line_items                 | Array\<object>   | Subscription contract line items.                                                     |
-| …                                       | next_billing_date          | String           | Subscription contract next billing date.                                              |
+| ...                                     | addonItems                 | Array\<object>   | Subscription contract add-on items.                                                   |
+| …                                       | nextBillingDate            | String           | Subscription contract next billing date.                                              |
 | …                                       | order_interval_frequency   | Number           | Number relating to “Order Interval Unit” for subscription renewal cadence.            |
 | …                                       | order_interval_unit        | String           | “DAY”, “WEEK”, “MONTH”, or “YEAR”.                                                    |
 | …                                       | order_interval_days        | Number           | Number of days between renewals.                                                      |
-| …                                       | is_prepaid                 | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
-| …                                       | value                      | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
+| …                                       | isPrepaid                  | Boolean          | True if the subscription is prepaid; false otherwise.                                 |
+| ...                                     | isGift                     | Boolean          | True if the subscription is a gift; false otherwise.                                  |
+| …                                       | $value                     | Number           | Subscription contract total charged amount (inc. taxes & shipping).                   |
 | …                                       | price                      | Number           | Subscription contract price before discounts.                                         |
 | Recurly Commerce Subscription Cancelled | cancel_reason              | String           | Reason captured from the cancellation survey.                                         |
 | Recurly Commerce Billing Attempt Failed | total_retries              | Number           | Number of dunning retry attempts (excludes the initial failure).                      |
