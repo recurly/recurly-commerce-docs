@@ -114,7 +114,7 @@ Embed “Quick Action” links in Klaviyo emails to let subscribers self-serve c
 
 1. In the Recurly Commerce merchant admin, configure a quicklink with a **name** and an **action**.
 2. After the next Recurly Commerce metric fires (e.g., upcoming order or cancelled), the quicklink appears in the customer’s Klaviyo profile.
-3. Reference the quicklink in a Klaviyo flow using the variable syntax `{{ event.extra.quicklink_name }}`.
+3. Reference the quicklink in a Klaviyo flow using the variable syntax `{{ event.quicklink_name }}`.
 
    Once clicked, the action executes immediately and the subscriber sees a confirmation message.
 
