@@ -6137,7 +6137,7 @@
           },
           "upsert": {
             "type": "boolean",
-            "description": "When true, merges new custom attributes with existing ones. When false, completely overwrites existing custom attributes. Default is false"
+            "description": "When true, merges new custom attributes with existing ones. When false, completely overwrites existing custom attributes. Default is false. WARNING: If you are setting custom attributes on a subscription line that has a bundle, you must set upsert=true to avoid overwriting the bundle data."
           }
         },
         "required": ["customAttributes"]
