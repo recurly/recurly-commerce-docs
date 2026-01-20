@@ -3910,6 +3910,16 @@
               "default": true,
               "type": "boolean"
             }
+          },
+          {
+            "name": "cancellationFlowId",
+            "required": false,
+            "in": "query",
+            "description": "Filter cancellation questions to a specific cancellation flow",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
           }
         ],
         "responses": {
