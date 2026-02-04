@@ -202,16 +202,18 @@ Now that your Shopify components and Commerce Bundle are configured, you can wra
 #### Product Swaps & Pricing
 
 
-* Can customers swap products within their bundle? Yes. Customers can swap individual items for any other item within the approved Shopify collection.
-  * Fixed Price Bundles: The price remains the same regardless of the items chosen. However, if a customer changes their bundle size (e.g., upgrading from a Small to a Large), they will be charged the price associated with that new variant.
-  * Flexible Price Bundles: The customer will be charged the total price of the new items they have selected.
+* **Can customers swap products within their bundle?** Yes, customers can swap individual items for any other item within the approved Shopify collection.
+  * **Fixed Price Bundles: **The price remains the same regardless of the items chosen. However, if a customer changes their bundle size (e.g., upgrading from a Small to a Large), they will be charged the price associated with that new variant.
+  * **Flexible Price Bundles:** The customer will be charged the total price of the new items they have selected.
 
-Can customers include add-ons with their bundle? Yes. Customers can add both subscription and one-time add-ons. These are configured during the Subscription Plan setup and will be billed alongside the bundle.
+**Can customers include add-ons with their bundle?** Yes, customers can add both subscription and one-time add-ons. These are configured during the Subscription Plan setup and will be billed alongside the bundle.
 
-Inventory & Stock Issues
-What happens if a product in the collection goes out of stock for new customers? Recurly Commerce syncs with Shopify inventory in real-time. If an item reaches zero stock, it is automatically labeled "Out of Stock" in the storefront widget to prevent selection. It will automatically reappear once inventory is replenished in Shopify.
+#### Inventory & Stock Issues
 
-What happens to active subscriptions if a product goes out of stock? If a product becomes unavailable for an existing subscriber, Recurly Commerce can trigger an automated notification. This alert prompts the customer to manage their subscription and select a replacement item before their next renewal.
 
-Still need help?
+**What happens if a product in the collection goes out of stock for new customers?** Recurly Commerce syncs with Shopify inventory. If an item reaches zero stock, it is automatically labeled "Out of Stock" in the storefront widget to prevent a customer from selecting that item. It will automatically be available for selection once inventory is replenished in Shopify.
+
+**What happens to active subscriptions if a product goes out of stock?** If a product becomes unavailable for an existing subscriber, Recurly Commerce can trigger an automated notification. This alert prompts the customer to manage their subscription and select a replacement item before their next renewal.
+
+**Still need help?**
 If you have additional questions or need assistance with your setup, please contact our support team at [support@recurly.com](mailto:support@recurly.com).
