@@ -1,5 +1,5 @@
 ---
-title: Bundles in Recurly Commerce
+title: Bundles
 excerpt: >-
   Recurly Commerce Bundles allow customers to curate their own selection of
   products from a pre-defined collection.
