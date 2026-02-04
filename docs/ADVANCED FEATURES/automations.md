@@ -1,5 +1,5 @@
 ---
-title: Automations in Recurly Commerce
+title: Automations
 excerpt: >-
   With Recurly Commerce Automations, unlock unbounded configurability to set up
   automated flows to surprise and delight your subscribers.
