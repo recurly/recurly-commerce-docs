@@ -78,8 +78,6 @@ Depending on the Shopify theme you are using, you may need to adjust the layout 
 
 Once your storefront is saved, you can create your bundle products and collections within Shopify.
 
-_Still having issues with the Commerce Bundles Builder?_ See the troubleshooting section below.
-
 ***
 
 ### Set up bundle products in Shopify
@@ -159,7 +157,7 @@ Once your products and collections are ready in Shopify, follow these steps to b
 
 ***
 
-### Creating a Subscription Plan for your Bundle  
+### Creating a Subscription Plan for your Bundle
 
 Now that your Shopify components and Commerce Bundle are configured, you can wrap them into a subscription offer.
 
@@ -170,7 +168,7 @@ Now that your Shopify components and Commerce Bundle are configured, you can wra
 2. **Attach Your Bundle Product**
    1. Click **Add Product** and select the **Parent Bundle Product** you created in Shopify.
    2. Click **Confirm**.
-   <Callout icon="❗️">
+   <Callout icon="❗️" theme="error">
      Note: Bundle products must stand alone on subscription plans. You cannot add additional, non-bundle products to the same subscription plan.
    </Callout>
 3. **Configure Purchase Options**
@@ -192,15 +190,12 @@ Now that your Shopify components and Commerce Bundle are configured, you can wra
 
 ### Frequently Asked Questions
 
-
 #### Gifting & General Features
-
 
 * **Can customers gift a bundle subscription?** Yes! Bundles are fully compatible with gifting. To enable and configure gift options, please contact our support team at [support@recurly.com](mailto:support@recurly.com) for assistance with the setup.
 * **Can customers pause a bundle subscription?** Yes, if you have enabled the Pause Subscription feature in your Customer Portal settings, customers can pause their bundles. All standard pause logic (duration limits, resume dates, etc.) applies.
 
 #### Product Swaps & Pricing
-
 
 * **Can customers swap products within their bundle?** Yes, customers can swap individual items for any other item within the approved Shopify collection.
   * **Fixed Price Bundles: **The price remains the same regardless of the items chosen. However, if a customer changes their bundle size (e.g., upgrading from a Small to a Large), they will be charged the price associated with that new variant.
@@ -209,7 +204,6 @@ Now that your Shopify components and Commerce Bundle are configured, you can wra
 **Can customers include add-ons with their bundle?** Yes, customers can add both subscription and one-time add-ons. These are configured during the Subscription Plan setup and will be billed alongside the bundle.
 
 #### Inventory & Stock Issues
-
 
 **What happens if a product in the collection goes out of stock for new customers?** Recurly Commerce syncs with Shopify inventory. If an item reaches zero stock, it is automatically labeled "Out of Stock" in the storefront widget to prevent a customer from selecting that item. It will automatically be available for selection once inventory is replenished in Shopify.
 
