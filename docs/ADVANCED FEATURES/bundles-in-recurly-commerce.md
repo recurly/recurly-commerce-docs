@@ -47,7 +47,7 @@ To use Recurly Commerce Bundles, begin with adding a new template to your Online
    2. Locate your current theme and click **Edit theme**.
 2. **Access the Product templates**
    1. Select **Home page** at the top of the editor.
-   2. Select **Products** from the list. 
+   2. Select **Products** from the list.
 3. **Create a new template.**
    1. Click **+ Create template**.
    2. In the **Based on** dropdown menu, select **Default product**, then click **Create template** to save your changes.
@@ -109,12 +109,12 @@ The Parent Product acts as the "container" for your bundle. This is the primary 
 The Bundle Collection serves as the library of items your customers can choose from to populate their bundle.
 
 1. **Add products to your collection**  
-   Create a new collection and add the individual products you want to offer within the bundle  
+   Create a new collection and add the individual products you want to offer within the bundle
    * Need help? See the [Shopify Collection Guide](https://help.shopify.com/en/manual/products/collections) for step-by-step instructions.
-2. **Choose your collection type**    
+2. **Choose your collection type**  
    You can use either manual or automated collections, but please keep the following logic in mind:
    * Manual Collections: Recommended for full control. These work immediately "out of the box."
-   * Automated (Smart) Collections: These are supported; however, the Commerce logic only recognizes standard product fields (such as Product Type, Tag, or Price).  
+   * Automated (Smart) Collections: These are supported; however, the Commerce logic only recognizes standard product fields (such as Product Type, Tag, or Price).
      * Note: Custom metafields cannot be used as conditions for automated bundle collections.
 
 ***
@@ -142,7 +142,7 @@ Once your products and collections are ready in Shopify, follow these steps to b
 
 <Image align="center" border={true} width="80% " src="https://files.readme.io/be243a969395b71b9e41b185876a66d8bd5923e8c0813e8440e40af8f00a2ffc-Select_bundle_product.png" className="border" />
 
-<Callout icon="❗️">
+<Callout icon="❗️" theme="error">
   One Product per Bundle: A Shopify product can only be linked to one bundle at a time. If a product is already assigned to another bundle, it will not appear in the selection list.
 </Callout>
 
@@ -156,3 +156,62 @@ Once your products and collections are ready in Shopify, follow these steps to b
 
 1. **Set Single Product Limits _(Optional)_**
    You can enforce a Single Product Limit to prevent customers from adding too many of the same item to a single bundle (e.g., "Max 2 of any specific flavor").
+
+***
+
+### Creating a Subscription Plan for your Bundle  
+
+Now that your Shopify components and Commerce Bundle are configured, you can wrap them into a subscription offer.
+
+1. **Create the Subscription Offer**
+   1. Navigate to **Subscription Plans** in Recurly Commerce.
+   2. Click **+ Create Offer**
+   3. **Internal Information:** Enter the Subscription Offer Group Name and Description. Like the bundle settings, these are for internal tracking and are not visible to customers.
+2. **Attach Your Bundle Product**
+   1. Click **Add Product** and select the **Parent Bundle Product** you created in Shopify.
+   2. Click **Confirm**.
+   <Callout icon="❗️">
+     Note: Bundle products must stand alone on subscription plans. You cannot add additional, non-bundle products to the same subscription plan.
+   </Callout>
+3. **Configure Purchase Options**
+   Bundles currently support two purchase models on subscription plans:
+   * **One-time purchase:** A single, non-recurring sale.
+   * **Subscribe & Save:** A recurring subscription with optional discounted pricing.
+4. **Customize the Subscription Experience**
+   Configuring your plan with the following:
+   * **Swaps & Add-ons:** Define which products customers can swap in the future.
+   * **Discounts:** Apply special pricing based on order frequency or item quantity.
+   * **Shipping:** Enable Free Shipping for this specific offer if desired.
+   * **Contract Terms:** Set specific contract terms (e.g., a 3-month minimum commitment).
+   * **Cancellation Flow:** Define the steps or retention offers a customer sees if they attempt to cancel.
+5. Go Live
+
+   Once you have reviewed your settings, click **Publish Offer** in the upper right-hand corner. Your bundle is now live and ready for customers!
+
+***
+
+### Frequently Asked Questions
+
+
+#### Gifting & General Features
+
+
+* **Can customers gift a bundle subscription?** Yes! Bundles are fully compatible with gifting. To enable and configure gift options, please contact our support team at [support@recurly.com](mailto:support@recurly.com) for assistance with the setup.
+* **Can customers pause a bundle subscription?** Yes, if you have enabled the Pause Subscription feature in your Customer Portal settings, customers can pause their bundles. All standard pause logic (duration limits, resume dates, etc.) applies.
+
+#### Product Swaps & Pricing
+
+
+* Can customers swap products within their bundle? Yes. Customers can swap individual items for any other item within the approved Shopify collection.
+  * Fixed Price Bundles: The price remains the same regardless of the items chosen. However, if a customer changes their bundle size (e.g., upgrading from a Small to a Large), they will be charged the price associated with that new variant.
+  * Flexible Price Bundles: The customer will be charged the total price of the new items they have selected.
+
+Can customers include add-ons with their bundle? Yes. Customers can add both subscription and one-time add-ons. These are configured during the Subscription Plan setup and will be billed alongside the bundle.
+
+Inventory & Stock Issues
+What happens if a product in the collection goes out of stock for new customers? Recurly Commerce syncs with Shopify inventory in real-time. If an item reaches zero stock, it is automatically labeled "Out of Stock" in the storefront widget to prevent selection. It will automatically reappear once inventory is replenished in Shopify.
+
+What happens to active subscriptions if a product goes out of stock? If a product becomes unavailable for an existing subscriber, Recurly Commerce can trigger an automated notification. This alert prompts the customer to manage their subscription and select a replacement item before their next renewal.
+
+Still need help?
+If you have additional questions or need assistance with your setup, please contact our support team at [support@recurly.com](mailto:support@recurly.com).
