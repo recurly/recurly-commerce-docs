@@ -1,5 +1,5 @@
 ---
-title: Bulk updater in Recurly Commerce
+title: Bulk updater
 excerpt: >-
   Quickly apply changes across multiple subscriptions at once using the Bulk
   Updater tool.
