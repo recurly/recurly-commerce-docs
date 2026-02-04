@@ -1,5 +1,5 @@
 ---
-title: Gift subscriptions in Recurly Commerce
+title: Gift subscriptions
 excerpt: >-
   Build recurring revenue, boost loyalty, and turn customers into advocates with
   Recurly Commerce’s end-to-end gifting feature for subscriptions.  #
