@@ -61,7 +61,7 @@ To use Recurly Commerce Bundles, begin with adding a new template to your Online
    2. Click Add section.
    3. In the section modal, navigate to the Apps tab.
    4. Select Commerce Bundle Builder.
-3. Adjust Theme Settings
+3. **Adjust Theme Settings**
    To ensure the best user experience, navigate to your Theme settings and enable the Reveal sections on scroll option. This creates a smoother visual transition as customers interact with your product page.
 
 _Note: If this is your first time using Recurly Commerce, please remember to also add the Commerce Subscriptions Widget to your layout to ensure all features function correctly._
