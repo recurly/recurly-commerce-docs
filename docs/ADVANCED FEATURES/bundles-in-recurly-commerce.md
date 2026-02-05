@@ -62,7 +62,7 @@ To use Recurly Commerce Bundles, begin with adding a new template to your Online
    3. In the section modal, navigate to the Apps tab.
    4. Select Commerce Bundle Builder.
 3. **Adjust Theme Settings**
-   To ensure the best user experience, navigate to your Theme settings and enable the Reveal sections on scroll option. This creates a smoother visual transition as customers interact with your product page.
+   To ensure the best user experience, navigate to your Theme settings and disable the **Reveal sections on scroll** option. This creates a smoother visual transition as customers interact with your product page.
 
 _Note: If this is your first time using Recurly Commerce, please remember to also add the Commerce Subscriptions Widget to your layout to ensure all features function correctly._
 
@@ -71,7 +71,7 @@ _Note: If this is your first time using Recurly Commerce, please remember to als
 Depending on the Shopify theme you are using, you may need to adjust the layout to ensure the Bundle Builder displays correctly.
 
 1. **Select the Section:** In the left-hand sidebar of the theme editor, click on the **Commerce Bundle App** section you just added.
-2. **Configure Dimensions:** Locate the **Size** settings in the side panel and apply the following:
+2. **Configure Dimensions (Optional):** Locate the **Size** settings in the side panel and apply the following:
    1. Set **Width** to **Full**.
    2. Set **Height** to **Full screen**.
 3. **Save your changes:** Click the **Save** button in the upper right-hand corner of the screen to apply your changes.
