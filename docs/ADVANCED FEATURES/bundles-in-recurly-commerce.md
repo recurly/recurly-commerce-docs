@@ -198,7 +198,7 @@ Now that your Shopify components and Commerce Bundle are configured, you can wra
 #### Product Swaps & Pricing
 
 * **Can customers swap products within their bundle?** Yes, customers can swap individual items for any other item within the approved Shopify collection.
-  * **Fixed Price Bundles: **The price remains the same regardless of the items chosen. However, if a customer changes their bundle size (e.g., upgrading from a Small to a Large), they will be charged the price associated with that new variant.
+  * **Fixed Price Bundles:** The price remains the same regardless of the items chosen. However, if a customer changes their bundle size (e.g., upgrading from a Small to a Large), they will be charged the price associated with that new variant.
   * **Flexible Price Bundles:** The customer will be charged the total price of the new items they have selected.
 
 **Can customers include add-ons with their bundle?** Yes, customers can add both subscription and one-time add-ons. These are configured during the Subscription Plan setup and will be billed alongside the bundle.
