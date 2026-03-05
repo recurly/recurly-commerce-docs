@@ -14,7 +14,7 @@ Bundles empower your customers to build their own bundle from a curated selectio
 
 ***
 
-## Bundle Types
+## Bundle types
 
 Recurly Commerce supports two pricing models for Bundles:
 
