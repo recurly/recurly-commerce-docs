@@ -8,6 +8,8 @@ hidden: false
 metadata:
   robots: index
 ---
+# Overview
+
 ## Definition
 
 Bundles empower your customers to build their own bundle from a curated selection of your products. By offering a personalized shopping experience and the convenience of all-in-one shipping, you create a high-value offer that increases your Average Order Value (AOV).
