@@ -16,8 +16,6 @@ metadata:
 <div style="position:relative;padding-top:46.04%;"><iframe src="https://fast.wistia.net/embed/iframe/qu346qhiwv" title="Recurly Commerce Bundles" allow="autoplay; fullscreen" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"></iframe></div>
 `}</HTMLBlock>
 
-<br />
-
 # Definition
 
 Bundles empower your customers to build their own bundle from a curated selection of your products. By offering a personalized shopping experience and the convenience of all-in-one shipping, you create a high-value offer that increases your Average Order Value (AOV).
