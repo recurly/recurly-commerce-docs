@@ -493,7 +493,7 @@ metadata:
           src="https://drive.google.com/file/d/1lahRtRmcqIenNmYvGZ3qLR8FJ7t-1IDG/preview" 
           width="100%" 
           height="100%" 
-          frameborder="0" 
+          frameborder="10" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
         </iframe>
