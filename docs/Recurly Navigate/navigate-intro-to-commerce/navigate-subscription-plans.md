@@ -156,7 +156,7 @@ metadata:
       </div>
 
       <div class="rc-sec-nav">
-        <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-commerce/docs/navigate-intro-to-commerce-navigate">← Intro</a>
+        <a class="rc-btn-prev" href="https://docs.recurly.com/recurly-commerce/docs/navigate-intro-to-commerce">← Intro</a>
         <a class="rc-btn-next" href="https://docs.recurly.com/recurly-commerce/docs/navigate-storefront-setup">Next: Storefront Setup →</a>
       </div>
 
