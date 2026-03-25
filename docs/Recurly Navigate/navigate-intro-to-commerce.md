@@ -469,13 +469,13 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a class="rc-active" href="https://docs.recurly.com/recurly-subscriptions/docs/intro-to-commerce-navigate"><span class="rc-snum">1</span>Intro</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-plans"><span class="rc-snum">2</span>Subscription Plans</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/storefront-setup"><span class="rc-snum">3</span>Storefront Setup</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/customer-portal"><span class="rc-snum">4</span>Customer Portal</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/notifications-commerce"><span class="rc-snum">5</span>Notifications</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/integrations-commerce"><span class="rc-snum">6</span>Integrations</a>
-    <a href="https://docs.recurly.com/recurly-subscriptions/docs/launch-commerce"><span class="rc-snum">✓</span>Launch!</a>
+    <a class="rc-active" href="https://docs.recurly.com/recurly-commerce/docs/navigate-intro-to-commerce-navigate"><span class="rc-snum">1</span>Intro</a>
+    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-subscription-plans"><span class="rc-snum">2</span>Subscription Plans</a>
+    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-storefront-setup"><span class="rc-snum">3</span>Storefront Setup</a>
+    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-customer-portal"><span class="rc-snum">4</span>Customer Portal</a>
+    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-notifications-commerce"><span class="rc-snum">5</span>Notifications</a>
+    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-integrations-commerce"><span class="rc-snum">6</span>Integrations</a>
+    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-launch-commerce"><span class="rc-snum">✓</span>Launch!</a>
   </nav>
 
   <div class="rc-container">
@@ -531,13 +531,13 @@ metadata:
 
       <div class="rc-sec-nav">
         <span class="rc-btn-disabled">🎯 Start Path</span>
-        <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-plans">Next: Subscription Plans →</a>
+        <a class="rc-btn-next" href="https://docs.recurly.com/recurly-commerce/docs/navigate-subscription-plans">Next: Subscription Plans →</a>
       </div>
 
       <div style="margin-top:24px;">
         <h3 class="rc-subhead">📚 Additional Resources</h3>
         <a class="rc-link-btn" href="https://navigate.recurly.com/commerce/launch-smarter/" target="_blank" rel="noopener noreferrer">▶ Full On-Demand Video</a>
-        <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-commerce/docs/getting-started-rc" target="_blank" rel="noopener noreferrer">📖 Recurly Docs</a>
+        <a class="rc-link-btn rc-link-sec" href="https://docs.recurly.com/recurly-commerce/docs/navigate-getting-started-rc" target="_blank" rel="noopener noreferrer">📖 Recurly Docs</a>
         <a class="rc-link-btn rc-link-sec" href="https://support.recurly.com" target="_blank" rel="noopener noreferrer">🎧 Recurly Support</a>
         <a class="rc-link-btn rc-link-sec" href="https://docs.google.com/presentation/d/1hEvBMcNC7PpQj-Fl-IMz6QM6cLfLi92ECI5gq_A_XbI/edit" target="_blank" rel="noopener noreferrer">📊 Presentation Deck</a>
       </div>
