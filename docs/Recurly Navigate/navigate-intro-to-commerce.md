@@ -469,13 +469,13 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a class="rc-active" href="https://docs.recurly.com/recurly-commerce/docs/navigate-intro-to-commerce"><span class="rc-snum">1</span>Intro</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-subscription-plans"><span class="rc-snum">2</span>Subscription Plans</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-storefront-setup"><span class="rc-snum">3</span>Storefront Setup</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-customer-portal"><span class="rc-snum">4</span>Customer Portal</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-notifications-commerce"><span class="rc-snum">5</span>Notifications</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-integrations-commerce"><span class="rc-snum">6</span>Integrations</a>
-    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-launch-commerce"><span class="rc-snum">✓</span>Launch!</a>
+    <a class="rc-active" href="https://docs.recurly.com/recurly-subscriptions/docs/intro-to-commerce-navigate"><span class="rc-snum">1</span>Intro</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-plans"><span class="rc-snum">2</span>Subscription Plans</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/storefront-setup"><span class="rc-snum">3</span>Storefront Setup</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/customer-portal"><span class="rc-snum">4</span>Customer Portal</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/notifications-commerce"><span class="rc-snum">5</span>Notifications</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/integrations-commerce"><span class="rc-snum">6</span>Integrations</a>
+    <a href="https://docs.recurly.com/recurly-subscriptions/docs/launch-commerce"><span class="rc-snum">✓</span>Launch!</a>
   </nav>
 
   <div class="rc-container">
@@ -488,12 +488,12 @@ metadata:
         </div>
       </div>
 
-      <div class="rc-video-card" style="padding: 0; overflow: hidden; height: 400px;">
+      <div class="rc-video-card" style="padding: 0; overflow: hidden; height: 480px;">
         <iframe 
           src="https://drive.google.com/file/d/1lahRtRmcqIenNmYvGZ3qLR8FJ7t-1IDG/preview" 
           width="100%" 
           height="100%" 
-          frameborder="10" 
+          frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
         </iframe>
@@ -531,7 +531,7 @@ metadata:
 
       <div class="rc-sec-nav">
         <span class="rc-btn-disabled">🎯 Start Path</span>
-        <a class="rc-btn-next" href="https://docs.recurly.com/recurly-commerce/docs/navigate-subscription-plans">Next: Subscription Plans →</a>
+        <a class="rc-btn-next" href="https://docs.recurly.com/recurly-subscriptions/docs/subscription-plans">Next: Subscription Plans →</a>
       </div>
 
       <div style="margin-top:24px;">
