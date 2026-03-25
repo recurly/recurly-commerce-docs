@@ -96,7 +96,7 @@ metadata:
   </div>
 
   <nav class="rc-nav">
-    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-intro-to-commerce-navigate"><span class="rc-snum">1</span>Intro</a>
+    <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-intro-to-commerce"><span class="rc-snum">1</span>Intro</a>
     <a class="rc-active" href="https://docs.recurly.com/recurly-commerce/docs/navigate-subscription-plans"><span class="rc-snum">2</span>Subscription Plans</a>
     <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-storefront-setup"><span class="rc-snum">3</span>Storefront Setup</a>
     <a href="https://docs.recurly.com/recurly-commerce/docs/navigate-customer-portal"><span class="rc-snum">4</span>Customer Portal</a>
