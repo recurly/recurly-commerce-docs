@@ -51,11 +51,11 @@ To integrate one of the following tools with Recurly Commerce:
 3. Follow the on-screen guide to authenticate and enable the integration.
 
 <Cards columns={3}>
-  <Card title="Klaviyo" icon="fa-envelope" target="_blank" href="https://docs.recurly.com/docs/klaviyo-integration#/">
+  <Card title="Klaviyo" icon="fa-envelope" target="_blank" href="https://docs.recurly.com/recurly-commerce/docs/klaviyo-integration/">
     Build advanced email automations and segments using Recurly Commerce subscription events in Klaviyo.
   </Card>
 
-  <Card title="Postscript" icon="fa-comment-dots" target="_blank" href="https://docs.recurly.com/docs/postcript-integration#/">
+  <Card title="Postscript" icon="fa-comment-dots" target="_blank" href="https://docs.recurly.com/recurly-commerce/docs/postcript-integration#/">
     Trigger SMS flows for subscription starts, cancellations, billing retries, and more in Postscript.
   </Card>
 
