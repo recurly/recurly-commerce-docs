@@ -58,7 +58,7 @@ To use Recurly Commerce Bundles, begin with adding a new template to your Online
    2. Select **Products** from the list.
 3. **Create a new template.**
    1. Click **+ Create template**.
-   2. In the **Based on** dropdown menu, select **Default product**, then click **Create template** to save your changes.
+   2. In the **Based on** dropdown menu, select **Default product** , then set the name to "**commerce-bundles**".  Select **Create template** to save your changes.
 
 #### Configure the Template Layout
 
