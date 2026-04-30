@@ -1,0 +1,31 @@
+name: Publish OpenAPI to ReadMe
+
+on:
+  push:
+    branches: [v1.0]
+    paths:
+      - 'reference/*.json'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        spec:
+          - reference/commerce-api-documentation.json
+          - reference/prive-api-documentation.json
+          - reference/prive-widget-documentation.json
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Upload OpenAPI spec to ReadMe
+        uses: readmeio/rdme@v10
+        with:
+          rdme: >-
+            openapi upload ${{ matrix.spec }}
+            --key=${{ secrets.COMMERCE_RDME_API_TOKEN }}
+            --branch=v1.0
+            --confirm-overwrite
