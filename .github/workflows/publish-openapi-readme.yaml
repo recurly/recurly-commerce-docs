@@ -13,10 +13,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        spec:
-          - reference/commerce-api-documentation.json
-          - reference/prive-api-documentation.json
-          - reference/prive-widget-documentation.json
+        include:
+          - spec: reference/commerce-api-documentation.json
+            slug: commerce-api-documentation.json
+          - spec: reference/prive-api-documentation.json
+            slug: prive-api-documentation.json
+          - spec: reference/prive-widget-documentation.json
+            slug: prive-widget-documentation.json
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -28,4 +31,5 @@ jobs:
             openapi upload ${{ matrix.spec }}
             --key=${{ secrets.COMMERCE_RDME_API_TOKEN }}
             --branch=v1.0
+            --slug=${{ matrix.slug }}
             --confirm-overwrite
