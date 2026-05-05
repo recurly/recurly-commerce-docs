@@ -3,7 +3,7 @@
   "paths": {
     "/api/v1/subscriptions": {
       "get": {
-        "operationId": "PublicApiController_listSubscriptions",
+        "operationId": "listSubscriptions",
         "summary": "",
         "description": "Retrieve a list of subscriptions",
         "parameters": [
@@ -232,7 +232,7 @@
         "tags": ["Subscriptions API"]
       },
       "post": {
-        "operationId": "PublicApiController_createSubscription",
+        "operationId": "createSubscription",
         "summary": "",
         "description": "Create a subscription",
         "parameters": [],
@@ -268,7 +268,7 @@
     },
     "/api/v1/subscriptionOffers": {
       "get": {
-        "operationId": "PublicApiController_listSubscriptionOffers",
+        "operationId": "listSubscriptionOffers",
         "summary": "",
         "description": "Retrieve a list of subscription offers",
         "parameters": [
@@ -417,7 +417,7 @@
     },
     "/api/v1/subscriptionOffers/{id}": {
       "get": {
-        "operationId": "PublicApiController_getSubscriptionOffer",
+        "operationId": "getSubscriptionOffer",
         "summary": "",
         "description": "Get subscription offer by id",
         "parameters": [
@@ -426,8 +426,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription offer",
-            "example": "subscription-offer-id",
             "schema": {
+              "example": "subscription-offer-id",
               "type": "string"
             }
           }
@@ -454,7 +454,7 @@
     },
     "/api/v1/subscriptions/count": {
       "get": {
-        "operationId": "PublicApiController_getSubscriptionsCount",
+        "operationId": "getSubscriptionsCount",
         "summary": "",
         "description": "Get all subscriptions count",
         "parameters": [
@@ -524,7 +524,7 @@
     },
     "/api/v1/subscriptions/{id}": {
       "get": {
-        "operationId": "PublicApiController_getSubscription",
+        "operationId": "getSubscription",
         "summary": "",
         "description": "Get subscription by id",
         "parameters": [
@@ -533,8 +533,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -561,7 +561,7 @@
     },
     "/api/v1/subscriptions/{id}/billingDeliveryCadenceUpdatePreview": {
       "get": {
-        "operationId": "PublicApiController_getSubscriptionBillingDeliveryCadenceUpdatePreview",
+        "operationId": "getSubscriptionBillingDeliveryCadenceUpdatePreview",
         "summary": "",
         "description": "Get subscription subscription billing delivery cadence update preview - used to preview PATCH - /subscriptions/:id/billingDeliveryCadence",
         "parameters": [
@@ -570,8 +570,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -601,7 +601,7 @@
     },
     "/api/v1/subscriptions/{id}/status": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionStatus",
+        "operationId": "updateSubscriptionStatus",
         "summary": "",
         "description": "Update the stuatus of the subscription",
         "parameters": [
@@ -610,8 +610,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -648,7 +648,7 @@
     },
     "/api/v1/subscriptions/{id}/paymentMethod": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionPaymentMethod",
+        "operationId": "updateSubscriptionPaymentMethod",
         "summary": "",
         "description": "Send the subscriber an email update the payment method of the subscription. Leaving the paymentMethodExternalId null in the body payload will send an email to the subscriber to reset their payment method.",
         "parameters": [
@@ -657,8 +657,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -695,7 +695,7 @@
     },
     "/api/v1/subscriptions/{id}/discountCodes/{code}": {
       "post": {
-        "operationId": "PublicApiController_applySubscriptionDiscountCode",
+        "operationId": "applySubscriptionDiscountCode",
         "summary": "",
         "description": "Apply a discount code to a subscription",
         "parameters": [
@@ -704,8 +704,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           },
@@ -714,8 +714,8 @@
             "required": true,
             "in": "path",
             "description": "The discount code",
-            "example": "code",
             "schema": {
+              "example": "code",
               "type": "string"
             }
           }
@@ -740,7 +740,7 @@
         "tags": ["Subscriptions API"]
       },
       "delete": {
-        "operationId": "PublicApiController_removeSubscriptionDiscountCode",
+        "operationId": "removeSubscriptionDiscountCode",
         "summary": "",
         "description": "Remove a discount code from a subscription",
         "parameters": [
@@ -749,8 +749,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           },
@@ -759,8 +759,8 @@
             "required": true,
             "in": "path",
             "description": "The discount code",
-            "example": "code",
             "schema": {
+              "example": "code",
               "type": "string"
             }
           }
@@ -780,7 +780,7 @@
     },
     "/api/v1/subscriptions/{id}/billingDeliveryCadence": {
       "patch": {
-        "operationId": "PublicApiController_updateBillingDeliveryCadence",
+        "operationId": "updateBillingDeliveryCadence",
         "summary": "",
         "description": "Update subscription contract and lines delivery cadences. If no matching line cadences, the line is left alone.",
         "parameters": [
@@ -789,8 +789,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -827,7 +827,7 @@
     },
     "/api/v1/subscriptions/{id}/deliveryAddress": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionDeliveryAddress",
+        "operationId": "updateSubscriptionDeliveryAddress",
         "summary": "",
         "description": "Update the delivery address for a subscription",
         "parameters": [
@@ -836,8 +836,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -874,7 +874,7 @@
     },
     "/api/v1/subscriptions/{id}/deliveryShippingOption": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionDeliveryShippingOption",
+        "operationId": "updateSubscriptionDeliveryShippingOption",
         "summary": "",
         "description": "Update the delivery shipping option for a subscription",
         "parameters": [
@@ -883,8 +883,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -921,7 +921,7 @@
     },
     "/api/v1/subscriptions/{id}/subscriptionOfferOption": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionOfferOption",
+        "operationId": "updateSubscriptionOfferOption",
         "summary": "",
         "description": "Update subscription offer option",
         "parameters": [
@@ -930,8 +930,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -968,7 +968,7 @@
     },
     "/api/v1/subscriptions/{id}/customAttributes": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionCustomAttributes",
+        "operationId": "updateSubscriptionCustomAttributes",
         "summary": "",
         "description": "Update subscription customAttributes. Note this completely overwrites the customAttributes instead of merging the existing customAttributes with new key-value pairs.",
         "parameters": [
@@ -977,8 +977,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -1008,7 +1008,7 @@
     },
     "/api/v1/subscriptions/{id}/billingAttempts": {
       "get": {
-        "operationId": "PublicApiController_getBillingAttemptsBySubscriptionId",
+        "operationId": "getBillingAttemptsBySubscriptionId",
         "summary": "",
         "description": "Retrieve a list of billing attempts by subscription id",
         "parameters": [
@@ -1017,32 +1017,29 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscriber-id",
             "schema": {
+              "example": "subscriber-id",
               "type": "string"
             }
           },
           {
             "name": "page",
-            "required": false,
+            "required": true,
             "in": "query",
             "description": "Page number",
             "schema": {
-              "type": "integer",
               "default": 1,
-              "minimum": 1
+              "type": "number"
             }
           },
           {
             "name": "limit",
-            "required": false,
+            "required": true,
             "in": "query",
             "description": "Items per page. Limit must be between 1 and 250.",
             "schema": {
-              "type": "integer",
               "default": 10,
-              "minimum": 1,
-              "maximum": 250
+              "type": "number"
             }
           },
           {
@@ -1051,9 +1048,7 @@
             "in": "query",
             "description": "Sort order. If not set, default is createdAt.",
             "schema": {
-              "type": "string",
-              "default": "createdAt",
-              "enum": ["createdAt", "updatedAt"]
+              "type": "string"
             }
           },
           {
@@ -1062,8 +1057,70 @@
             "in": "query",
             "description": "Sort direction. If not set, default is ASC.",
             "schema": {
-              "type": "boolean",
-              "default": false
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "minCreatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of createdAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "maxCreatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The max date of createdAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "minUpdatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of updatedAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "maxUpdatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of updatedAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "includeDeleted",
+            "required": false,
+            "in": "query",
+            "description": "If true, include deleted lines",
+            "schema": {
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -1092,7 +1149,7 @@
     },
     "/api/v1/subscriptions/{id}/billingAttempts/count": {
       "get": {
-        "operationId": "PublicApiController_getBillingAttemptsCountBySubscriptionId",
+        "operationId": "getBillingAttemptsCountBySubscriptionId",
         "summary": "",
         "description": "Retrieve all billing attempts count by subscription id",
         "parameters": [
@@ -1101,8 +1158,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscriber-id",
             "schema": {
+              "example": "subscriber-id",
               "type": "string"
             }
           }
@@ -1129,7 +1186,7 @@
     },
     "/api/v1/subscriptions/{id}/nextBillingAndDeliveryDate": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionNextBillingAndDeliveryDate",
+        "operationId": "updateSubscriptionNextBillingAndDeliveryDate",
         "summary": "",
         "description": "Update next billing and delivery date for a subscription",
         "parameters": [
@@ -1138,8 +1195,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -1176,7 +1233,7 @@
     },
     "/api/v1/subscriptions/{id}/upcomingOrders/{date}/skip": {
       "patch": {
-        "operationId": "PublicApiController_skipUpcomingOrder",
+        "operationId": "skipUpcomingOrder",
         "summary": "",
         "description": "Skip or unskipped an upcoming order. Note if there are automations, this action can also impact the other upcoming orders.",
         "parameters": [
@@ -1185,8 +1242,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           },
@@ -1195,8 +1252,8 @@
             "required": true,
             "in": "path",
             "description": "The date of the upcoming order",
-            "example": "2023-01-01",
             "schema": {
+              "example": "2023-01-01",
               "type": "string"
             }
           }
@@ -1233,7 +1290,7 @@
     },
     "/api/v1/subscriptions/{id}/swapAndAddOnOptions": {
       "get": {
-        "operationId": "PublicApiController_listSubscriptionSwapAndAddOnOptions",
+        "operationId": "listSubscriptionSwapAndAddOnOptions",
         "summary": "",
         "description": "List swap and add-on options of a subscription",
         "parameters": [
@@ -1242,8 +1299,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription",
-            "example": "subscription-id",
             "schema": {
+              "example": "subscription-id",
               "type": "string"
             }
           }
@@ -1273,7 +1330,7 @@
     },
     "/api/v1/oneTimeAddOns": {
       "post": {
-        "operationId": "PublicApiController_createOneTimeAddOn",
+        "operationId": "createOneTimeAddOn",
         "summary": "",
         "description": "Add an one-time add-on to an upcoming order",
         "parameters": [],
@@ -1309,7 +1366,7 @@
     },
     "/api/v1/oneTimeAddOns/{id}": {
       "patch": {
-        "operationId": "PublicApiController_updateOneTimeAddOn",
+        "operationId": "updateOneTimeAddOn",
         "summary": "",
         "description": "Update a one-time add-on",
         "parameters": [
@@ -1318,8 +1375,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the one-time add-on",
-            "example": "one-time-add-on-id",
             "schema": {
+              "example": "one-time-add-on-id",
               "type": "string"
             }
           }
@@ -1354,7 +1411,7 @@
         "tags": ["OneTimeAddOns API"]
       },
       "delete": {
-        "operationId": "PublicApiController_deleteOneTimeAddOn",
+        "operationId": "deleteOneTimeAddOn",
         "summary": "",
         "description": "Delete a one-time add-on",
         "parameters": [
@@ -1363,8 +1420,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the one-time add-on",
-            "example": "one-time-add-on-id",
             "schema": {
+              "example": "one-time-add-on-id",
               "type": "string"
             }
           }
@@ -1384,7 +1441,7 @@
     },
     "/api/v1/subscriptionLines": {
       "get": {
-        "operationId": "PublicApiController_listSubscriptionLines",
+        "operationId": "listSubscriptionLines",
         "summary": "",
         "description": "Retrieve a list of subscription lines",
         "parameters": [
@@ -1510,7 +1567,7 @@
         "tags": ["SubscriptionLines API"]
       },
       "post": {
-        "operationId": "PublicApiController_createSubscriptionLine",
+        "operationId": "createSubscriptionLine",
         "summary": "",
         "description": "Create a subscription line",
         "parameters": [],
@@ -1546,7 +1603,7 @@
     },
     "/api/v1/subscriptionLines/{id}": {
       "get": {
-        "operationId": "PublicApiController_getSubscriptionLine",
+        "operationId": "getSubscriptionLine",
         "summary": "",
         "description": "Get subscription line by id",
         "parameters": [
@@ -1555,8 +1612,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1581,7 +1638,7 @@
         "tags": ["SubscriptionLines API"]
       },
       "delete": {
-        "operationId": "PublicApiController_deleteSubscriptionLine",
+        "operationId": "deleteSubscriptionLine",
         "summary": "",
         "description": "Delete a subscription line",
         "parameters": [
@@ -1590,8 +1647,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1611,7 +1668,7 @@
     },
     "/api/v1/subscriptionLines/{id}/schedule": {
       "post": {
-        "operationId": "PublicApiController_createSubscriptionLineSchedule",
+        "operationId": "createSubscriptionLineSchedule",
         "summary": "",
         "description": "Create a schedule on a subscription line product variant",
         "parameters": [
@@ -1620,8 +1677,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1656,7 +1713,7 @@
         "tags": ["SubscriptionLines API"]
       },
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionLineSchedule",
+        "operationId": "updateSubscriptionLineSchedule",
         "summary": "",
         "description": "Update the schedule on a subscription line product variant",
         "parameters": [
@@ -1665,8 +1722,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1701,7 +1758,7 @@
         "tags": ["SubscriptionLines API"]
       },
       "delete": {
-        "operationId": "PublicApiController_deleteSubscriptionLineSchedule",
+        "operationId": "deleteSubscriptionLineSchedule",
         "summary": "",
         "description": "Delete a schedule from a subscription line. This converts the line back to \"every delivery\" behavior.",
         "parameters": [
@@ -1710,8 +1767,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1731,17 +1788,17 @@
     },
     "/api/v1/subscriptionLines/{id}/customAttributes": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionLineCustomAttributes",
+        "operationId": "updateSubscriptionLineCustomAttributes",
         "summary": "",
-        "description": "Update customAttributes on a subscription line product variant",
+        "description": "Update customAttributes on a subscription line product variant. WARNING: If the subscription line contains a bundle, you must set upsert=true in the request body to avoid overwriting the bundle data.",
         "parameters": [
           {
             "name": "id",
             "required": true,
             "in": "path",
             "description": "The id of the subscription subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1771,7 +1828,7 @@
     },
     "/api/v1/subscriptionLines/{id}/swap": {
       "patch": {
-        "operationId": "PublicApiController_swapSubscriptionLine",
+        "operationId": "swapSubscriptionLine",
         "summary": "",
         "description": "Swap a subscription line product variant",
         "parameters": [
@@ -1780,8 +1837,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1818,7 +1875,7 @@
     },
     "/api/v1/subscriptionLines/{id}/price": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionLinePrice",
+        "operationId": "updateSubscriptionLinePrice",
         "summary": "",
         "description": "Update subscription line price",
         "parameters": [
@@ -1827,8 +1884,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1865,7 +1922,7 @@
     },
     "/api/v1/subscriptionLines/{id}/quantity": {
       "patch": {
-        "operationId": "PublicApiController_updateSubscriptionLineQuantity",
+        "operationId": "updateSubscriptionLineQuantity",
         "summary": "",
         "description": "Update quantity on a subscription line",
         "parameters": [
@@ -1874,8 +1931,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscription subscription line",
-            "example": "subscription-line-id",
             "schema": {
+              "example": "subscription-line-id",
               "type": "string"
             }
           }
@@ -1912,7 +1969,7 @@
     },
     "/api/v1/subscribers/{id}/subscriptions": {
       "get": {
-        "operationId": "PublicApiController_listSubscriptionsBySubscriber",
+        "operationId": "listSubscriptionsBySubscriber",
         "summary": "",
         "description": "Get subscriptions by subscriber",
         "parameters": [
@@ -1921,32 +1978,29 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscriber",
-            "example": "subscriber-id",
             "schema": {
+              "example": "subscriber-id",
               "type": "string"
             }
           },
           {
             "name": "page",
-            "required": false,
+            "required": true,
             "in": "query",
             "description": "Page number",
             "schema": {
-              "type": "integer",
               "default": 1,
-              "minimum": 1
+              "type": "number"
             }
           },
           {
             "name": "limit",
-            "required": false,
+            "required": true,
             "in": "query",
             "description": "Items per page. Limit must be between 1 and 250.",
             "schema": {
-              "type": "integer",
               "default": 10,
-              "minimum": 1,
-              "maximum": 250
+              "type": "number"
             }
           },
           {
@@ -1955,9 +2009,7 @@
             "in": "query",
             "description": "Sort order. If not set, default is createdAt.",
             "schema": {
-              "type": "string",
-              "default": "createdAt",
-              "enum": ["createdAt", "updatedAt"]
+              "type": "string"
             }
           },
           {
@@ -1966,8 +2018,70 @@
             "in": "query",
             "description": "Sort direction. If not set, default is ASC.",
             "schema": {
-              "type": "boolean",
-              "default": false
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "minCreatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of createdAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "maxCreatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The max date of createdAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "minUpdatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of updatedAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "maxUpdatedAt",
+            "required": false,
+            "in": "query",
+            "description": "The min date of updatedAt",
+            "schema": {
+              "format": "date-time",
+              "default": "2023-01-01T00:00:00.000Z",
+              "type": "string"
+            }
+          },
+          {
+            "name": "includeDeleted",
+            "required": false,
+            "in": "query",
+            "description": "If true, include deleted lines",
+            "schema": {
+              "default": false,
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "subscriptionId",
+            "required": false,
+            "in": "query",
+            "description": "The subscription ID",
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -1996,7 +2110,7 @@
     },
     "/api/v1/subscribers": {
       "get": {
-        "operationId": "PublicApiController_listSubscribers",
+        "operationId": "listSubscribers",
         "summary": "",
         "description": "Retrieve a list of subscribers",
         "parameters": [
@@ -2149,7 +2263,7 @@
     },
     "/api/v1/subscribers/{id}": {
       "get": {
-        "operationId": "PublicApiController_getSubscriber",
+        "operationId": "getSubscriber",
         "summary": "",
         "description": "Get subscriber by id",
         "parameters": [
@@ -2158,8 +2272,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscriber",
-            "example": "subscriber-id",
             "schema": {
+              "example": "subscriber-id",
               "type": "string"
             }
           }
@@ -2184,7 +2298,7 @@
         "tags": ["Subscribers API"]
       },
       "patch": {
-        "operationId": "PublicApiController_patchSubscriber",
+        "operationId": "patchSubscriber",
         "summary": "",
         "description": "Update a subscriber",
         "parameters": [
@@ -2193,8 +2307,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscriber",
-            "example": "subscriber-id",
             "schema": {
+              "example": "subscriber-id",
               "type": "string"
             }
           }
@@ -2231,7 +2345,7 @@
     },
     "/api/v1/subscribers/{id}/shopifyPaymentMethods": {
       "get": {
-        "operationId": "PublicApiController_getSubscriberPaymentMethods",
+        "operationId": "getSubscriberPaymentMethods",
         "summary": "",
         "description": "Get subscriber shopify payment methods by subscriber id",
         "parameters": [
@@ -2240,8 +2354,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the subscriber",
-            "example": "subscriber-id",
             "schema": {
+              "example": "subscriber-id",
               "type": "string"
             }
           }
@@ -2268,7 +2382,7 @@
     },
     "/api/v1/subscribers/{id}/portalLoginToken": {
       "post": {
-        "operationId": "PublicApiController_postSubscriberPortalToken",
+        "operationId": "postSubscriberPortalToken",
         "parameters": [
           {
             "name": "id",
@@ -2294,7 +2408,7 @@
     },
     "/api/v1/orders": {
       "get": {
-        "operationId": "PublicApiController_listOrders",
+        "operationId": "listOrders",
         "summary": "",
         "description": "Get all orders",
         "parameters": [
@@ -2475,7 +2589,7 @@
     },
     "/api/v1/orders/count": {
       "get": {
-        "operationId": "PublicApiController_getOrdersCount",
+        "operationId": "getOrdersCount",
         "summary": "",
         "description": "Get orders count",
         "parameters": [
@@ -2529,7 +2643,7 @@
     },
     "/api/v1/orderLineItems": {
       "get": {
-        "operationId": "PublicApiController_listOrderLineItems",
+        "operationId": "listOrderLineItems",
         "summary": "",
         "description": "Retrieve a list of order line items",
         "parameters": [
@@ -2657,7 +2771,7 @@
     },
     "/api/v1/webhooks": {
       "post": {
-        "operationId": "PublicApiController_createWebhook",
+        "operationId": "createWebhook",
         "summary": "",
         "description": "Create a new webhook",
         "parameters": [],
@@ -2691,7 +2805,7 @@
         "tags": ["Webhooks API"]
       },
       "get": {
-        "operationId": "PublicApiController_listWebhooks",
+        "operationId": "listWebhooks",
         "summary": "",
         "description": "Retrieve a list of webhooks",
         "parameters": [
@@ -2819,7 +2933,7 @@
     },
     "/api/v1/webhooks/{id}": {
       "get": {
-        "operationId": "PublicApiController_getWebhook",
+        "operationId": "getWebhook",
         "summary": "",
         "description": "Retrieve a single webhook",
         "parameters": [
@@ -2828,8 +2942,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the webhook",
-            "example": "webhook-id",
             "schema": {
+              "example": "webhook-id",
               "type": "string"
             }
           }
@@ -2854,7 +2968,7 @@
         "tags": ["Webhooks API"]
       },
       "patch": {
-        "operationId": "PublicApiController_patchWebhook",
+        "operationId": "patchWebhook",
         "summary": "",
         "description": "Update an existing webhook",
         "parameters": [
@@ -2863,8 +2977,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the webhook",
-            "example": "webhook-id",
             "schema": {
+              "example": "webhook-id",
               "type": "string"
             }
           }
@@ -2892,7 +3006,7 @@
         "tags": ["Webhooks API"]
       },
       "delete": {
-        "operationId": "PublicApiController_deleteWebhook",
+        "operationId": "deleteWebhook",
         "summary": "",
         "description": "Remove an existing webhook",
         "parameters": [
@@ -2901,8 +3015,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the webhook",
-            "example": "webhook-id",
             "schema": {
+              "example": "webhook-id",
               "type": "string"
             }
           }
@@ -2922,7 +3036,7 @@
     },
     "/api/v1/webhooks/{id}/test": {
       "post": {
-        "operationId": "PublicApiController_testWebhook",
+        "operationId": "testWebhook",
         "summary": "",
         "description": "Test an existing webhook",
         "parameters": [
@@ -2931,8 +3045,8 @@
             "required": true,
             "in": "path",
             "description": "The id of the webhook",
-            "example": "webhook-id",
             "schema": {
+              "example": "webhook-id",
               "type": "string"
             }
           }
@@ -2952,7 +3066,7 @@
     },
     "/api/v1/products": {
       "get": {
-        "operationId": "PublicApiController_getProducts",
+        "operationId": "getProducts",
         "summary": "",
         "description": "Retrieve a list of products",
         "parameters": [
@@ -3096,7 +3210,7 @@
     },
     "/api/v1/billingAttempts": {
       "get": {
-        "operationId": "PublicApiController_listBillingAttempts",
+        "operationId": "listBillingAttempts",
         "summary": "",
         "description": "Retrieve a list of billing attempts",
         "parameters": [
@@ -3222,7 +3336,7 @@
         "tags": ["BillingAttempts API"]
       },
       "post": {
-        "operationId": "PublicApiController_createBillingAttempt",
+        "operationId": "createBillingAttempt",
         "summary": "",
         "description": "Create a billing attempt with trigger PROCESS_NOW. Note this moves the next delivery date to now, and it will not affect future delivery dates.",
         "parameters": [],
@@ -3258,7 +3372,7 @@
     },
     "/api/v1/subscriptionDiscountCodes": {
       "get": {
-        "operationId": "PublicApiController_listSubscriptionDiscountCodes",
+        "operationId": "listSubscriptionDiscountCodes",
         "summary": "",
         "description": "Retrieve a list of subscription discount codes",
         "parameters": [
@@ -3386,7 +3500,7 @@
     },
     "/api/v1/subscriptionActivities": {
       "get": {
-        "operationId": "PublicApiController_listSubscriptionActivities",
+        "operationId": "listSubscriptionActivities",
         "summary": "",
         "description": "Retrieve a list of subscription activities",
         "parameters": [
@@ -3514,7 +3628,7 @@
     },
     "/api/v1/baseOrders": {
       "get": {
-        "operationId": "PublicApiController_listBaseOrders",
+        "operationId": "listBaseOrders",
         "summary": "",
         "description": "Retrieve a list of base orders. Base orders are the prive representation of orders which include both fulfilled and upcoming orders. The order created directly from shopify checkout is not included.",
         "parameters": [
@@ -3642,7 +3756,7 @@
     },
     "/api/v1/baseOrderLineItems": {
       "get": {
-        "operationId": "PublicApiController_listBaseOrderLineItems",
+        "operationId": "listBaseOrderLineItems",
         "summary": "",
         "description": "Retrieve a list of base orders line items",
         "parameters": [
@@ -3770,7 +3884,7 @@
     },
     "/api/v1/swapAndAddOnOptions": {
       "get": {
-        "operationId": "PublicApiController_listSwapAndAddOnOptions",
+        "operationId": "listSwapAndAddOnOptions",
         "summary": "",
         "description": "Retrieve a list of swap and add-on options",
         "parameters": [
@@ -3898,7 +4012,7 @@
     },
     "/api/v1/cancellationQuestions": {
       "get": {
-        "operationId": "PublicApiController_listCancellationQuestions",
+        "operationId": "listCancellationQuestions",
         "summary": "",
         "description": "Retrieve a list of cancellation questions",
         "parameters": [
@@ -3917,8 +4031,7 @@
             "in": "query",
             "description": "Filter cancellation questions to a specific cancellation flow",
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -3947,7 +4060,7 @@
     },
     "/api/v1/cancellationSurveyResults": {
       "post": {
-        "operationId": "PublicApiController_createCancellationSurveyResult",
+        "operationId": "createCancellationSurveyResult",
         "summary": "",
         "description": "Create a cancellation survey result",
         "parameters": [],
@@ -3981,7 +4094,7 @@
         "tags": ["CancellationSurveyResults API"]
       },
       "get": {
-        "operationId": "PublicApiController_listCancellationSurveyResults",
+        "operationId": "listCancellationSurveyResults",
         "summary": "",
         "description": "Retrieve a list of cancellation survey results",
         "parameters": [
@@ -4112,7 +4225,7 @@
     },
     "/api/v1/memberships": {
       "get": {
-        "operationId": "PublicApiController_listMemberships",
+        "operationId": "listMemberships",
         "summary": "",
         "description": "Retrieve a list of memberships",
         "parameters": [
@@ -4265,7 +4378,7 @@
     },
     "/api/v1/memberships/lifetime": {
       "post": {
-        "operationId": "PublicApiController_createMembership",
+        "operationId": "createMembership",
         "summary": "",
         "description": "Create a lifetime membership.",
         "parameters": [],
@@ -4523,6 +4636,11 @@
             "items": {
               "$ref": "#/components/schemas/SubscriptionOfferOptionDto"
             }
+          },
+          "cancellationFlowId": {
+            "type": "string",
+            "nullable": true,
+            "description": "The ID of the associated cancellation flow, if any"
           }
         },
         "required": [
@@ -4627,6 +4745,26 @@
         },
         "required": ["key", "value"]
       },
+      "BundleItemDto": {
+        "type": "object",
+        "properties": {
+          "variant": {
+            "nullable": true,
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/VariantDto"
+              }
+            ]
+          },
+          "quantity": {
+            "type": "number"
+          },
+          "currentPrice": {
+            "type": "number"
+          }
+        },
+        "required": ["variant", "quantity", "currentPrice"]
+      },
       "SubscriptionLineDto": {
         "type": "object",
         "properties": {
@@ -4679,6 +4817,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CustomAttribute"
+            }
+          },
+          "bundleItems": {
+            "nullable": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BundleItemDto"
             }
           },
           "deletedAt": {
@@ -4834,7 +4979,7 @@
           },
           "type": {
             "type": "string",
-            "enum": ["MANUAL", "CODE_DISCOUNT"]
+            "enum": ["MANUAL", "CODE_DISCOUNT", "AUTOMATIC_DISCOUNT"]
           },
           "targetType": {
             "type": "string",
@@ -5301,6 +5446,11 @@
             "items": {
               "$ref": "#/components/schemas/SubscriptionOfferOptionDto"
             }
+          },
+          "cancellationFlowId": {
+            "type": "string",
+            "nullable": true,
+            "description": "The ID of the associated cancellation flow, if any"
           },
           "products": {
             "nullable": true,
@@ -5889,7 +6039,7 @@
           },
           "status": {
             "type": "string",
-            "enum": ["ACTIVE", "ARCHIVED", "DRAFT", "DELETED"]
+            "enum": ["ACTIVE", "ARCHIVED", "DRAFT", "DELETED", "UNLISTED"]
           },
           "imageUrl": {
             "type": "string",
@@ -6349,19 +6499,19 @@
             "type": "string"
           },
           "instrument": {
-            "oneOf": [
-              {
-                "$ref": "#/components/schemas/ShopifyPaymentInstrumentCreditCardDto"
-              },
-              {
-                "$ref": "#/components/schemas/ShopifyPaymentInstrumentPaypalBillingAgreementDto"
-              },
-              {
-                "$ref": "#/components/schemas/ShopifyPaymentInstrumentShopPayAgreementDto"
-              }
-            ],
+            "type": "array",
             "items": {
-              "type": "string"
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/ShopifyPaymentInstrumentCreditCardDto"
+                },
+                {
+                  "$ref": "#/components/schemas/ShopifyPaymentInstrumentPaypalBillingAgreementDto"
+                },
+                {
+                  "$ref": "#/components/schemas/ShopifyPaymentInstrumentShopPayAgreementDto"
+                }
+              ]
             }
           }
         },
@@ -6881,7 +7031,7 @@
           "user": {
             "type": "string",
             "description": "The initiator of the activity",
-            "enum": ["Store Admin", "Customer", "Recurly System", "Prive System"]
+            "enum": ["Store Admin", "Customer", "Recurly System", "Prive System", "Shopper"]
           },
           "apiToken": {
             "description": "The API token if the activity was triggered by API",
@@ -7038,6 +7188,13 @@
           },
           "isAddOnOneTime": {
             "type": "boolean"
+          },
+          "bundleItems": {
+            "nullable": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BundleItemDto"
+            }
           }
         },
         "required": [
