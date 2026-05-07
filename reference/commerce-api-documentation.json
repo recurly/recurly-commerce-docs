@@ -4,7 +4,7 @@
     "/api/v1/subscriptions": {
       "get": {
         "operationId": "listSubscriptions",
-        "summary": "",
+        "summary": "List Subscriptions",
         "description": "Retrieve a list of subscriptions",
         "parameters": [
           {
@@ -233,7 +233,7 @@
       },
       "post": {
         "operationId": "createSubscription",
-        "summary": "",
+        "summary": "Create Subscription",
         "description": "Create a subscription",
         "parameters": [],
         "requestBody": {
@@ -269,7 +269,7 @@
     "/api/v1/subscriptionOffers": {
       "get": {
         "operationId": "listSubscriptionOffers",
-        "summary": "",
+        "summary": "List Subscription Offers",
         "description": "Retrieve a list of subscription offers",
         "parameters": [
           {
@@ -418,7 +418,7 @@
     "/api/v1/subscriptionOffers/{id}": {
       "get": {
         "operationId": "getSubscriptionOffer",
-        "summary": "",
+        "summary": "Get Subscription Offer",
         "description": "Get subscription offer by id",
         "parameters": [
           {
@@ -455,7 +455,7 @@
     "/api/v1/subscriptions/count": {
       "get": {
         "operationId": "getSubscriptionsCount",
-        "summary": "",
+        "summary": "Get Subscriptions Count",
         "description": "Get all subscriptions count",
         "parameters": [
           {
@@ -525,7 +525,7 @@
     "/api/v1/subscriptions/{id}": {
       "get": {
         "operationId": "getSubscription",
-        "summary": "",
+        "summary": "Get Subscription",
         "description": "Get subscription by id",
         "parameters": [
           {
@@ -562,7 +562,7 @@
     "/api/v1/subscriptions/{id}/billingDeliveryCadenceUpdatePreview": {
       "get": {
         "operationId": "getSubscriptionBillingDeliveryCadenceUpdatePreview",
-        "summary": "",
+        "summary": "Get Subscription Billing Delivery Cadence Update Preview",
         "description": "Get subscription subscription billing delivery cadence update preview - used to preview PATCH - /subscriptions/:id/billingDeliveryCadence",
         "parameters": [
           {
@@ -602,7 +602,7 @@
     "/api/v1/subscriptions/{id}/status": {
       "patch": {
         "operationId": "updateSubscriptionStatus",
-        "summary": "",
+        "summary": "Update Subscription Status",
         "description": "Update the stuatus of the subscription",
         "parameters": [
           {
@@ -649,7 +649,7 @@
     "/api/v1/subscriptions/{id}/paymentMethod": {
       "patch": {
         "operationId": "updateSubscriptionPaymentMethod",
-        "summary": "",
+        "summary": "Update Subscription Payment Method",
         "description": "Send the subscriber an email update the payment method of the subscription. Leaving the paymentMethodExternalId null in the body payload will send an email to the subscriber to reset their payment method.",
         "parameters": [
           {
@@ -696,7 +696,7 @@
     "/api/v1/subscriptions/{id}/discountCodes/{code}": {
       "post": {
         "operationId": "applySubscriptionDiscountCode",
-        "summary": "",
+        "summary": "Apply Subscription Discount Code",
         "description": "Apply a discount code to a subscription",
         "parameters": [
           {
@@ -741,7 +741,7 @@
       },
       "delete": {
         "operationId": "removeSubscriptionDiscountCode",
-        "summary": "",
+        "summary": "Remove Subscription Discount Code",
         "description": "Remove a discount code from a subscription",
         "parameters": [
           {
@@ -781,7 +781,7 @@
     "/api/v1/subscriptions/{id}/billingDeliveryCadence": {
       "patch": {
         "operationId": "updateBillingDeliveryCadence",
-        "summary": "",
+        "summary": "Update Billing Delivery Cadence",
         "description": "Update subscription contract and lines delivery cadences. If no matching line cadences, the line is left alone.",
         "parameters": [
           {
@@ -828,7 +828,7 @@
     "/api/v1/subscriptions/{id}/deliveryAddress": {
       "patch": {
         "operationId": "updateSubscriptionDeliveryAddress",
-        "summary": "",
+        "summary": "Update Subscription Delivery Address",
         "description": "Update the delivery address for a subscription",
         "parameters": [
           {
@@ -875,7 +875,7 @@
     "/api/v1/subscriptions/{id}/deliveryShippingOption": {
       "patch": {
         "operationId": "updateSubscriptionDeliveryShippingOption",
-        "summary": "",
+        "summary": "Update Subscription Delivery Shipping Option",
         "description": "Update the delivery shipping option for a subscription",
         "parameters": [
           {
@@ -922,7 +922,7 @@
     "/api/v1/subscriptions/{id}/subscriptionOfferOption": {
       "patch": {
         "operationId": "updateSubscriptionOfferOption",
-        "summary": "",
+        "summary": "Update Subscription Offer Option",
         "description": "Update subscription offer option",
         "parameters": [
           {
@@ -969,7 +969,7 @@
     "/api/v1/subscriptions/{id}/customAttributes": {
       "patch": {
         "operationId": "updateSubscriptionCustomAttributes",
-        "summary": "",
+        "summary": "Update Subscription Custom Attributes",
         "description": "Update subscription customAttributes. Note this completely overwrites the customAttributes instead of merging the existing customAttributes with new key-value pairs.",
         "parameters": [
           {
@@ -1009,7 +1009,7 @@
     "/api/v1/subscriptions/{id}/billingAttempts": {
       "get": {
         "operationId": "getBillingAttemptsBySubscriptionId",
-        "summary": "",
+        "summary": "Get Billing Attempts By Subscription Id",
         "description": "Retrieve a list of billing attempts by subscription id",
         "parameters": [
           {
@@ -1150,7 +1150,7 @@
     "/api/v1/subscriptions/{id}/billingAttempts/count": {
       "get": {
         "operationId": "getBillingAttemptsCountBySubscriptionId",
-        "summary": "",
+        "summary": "Get Billing Attempts Count By Subscription Id",
         "description": "Retrieve all billing attempts count by subscription id",
         "parameters": [
           {
@@ -1187,7 +1187,7 @@
     "/api/v1/subscriptions/{id}/nextBillingAndDeliveryDate": {
       "patch": {
         "operationId": "updateSubscriptionNextBillingAndDeliveryDate",
-        "summary": "",
+        "summary": "Update Subscription Next Billing And Delivery Date",
         "description": "Update next billing and delivery date for a subscription",
         "parameters": [
           {
@@ -1234,7 +1234,7 @@
     "/api/v1/subscriptions/{id}/upcomingOrders/{date}/skip": {
       "patch": {
         "operationId": "skipUpcomingOrder",
-        "summary": "",
+        "summary": "Skip Upcoming Order",
         "description": "Skip or unskipped an upcoming order. Note if there are automations, this action can also impact the other upcoming orders.",
         "parameters": [
           {
@@ -1291,7 +1291,7 @@
     "/api/v1/subscriptions/{id}/swapAndAddOnOptions": {
       "get": {
         "operationId": "listSubscriptionSwapAndAddOnOptions",
-        "summary": "",
+        "summary": "List Subscription Swap And Add On Options",
         "description": "List swap and add-on options of a subscription",
         "parameters": [
           {
@@ -1331,7 +1331,7 @@
     "/api/v1/oneTimeAddOns": {
       "post": {
         "operationId": "createOneTimeAddOn",
-        "summary": "",
+        "summary": "Create One Time Add On",
         "description": "Add an one-time add-on to an upcoming order",
         "parameters": [],
         "requestBody": {
@@ -1367,7 +1367,7 @@
     "/api/v1/oneTimeAddOns/{id}": {
       "patch": {
         "operationId": "updateOneTimeAddOn",
-        "summary": "",
+        "summary": "Update One Time Add On",
         "description": "Update a one-time add-on",
         "parameters": [
           {
@@ -1412,7 +1412,7 @@
       },
       "delete": {
         "operationId": "deleteOneTimeAddOn",
-        "summary": "",
+        "summary": "Delete One Time Add On",
         "description": "Delete a one-time add-on",
         "parameters": [
           {
@@ -1442,7 +1442,7 @@
     "/api/v1/subscriptionLines": {
       "get": {
         "operationId": "listSubscriptionLines",
-        "summary": "",
+        "summary": "List Subscription Lines",
         "description": "Retrieve a list of subscription lines",
         "parameters": [
           {
@@ -1568,7 +1568,7 @@
       },
       "post": {
         "operationId": "createSubscriptionLine",
-        "summary": "",
+        "summary": "Create Subscription Line",
         "description": "Create a subscription line",
         "parameters": [],
         "requestBody": {
@@ -1604,7 +1604,7 @@
     "/api/v1/subscriptionLines/{id}": {
       "get": {
         "operationId": "getSubscriptionLine",
-        "summary": "",
+        "summary": "Get Subscription Line",
         "description": "Get subscription line by id",
         "parameters": [
           {
@@ -1639,7 +1639,7 @@
       },
       "delete": {
         "operationId": "deleteSubscriptionLine",
-        "summary": "",
+        "summary": "Delete Subscription Line",
         "description": "Delete a subscription line",
         "parameters": [
           {
@@ -1669,7 +1669,7 @@
     "/api/v1/subscriptionLines/{id}/schedule": {
       "post": {
         "operationId": "createSubscriptionLineSchedule",
-        "summary": "",
+        "summary": "Create Subscription Line Schedule",
         "description": "Create a schedule on a subscription line product variant",
         "parameters": [
           {
@@ -1714,7 +1714,7 @@
       },
       "patch": {
         "operationId": "updateSubscriptionLineSchedule",
-        "summary": "",
+        "summary": "Update Subscription Line Schedule",
         "description": "Update the schedule on a subscription line product variant",
         "parameters": [
           {
@@ -1759,7 +1759,7 @@
       },
       "delete": {
         "operationId": "deleteSubscriptionLineSchedule",
-        "summary": "",
+        "summary": "Delete Subscription Line Schedule",
         "description": "Delete a schedule from a subscription line. This converts the line back to \"every delivery\" behavior.",
         "parameters": [
           {
@@ -1789,7 +1789,7 @@
     "/api/v1/subscriptionLines/{id}/customAttributes": {
       "patch": {
         "operationId": "updateSubscriptionLineCustomAttributes",
-        "summary": "",
+        "summary": "Update Subscription Line Custom Attributes",
         "description": "Update customAttributes on a subscription line product variant. WARNING: If the subscription line contains a bundle, you must set upsert=true in the request body to avoid overwriting the bundle data.",
         "parameters": [
           {
@@ -1829,7 +1829,7 @@
     "/api/v1/subscriptionLines/{id}/swap": {
       "patch": {
         "operationId": "swapSubscriptionLine",
-        "summary": "",
+        "summary": "Swap Subscription Line",
         "description": "Swap a subscription line product variant",
         "parameters": [
           {
@@ -1876,7 +1876,7 @@
     "/api/v1/subscriptionLines/{id}/price": {
       "patch": {
         "operationId": "updateSubscriptionLinePrice",
-        "summary": "",
+        "summary": "Update Subscription Line Price",
         "description": "Update subscription line price",
         "parameters": [
           {
@@ -1923,7 +1923,7 @@
     "/api/v1/subscriptionLines/{id}/quantity": {
       "patch": {
         "operationId": "updateSubscriptionLineQuantity",
-        "summary": "",
+        "summary": "Update Subscription Line Quantity",
         "description": "Update quantity on a subscription line",
         "parameters": [
           {
@@ -1970,7 +1970,7 @@
     "/api/v1/subscribers/{id}/subscriptions": {
       "get": {
         "operationId": "listSubscriptionsBySubscriber",
-        "summary": "",
+        "summary": "List Subscriptions By Subscriber",
         "description": "Get subscriptions by subscriber",
         "parameters": [
           {
@@ -2111,7 +2111,7 @@
     "/api/v1/subscribers": {
       "get": {
         "operationId": "listSubscribers",
-        "summary": "",
+        "summary": "List Subscribers",
         "description": "Retrieve a list of subscribers",
         "parameters": [
           {
@@ -2264,7 +2264,7 @@
     "/api/v1/subscribers/{id}": {
       "get": {
         "operationId": "getSubscriber",
-        "summary": "",
+        "summary": "Get Subscriber",
         "description": "Get subscriber by id",
         "parameters": [
           {
@@ -2299,7 +2299,7 @@
       },
       "patch": {
         "operationId": "patchSubscriber",
-        "summary": "",
+        "summary": "Patch Subscriber",
         "description": "Update a subscriber",
         "parameters": [
           {
@@ -2346,7 +2346,7 @@
     "/api/v1/subscribers/{id}/shopifyPaymentMethods": {
       "get": {
         "operationId": "getSubscriberPaymentMethods",
-        "summary": "",
+        "summary": "Get Subscriber Payment Methods",
         "description": "Get subscriber shopify payment methods by subscriber id",
         "parameters": [
           {
@@ -2403,13 +2403,14 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscribers API"]
+        "tags": ["Subscribers API"],
+        "summary": "Post Subscriber Portal Token"
       }
     },
     "/api/v1/orders": {
       "get": {
         "operationId": "listOrders",
-        "summary": "",
+        "summary": "List Orders",
         "description": "Get all orders",
         "parameters": [
           {
@@ -2590,7 +2591,7 @@
     "/api/v1/orders/count": {
       "get": {
         "operationId": "getOrdersCount",
-        "summary": "",
+        "summary": "Get Orders Count",
         "description": "Get orders count",
         "parameters": [
           {
@@ -2644,7 +2645,7 @@
     "/api/v1/orderLineItems": {
       "get": {
         "operationId": "listOrderLineItems",
-        "summary": "",
+        "summary": "List Order Line Items",
         "description": "Retrieve a list of order line items",
         "parameters": [
           {
@@ -2772,7 +2773,7 @@
     "/api/v1/webhooks": {
       "post": {
         "operationId": "createWebhook",
-        "summary": "",
+        "summary": "Create Webhook",
         "description": "Create a new webhook",
         "parameters": [],
         "requestBody": {
@@ -2806,7 +2807,7 @@
       },
       "get": {
         "operationId": "listWebhooks",
-        "summary": "",
+        "summary": "List Webhooks",
         "description": "Retrieve a list of webhooks",
         "parameters": [
           {
@@ -2934,7 +2935,7 @@
     "/api/v1/webhooks/{id}": {
       "get": {
         "operationId": "getWebhook",
-        "summary": "",
+        "summary": "Get Webhook",
         "description": "Retrieve a single webhook",
         "parameters": [
           {
@@ -2969,7 +2970,7 @@
       },
       "patch": {
         "operationId": "patchWebhook",
-        "summary": "",
+        "summary": "Patch Webhook",
         "description": "Update an existing webhook",
         "parameters": [
           {
@@ -3007,7 +3008,7 @@
       },
       "delete": {
         "operationId": "deleteWebhook",
-        "summary": "",
+        "summary": "Delete Webhook",
         "description": "Remove an existing webhook",
         "parameters": [
           {
@@ -3037,7 +3038,7 @@
     "/api/v1/webhooks/{id}/test": {
       "post": {
         "operationId": "testWebhook",
-        "summary": "",
+        "summary": "Test Webhook",
         "description": "Test an existing webhook",
         "parameters": [
           {
@@ -3067,7 +3068,7 @@
     "/api/v1/products": {
       "get": {
         "operationId": "getProducts",
-        "summary": "",
+        "summary": "Get Products",
         "description": "Retrieve a list of products",
         "parameters": [
           {
@@ -3211,7 +3212,7 @@
     "/api/v1/billingAttempts": {
       "get": {
         "operationId": "listBillingAttempts",
-        "summary": "",
+        "summary": "List Billing Attempts",
         "description": "Retrieve a list of billing attempts",
         "parameters": [
           {
@@ -3337,7 +3338,7 @@
       },
       "post": {
         "operationId": "createBillingAttempt",
-        "summary": "",
+        "summary": "Create Billing Attempt",
         "description": "Create a billing attempt with trigger PROCESS_NOW. Note this moves the next delivery date to now, and it will not affect future delivery dates.",
         "parameters": [],
         "requestBody": {
@@ -3373,7 +3374,7 @@
     "/api/v1/subscriptionDiscountCodes": {
       "get": {
         "operationId": "listSubscriptionDiscountCodes",
-        "summary": "",
+        "summary": "List Subscription Discount Codes",
         "description": "Retrieve a list of subscription discount codes",
         "parameters": [
           {
@@ -3501,7 +3502,7 @@
     "/api/v1/subscriptionActivities": {
       "get": {
         "operationId": "listSubscriptionActivities",
-        "summary": "",
+        "summary": "List Subscription Activities",
         "description": "Retrieve a list of subscription activities",
         "parameters": [
           {
@@ -3629,7 +3630,7 @@
     "/api/v1/baseOrders": {
       "get": {
         "operationId": "listBaseOrders",
-        "summary": "",
+        "summary": "List Base Orders",
         "description": "Retrieve a list of base orders. Base orders are the prive representation of orders which include both fulfilled and upcoming orders. The order created directly from shopify checkout is not included.",
         "parameters": [
           {
@@ -3757,7 +3758,7 @@
     "/api/v1/baseOrderLineItems": {
       "get": {
         "operationId": "listBaseOrderLineItems",
-        "summary": "",
+        "summary": "List Base Order Line Items",
         "description": "Retrieve a list of base orders line items",
         "parameters": [
           {
@@ -3885,7 +3886,7 @@
     "/api/v1/swapAndAddOnOptions": {
       "get": {
         "operationId": "listSwapAndAddOnOptions",
-        "summary": "",
+        "summary": "List Swap And Add On Options",
         "description": "Retrieve a list of swap and add-on options",
         "parameters": [
           {
@@ -4013,7 +4014,7 @@
     "/api/v1/cancellationQuestions": {
       "get": {
         "operationId": "listCancellationQuestions",
-        "summary": "",
+        "summary": "List Cancellation Questions",
         "description": "Retrieve a list of cancellation questions",
         "parameters": [
           {
@@ -4061,7 +4062,7 @@
     "/api/v1/cancellationSurveyResults": {
       "post": {
         "operationId": "createCancellationSurveyResult",
-        "summary": "",
+        "summary": "Create Cancellation Survey Result",
         "description": "Create a cancellation survey result",
         "parameters": [],
         "requestBody": {
@@ -4095,7 +4096,7 @@
       },
       "get": {
         "operationId": "listCancellationSurveyResults",
-        "summary": "",
+        "summary": "List Cancellation Survey Results",
         "description": "Retrieve a list of cancellation survey results",
         "parameters": [
           {
@@ -4226,7 +4227,7 @@
     "/api/v1/memberships": {
       "get": {
         "operationId": "listMemberships",
-        "summary": "",
+        "summary": "List Memberships",
         "description": "Retrieve a list of memberships",
         "parameters": [
           {
@@ -4379,7 +4380,7 @@
     "/api/v1/memberships/lifetime": {
       "post": {
         "operationId": "createMembership",
-        "summary": "",
+        "summary": "Create Membership",
         "description": "Create a lifetime membership.",
         "parameters": [],
         "requestBody": {
@@ -5874,6 +5875,11 @@
           "isPause": {
             "type": "boolean",
             "description": "Whether the dates are updated because of pause. If so, it appends additional custom attributes to the subscription."
+          },
+          "preserveHour": {
+            "type": "boolean",
+            "description": "When true (default), the billing hour from the existing contract is carried over to the new date. Set to false to use the hour as provided.",
+            "default": true
           }
         },
         "required": ["nextBillingDate", "nextDeliveryDate"]
