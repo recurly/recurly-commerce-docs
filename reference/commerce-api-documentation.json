@@ -5764,6 +5764,13 @@
           "subscriptionId": {
             "type": "string"
           },
+          "relatedSubscriptionIds": {
+            "description": "Every subscription this billing attempt covers. For a combined order, this includes the driver subscription (subscriptionId) plus every other subscription billed in the same attempt. For a solo billing attempt, this is just [subscriptionId].",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "orderId": {
             "type": "string",
             "nullable": true
@@ -5837,6 +5844,7 @@
           "updatedAt",
           "externalId",
           "subscriptionId",
+          "relatedSubscriptionIds",
           "orderId",
           "errorMsg",
           "errorCode",
@@ -7037,7 +7045,7 @@
           "user": {
             "type": "string",
             "description": "The initiator of the activity",
-            "enum": ["Store Admin", "Customer", "Recurly System", "Prive System", "Shopper"]
+            "enum": ["Store Admin", "Customer", "Recurly System", "Prive System", "Shopper", "Bulk Updater"]
           },
           "apiToken": {
             "description": "The API token if the activity was triggered by API",
