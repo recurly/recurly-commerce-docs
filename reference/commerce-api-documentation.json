@@ -4642,6 +4642,15 @@
             "type": "string",
             "nullable": true,
             "description": "The ID of the associated cancellation flow, if any"
+          },
+          "trialDurationValue": {
+            "type": "number",
+            "nullable": true
+          },
+          "trialDurationUnit": {
+            "type": "string",
+            "enum": ["DAYS", "WEEKS", "MONTHS", "YEARS"],
+            "nullable": true
           }
         },
         "required": [
@@ -4653,7 +4662,9 @@
           "status",
           "name",
           "description",
-          "subscriptionOfferOptions"
+          "subscriptionOfferOptions",
+          "trialDurationValue",
+          "trialDurationUnit"
         ]
       },
       "VariantDto": {
@@ -4680,6 +4691,9 @@
             "type": "string",
             "nullable": true
           },
+          "requiresShipping": {
+            "type": "boolean"
+          },
           "product": {
             "nullable": true,
             "allOf": [
@@ -4692,7 +4706,7 @@
             "$ref": "#/components/schemas/SubscriptionOfferDto"
           }
         },
-        "required": ["id", "externalId", "status", "currentPrice", "variantTitle", "sku"]
+        "required": ["id", "externalId", "status", "currentPrice", "variantTitle", "sku", "requiresShipping"]
       },
       "SubscriptionLineScheduleDto": {
         "type": "object",
@@ -4805,6 +4819,12 @@
             "nullable": true,
             "description": "The shopify selling plan ID of the subscription offer option"
           },
+          "productFulfillmentTypeRestriction": {
+            "type": "string",
+            "enum": ["PHYSICAL_ONLY", "DIGITAL_ONLY"],
+            "nullable": true,
+            "description": "Fulfillment type restriction declared on the subscription offer, if any"
+          },
           "schedule": {
             "nullable": true,
             "allOf": [
@@ -4844,6 +4864,7 @@
           "currentPrice",
           "subscriptionOfferOptionId",
           "sellingPlanId",
+          "productFulfillmentTypeRestriction",
           "schedule",
           "customAttributes"
         ]
@@ -5089,6 +5110,11 @@
             "format": "date-time",
             "type": "string"
           },
+          "trialEndsAt": {
+            "format": "date-time",
+            "type": "string",
+            "nullable": true
+          },
           "cancelDate": {
             "format": "date-time",
             "type": "string",
@@ -5322,6 +5348,7 @@
           "externalId",
           "subscriber",
           "purchaseDate",
+          "trialEndsAt",
           "cancelDate",
           "cancelReason",
           "pausedAtDate",
@@ -5453,6 +5480,15 @@
             "nullable": true,
             "description": "The ID of the associated cancellation flow, if any"
           },
+          "trialDurationValue": {
+            "type": "number",
+            "nullable": true
+          },
+          "trialDurationUnit": {
+            "type": "string",
+            "enum": ["DAYS", "WEEKS", "MONTHS", "YEARS"],
+            "nullable": true
+          },
           "products": {
             "nullable": true,
             "items": {
@@ -5471,6 +5507,8 @@
           "name",
           "description",
           "subscriptionOfferOptions",
+          "trialDurationValue",
+          "trialDurationUnit",
           "products"
         ]
       },
@@ -5954,21 +5992,29 @@
           "subscriberId": {
             "type": "string"
           },
+          "subscriptionOfferId": {
+            "type": "string",
+            "description": "The internal id of the subscription plan (subscription offer) this subscription belongs to. Every line must belong to this plan."
+          },
           "deliveryFirstName": {
-            "type": "string"
+            "type": "string",
+            "description": "Required unless the subscription plan is digital-only (no shipping needed)."
           },
           "deliveryLastName": {
-            "type": "string"
+            "type": "string",
+            "description": "Required unless the subscription plan is digital-only (no shipping needed)."
           },
           "deliveryAddress1": {
-            "type": "string"
+            "type": "string",
+            "description": "Required unless the subscription plan is digital-only (no shipping needed)."
           },
           "deliveryAddress2": {
             "type": "string",
             "nullable": true
           },
           "deliveryCountry": {
-            "type": "string"
+            "type": "string",
+            "description": "Required unless the subscription plan is digital-only (no shipping needed)."
           },
           "deliveryCountryCode": {
             "type": "string"
@@ -5981,14 +6027,16 @@
             "type": "string"
           },
           "deliveryCity": {
-            "type": "string"
+            "type": "string",
+            "description": "Required unless the subscription plan is digital-only (no shipping needed)."
           },
           "deliveryZip": {
-            "type": "string"
+            "type": "string",
+            "description": "Required unless the subscription plan is digital-only (no shipping needed)."
           },
           "deliveryPhone": {
             "type": "string",
-            "description": "The delivery phone number"
+            "description": "The delivery phone number. Required unless the subscription plan is digital-only."
           },
           "deliveryCompany": {
             "type": "string",
@@ -6015,16 +6063,7 @@
           "billingCadenceCount",
           "billingCadenceUnit",
           "subscriberId",
-          "deliveryFirstName",
-          "deliveryLastName",
-          "deliveryAddress1",
-          "deliveryCountry",
-          "deliveryCountryCode",
-          "deliveryProvince",
-          "deliveryProvinceCode",
-          "deliveryCity",
-          "deliveryZip",
-          "deliveryPhone",
+          "subscriptionOfferId",
           "paymentMethodExternalId",
           "lines"
         ]
@@ -6815,7 +6854,9 @@
               "billingAttempts/failed",
               "paymentMethod/updated",
               "subscriptionActivities/created",
-              "subscription/customAttributes/updated"
+              "subscription/customAttributes/updated",
+              "freeTrial/started",
+              "freeTrial/ended"
             ],
             "default": "subscriptions/created"
           }
