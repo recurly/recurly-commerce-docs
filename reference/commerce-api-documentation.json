@@ -6239,7 +6239,7 @@
           },
           "variantPriceOverride": {
             "type": "number",
-            "description": "Override price for the variant. If specified, this will be used instead of modifierType and discount."
+            "description": "Override price for the variant, denominated in the subscription contract's currency. For merchants whose shop currency equals the contract currency this is the catalog price; on non-USD contracts it is NOT the Shopify catalog price. If specified, this will be used instead of modifierType and discount."
           }
         },
         "required": ["variantId", "quantity", "subscriptionId", "upcomingOrderDate"]
