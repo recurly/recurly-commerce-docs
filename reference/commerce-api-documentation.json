@@ -188,7 +188,13 @@
             "in": "query",
             "description": "The subscription status",
             "schema": {
-              "enum": ["ACTIVE", "PAUSED", "EXPIRED", "CANCELLED", "FAILED"],
+              "enum": [
+                "ACTIVE",
+                "PAUSED",
+                "EXPIRED",
+                "CANCELLED",
+                "FAILED"
+              ],
               "type": "string"
             }
           },
@@ -229,7 +235,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       },
       "post": {
         "operationId": "createSubscription",
@@ -263,7 +271,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptionOffers": {
@@ -378,7 +388,11 @@
             "required": false,
             "in": "query",
             "schema": {
-              "enum": ["ACTIVE", "ARCHIVED", "DRAFT"],
+              "enum": [
+                "ACTIVE",
+                "ARCHIVED",
+                "DRAFT"
+              ],
               "type": "string"
             }
           },
@@ -390,7 +404,11 @@
               "type": "array",
               "items": {
                 "type": "string",
-                "enum": ["ACTIVE", "ARCHIVED", "DRAFT"]
+                "enum": [
+                  "ACTIVE",
+                  "ARCHIVED",
+                  "DRAFT"
+                ]
               }
             }
           }
@@ -412,7 +430,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscription Offers API"]
+        "tags": [
+          "Subscription Offers API"
+        ]
       }
     },
     "/api/v1/subscriptionOffers/{id}": {
@@ -449,7 +469,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscription Offers API"]
+        "tags": [
+          "Subscription Offers API"
+        ]
       }
     },
     "/api/v1/subscriptions/count": {
@@ -489,7 +511,13 @@
             "in": "query",
             "description": "The subscription status",
             "schema": {
-              "enum": ["ACTIVE", "PAUSED", "EXPIRED", "CANCELLED", "FAILED"],
+              "enum": [
+                "ACTIVE",
+                "PAUSED",
+                "EXPIRED",
+                "CANCELLED",
+                "FAILED"
+              ],
               "type": "string"
             }
           },
@@ -519,7 +547,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}": {
@@ -556,7 +586,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/billingDeliveryCadenceUpdatePreview": {
@@ -596,7 +628,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/status": {
@@ -643,7 +677,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/paymentMethod": {
@@ -690,7 +726,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/discountCodes/{code}": {
@@ -737,7 +775,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       },
       "delete": {
         "operationId": "removeSubscriptionDiscountCode",
@@ -775,7 +815,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/billingDeliveryCadence": {
@@ -822,7 +864,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/deliveryAddress": {
@@ -869,7 +913,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/deliveryShippingOption": {
@@ -916,7 +962,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/subscriptionOfferOption": {
@@ -963,7 +1011,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/customAttributes": {
@@ -1003,7 +1053,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/billingAttempts": {
@@ -1144,7 +1196,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/billingAttempts/count": {
@@ -1181,7 +1235,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/nextBillingAndDeliveryDate": {
@@ -1228,7 +1284,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/upcomingOrders/{date}/skip": {
@@ -1285,7 +1343,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/subscriptions/{id}/swapAndAddOnOptions": {
@@ -1325,7 +1385,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscriptions API"]
+        "tags": [
+          "Subscriptions API"
+        ]
       }
     },
     "/api/v1/oneTimeAddOns": {
@@ -1361,7 +1423,9 @@
             "bearer": []
           }
         ],
-        "tags": ["OneTimeAddOns API"]
+        "tags": [
+          "OneTimeAddOns API"
+        ]
       }
     },
     "/api/v1/oneTimeAddOns/{id}": {
@@ -1408,7 +1472,9 @@
             "bearer": []
           }
         ],
-        "tags": ["OneTimeAddOns API"]
+        "tags": [
+          "OneTimeAddOns API"
+        ]
       },
       "delete": {
         "operationId": "deleteOneTimeAddOn",
@@ -1436,7 +1502,9 @@
             "bearer": []
           }
         ],
-        "tags": ["OneTimeAddOns API"]
+        "tags": [
+          "OneTimeAddOns API"
+        ]
       }
     },
     "/api/v1/subscriptionLines": {
@@ -1564,7 +1632,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       },
       "post": {
         "operationId": "createSubscriptionLine",
@@ -1598,7 +1668,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       }
     },
     "/api/v1/subscriptionLines/{id}": {
@@ -1635,7 +1707,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       },
       "delete": {
         "operationId": "deleteSubscriptionLine",
@@ -1663,7 +1737,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       }
     },
     "/api/v1/subscriptionLines/{id}/schedule": {
@@ -1710,7 +1786,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       },
       "patch": {
         "operationId": "updateSubscriptionLineSchedule",
@@ -1755,7 +1833,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       },
       "delete": {
         "operationId": "deleteSubscriptionLineSchedule",
@@ -1783,7 +1863,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       }
     },
     "/api/v1/subscriptionLines/{id}/customAttributes": {
@@ -1823,7 +1905,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       }
     },
     "/api/v1/subscriptionLines/{id}/swap": {
@@ -1870,7 +1954,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       }
     },
     "/api/v1/subscriptionLines/{id}/price": {
@@ -1917,7 +2003,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       }
     },
     "/api/v1/subscriptionLines/{id}/quantity": {
@@ -1964,7 +2052,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionLines API"]
+        "tags": [
+          "SubscriptionLines API"
+        ]
       }
     },
     "/api/v1/subscribers/{id}/subscriptions": {
@@ -2105,7 +2195,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscribers API"]
+        "tags": [
+          "Subscribers API"
+        ]
       }
     },
     "/api/v1/subscribers": {
@@ -2258,7 +2350,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscribers API"]
+        "tags": [
+          "Subscribers API"
+        ]
       }
     },
     "/api/v1/subscribers/{id}": {
@@ -2295,7 +2389,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscribers API"]
+        "tags": [
+          "Subscribers API"
+        ]
       },
       "patch": {
         "operationId": "patchSubscriber",
@@ -2340,7 +2436,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscribers API"]
+        "tags": [
+          "Subscribers API"
+        ]
       }
     },
     "/api/v1/subscribers/{id}/shopifyPaymentMethods": {
@@ -2377,7 +2475,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscribers API"]
+        "tags": [
+          "Subscribers API"
+        ]
       }
     },
     "/api/v1/subscribers/{id}/portalLoginToken": {
@@ -2403,7 +2503,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Subscribers API"],
+        "tags": [
+          "Subscribers API"
+        ],
         "summary": "Post Subscriber Portal Token"
       }
     },
@@ -2529,7 +2631,11 @@
             "in": "query",
             "description": "The order status",
             "schema": {
-              "enum": ["PROCESSED", "REFUNDED", "PARTIALLY_REFUNDED"],
+              "enum": [
+                "PROCESSED",
+                "REFUNDED",
+                "PARTIALLY_REFUNDED"
+              ],
               "type": "string"
             }
           },
@@ -2585,7 +2691,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Orders API"]
+        "tags": [
+          "Orders API"
+        ]
       }
     },
     "/api/v1/orders/count": {
@@ -2617,7 +2725,11 @@
             "in": "query",
             "description": "The order status",
             "schema": {
-              "enum": ["PROCESSED", "REFUNDED", "PARTIALLY_REFUNDED"],
+              "enum": [
+                "PROCESSED",
+                "REFUNDED",
+                "PARTIALLY_REFUNDED"
+              ],
               "type": "string"
             }
           }
@@ -2639,7 +2751,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Orders API"]
+        "tags": [
+          "Orders API"
+        ]
       }
     },
     "/api/v1/orderLineItems": {
@@ -2767,7 +2881,9 @@
             "bearer": []
           }
         ],
-        "tags": ["OrderLineItems API"]
+        "tags": [
+          "OrderLineItems API"
+        ]
       }
     },
     "/api/v1/webhooks": {
@@ -2803,7 +2919,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Webhooks API"]
+        "tags": [
+          "Webhooks API"
+        ]
       },
       "get": {
         "operationId": "listWebhooks",
@@ -2929,7 +3047,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Webhooks API"]
+        "tags": [
+          "Webhooks API"
+        ]
       }
     },
     "/api/v1/webhooks/{id}": {
@@ -2966,7 +3086,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Webhooks API"]
+        "tags": [
+          "Webhooks API"
+        ]
       },
       "patch": {
         "operationId": "patchWebhook",
@@ -3004,7 +3126,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Webhooks API"]
+        "tags": [
+          "Webhooks API"
+        ]
       },
       "delete": {
         "operationId": "deleteWebhook",
@@ -3032,7 +3156,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Webhooks API"]
+        "tags": [
+          "Webhooks API"
+        ]
       }
     },
     "/api/v1/webhooks/{id}/test": {
@@ -3062,7 +3188,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Webhooks API"]
+        "tags": [
+          "Webhooks API"
+        ]
       }
     },
     "/api/v1/products": {
@@ -3206,7 +3334,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Products API"]
+        "tags": [
+          "Products API"
+        ]
       }
     },
     "/api/v1/billingAttempts": {
@@ -3334,7 +3464,9 @@
             "bearer": []
           }
         ],
-        "tags": ["BillingAttempts API"]
+        "tags": [
+          "BillingAttempts API"
+        ]
       },
       "post": {
         "operationId": "createBillingAttempt",
@@ -3368,7 +3500,9 @@
             "bearer": []
           }
         ],
-        "tags": ["BillingAttempts API"]
+        "tags": [
+          "BillingAttempts API"
+        ]
       }
     },
     "/api/v1/subscriptionDiscountCodes": {
@@ -3496,7 +3630,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionDiscountCodes API"]
+        "tags": [
+          "SubscriptionDiscountCodes API"
+        ]
       }
     },
     "/api/v1/subscriptionActivities": {
@@ -3624,7 +3760,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SubscriptionActivities API"]
+        "tags": [
+          "SubscriptionActivities API"
+        ]
       }
     },
     "/api/v1/baseOrders": {
@@ -3752,7 +3890,9 @@
             "bearer": []
           }
         ],
-        "tags": ["BaseOrders API"]
+        "tags": [
+          "BaseOrders API"
+        ]
       }
     },
     "/api/v1/baseOrderLineItems": {
@@ -3880,7 +4020,9 @@
             "bearer": []
           }
         ],
-        "tags": ["BaseOrderLineItems API"]
+        "tags": [
+          "BaseOrderLineItems API"
+        ]
       }
     },
     "/api/v1/swapAndAddOnOptions": {
@@ -4008,7 +4150,9 @@
             "bearer": []
           }
         ],
-        "tags": ["SwapAndAddOnOptions API"]
+        "tags": [
+          "SwapAndAddOnOptions API"
+        ]
       }
     },
     "/api/v1/cancellationQuestions": {
@@ -4056,7 +4200,9 @@
             "bearer": []
           }
         ],
-        "tags": ["CancellationQuestions API"]
+        "tags": [
+          "CancellationQuestions API"
+        ]
       }
     },
     "/api/v1/cancellationSurveyResults": {
@@ -4092,7 +4238,9 @@
             "bearer": []
           }
         ],
-        "tags": ["CancellationSurveyResults API"]
+        "tags": [
+          "CancellationSurveyResults API"
+        ]
       },
       "get": {
         "operationId": "listCancellationSurveyResults",
@@ -4221,7 +4369,9 @@
             "bearer": []
           }
         ],
-        "tags": ["CancellationSurveyResults API"]
+        "tags": [
+          "CancellationSurveyResults API"
+        ]
       }
     },
     "/api/v1/memberships": {
@@ -4374,7 +4524,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Memberships API"]
+        "tags": [
+          "Memberships API"
+        ]
       }
     },
     "/api/v1/memberships/lifetime": {
@@ -4410,7 +4562,9 @@
             "bearer": []
           }
         ],
-        "tags": ["Memberships API"]
+        "tags": [
+          "Memberships API"
+        ]
       }
     }
   },
@@ -4522,9 +4676,23 @@
           "description": {
             "type": "string",
             "nullable": true
+          },
+          "currencyCode": {
+            "type": "string",
+            "nullable": true,
+            "description": "The currency the variant prices are denominated in"
           }
         },
-        "required": ["id", "createdAt", "updatedAt", "externalId", "imageUrl", "productTitle", "description"]
+        "required": [
+          "id",
+          "createdAt",
+          "updatedAt",
+          "externalId",
+          "imageUrl",
+          "productTitle",
+          "description",
+          "currencyCode"
+        ]
       },
       "SubscriptionOfferOptionDto": {
         "type": "object",
@@ -4565,21 +4733,37 @@
           },
           "deliveryCadenceUnit": {
             "type": "string",
-            "enum": ["HOUR", "DAY", "MONTH", "WEEK", "YEAR"]
+            "enum": [
+              "HOUR",
+              "DAY",
+              "MONTH",
+              "WEEK",
+              "YEAR"
+            ]
           },
           "billingCadenceCount": {
             "type": "number"
           },
           "billingCadenceUnit": {
             "type": "string",
-            "enum": ["HOUR", "DAY", "MONTH", "WEEK", "YEAR"]
+            "enum": [
+              "HOUR",
+              "DAY",
+              "MONTH",
+              "WEEK",
+              "YEAR"
+            ]
           },
           "discount": {
             "type": "number"
           },
           "discountModifier": {
             "type": "string",
-            "enum": ["PERCENTAGE", "AMOUNT", "FIXED_AMOUNT"]
+            "enum": [
+              "PERCENTAGE",
+              "AMOUNT",
+              "FIXED_AMOUNT"
+            ]
           },
           "archived": {
             "type": "boolean"
@@ -4633,7 +4817,11 @@
           },
           "status": {
             "type": "string",
-            "enum": ["ACTIVE", "ARCHIVED", "DRAFT"]
+            "enum": [
+              "ACTIVE",
+              "ARCHIVED",
+              "DRAFT"
+            ]
           },
           "name": {
             "type": "string"
@@ -4659,7 +4847,12 @@
           },
           "trialDurationUnit": {
             "type": "string",
-            "enum": ["DAYS", "WEEKS", "MONTHS", "YEARS"],
+            "enum": [
+              "DAYS",
+              "WEEKS",
+              "MONTHS",
+              "YEARS"
+            ],
             "nullable": true
           }
         },
@@ -4689,10 +4882,18 @@
           },
           "status": {
             "type": "string",
-            "enum": ["ACTIVE", "DELETED"]
+            "enum": [
+              "ACTIVE",
+              "DELETED"
+            ]
           },
           "currentPrice": {
             "type": "number"
+          },
+          "currencyCode": {
+            "type": "string",
+            "nullable": true,
+            "description": "The currency the variant currentPrice is denominated in"
           },
           "variantTitle": {
             "type": "string"
@@ -4716,7 +4917,15 @@
             "$ref": "#/components/schemas/SubscriptionOfferDto"
           }
         },
-        "required": ["id", "externalId", "status", "currentPrice", "variantTitle", "sku", "requiresShipping"]
+        "required": [
+          "id",
+          "externalId",
+          "status",
+          "currentPrice",
+          "variantTitle",
+          "sku",
+          "requiresShipping"
+        ]
       },
       "SubscriptionLineScheduleDto": {
         "type": "object",
@@ -4768,7 +4977,10 @@
             "type": "string"
           }
         },
-        "required": ["key", "value"]
+        "required": [
+          "key",
+          "value"
+        ]
       },
       "BundleItemDto": {
         "type": "object",
@@ -4788,7 +5000,11 @@
             "type": "number"
           }
         },
-        "required": ["variant", "quantity", "currentPrice"]
+        "required": [
+          "variant",
+          "quantity",
+          "currentPrice"
+        ]
       },
       "SubscriptionLineDto": {
         "type": "object",
@@ -4820,6 +5036,11 @@
           "currentPrice": {
             "type": "number"
           },
+          "currencyCode": {
+            "type": "string",
+            "nullable": true,
+            "description": "The currency the line currentPrice is denominated in"
+          },
           "subscriptionOfferOptionId": {
             "type": "string",
             "nullable": true
@@ -4831,7 +5052,10 @@
           },
           "productFulfillmentTypeRestriction": {
             "type": "string",
-            "enum": ["PHYSICAL_ONLY", "DIGITAL_ONLY"],
+            "enum": [
+              "PHYSICAL_ONLY",
+              "DIGITAL_ONLY"
+            ],
             "nullable": true,
             "description": "Fulfillment type restriction declared on the subscription offer, if any"
           },
@@ -4876,7 +5100,8 @@
           "sellingPlanId",
           "productFulfillmentTypeRestriction",
           "schedule",
-          "customAttributes"
+          "customAttributes",
+          "currencyCode"
         ]
       },
       "OneTimeAddOnDto": {
@@ -4893,7 +5118,11 @@
           },
           "modifierType": {
             "type": "string",
-            "enum": ["PERCENTAGE", "AMOUNT", "FIXED_AMOUNT"]
+            "enum": [
+              "PERCENTAGE",
+              "AMOUNT",
+              "FIXED_AMOUNT"
+            ]
           },
           "discount": {
             "type": "number"
@@ -4906,7 +5135,11 @@
             "description": "Calculated price after applying discount"
           }
         },
-        "required": ["id", "variantId", "quantity"]
+        "required": [
+          "id",
+          "variantId",
+          "quantity"
+        ]
       },
       "UpcomingOrderDto": {
         "type": "object",
@@ -4917,6 +5150,10 @@
           },
           "isSkipped": {
             "type": "boolean"
+          },
+          "currencyCode": {
+            "type": "string",
+            "description": "The currency the lines and one-time add-on amounts are denominated in"
           },
           "lines": {
             "type": "array",
@@ -4931,7 +5168,13 @@
             }
           }
         },
-        "required": ["scheduledDate", "isSkipped", "lines", "oneTimeAddOns"]
+        "required": [
+          "scheduledDate",
+          "isSkipped",
+          "currencyCode",
+          "lines",
+          "oneTimeAddOns"
+        ]
       },
       "SubscriptionGiftDto": {
         "type": "object",
@@ -5011,15 +5254,25 @@
           },
           "type": {
             "type": "string",
-            "enum": ["MANUAL", "CODE_DISCOUNT", "AUTOMATIC_DISCOUNT"]
+            "enum": [
+              "MANUAL",
+              "CODE_DISCOUNT",
+              "AUTOMATIC_DISCOUNT"
+            ]
           },
           "targetType": {
             "type": "string",
-            "enum": ["SHIPPING_LINE", "LINE_ITEM"]
+            "enum": [
+              "SHIPPING_LINE",
+              "LINE_ITEM"
+            ]
           },
           "discountModifier": {
             "type": "string",
-            "enum": ["PERCENTAGE", "FIXED_AMOUNT"]
+            "enum": [
+              "PERCENTAGE",
+              "FIXED_AMOUNT"
+            ]
           },
           "discount": {
             "type": "number"
@@ -5155,21 +5408,39 @@
           },
           "status": {
             "type": "string",
-            "enum": ["ACTIVE", "PAUSED", "EXPIRED", "CANCELLED", "FAILED"]
+            "enum": [
+              "ACTIVE",
+              "PAUSED",
+              "EXPIRED",
+              "CANCELLED",
+              "FAILED"
+            ]
           },
           "deliveryCadenceCount": {
             "type": "number"
           },
           "deliveryCadenceUnit": {
             "type": "string",
-            "enum": ["HOUR", "DAY", "MONTH", "WEEK", "YEAR"]
+            "enum": [
+              "HOUR",
+              "DAY",
+              "MONTH",
+              "WEEK",
+              "YEAR"
+            ]
           },
           "billingCadenceCount": {
             "type": "number"
           },
           "billingCadenceUnit": {
             "type": "string",
-            "enum": ["HOUR", "DAY", "MONTH", "WEEK", "YEAR"]
+            "enum": [
+              "HOUR",
+              "DAY",
+              "MONTH",
+              "WEEK",
+              "YEAR"
+            ]
           },
           "isPrepaid": {
             "type": "boolean"
@@ -5267,7 +5538,11 @@
           "paymentMethodType": {
             "type": "string",
             "description": "The payment method card type",
-            "enum": ["CustomerCreditCard", "CustomerPaypalBillingAgreement", "CustomerShopPayAgreement"],
+            "enum": [
+              "CustomerCreditCard",
+              "CustomerPaypalBillingAgreement",
+              "CustomerShopPayAgreement"
+            ],
             "default": "CustomerCreditCard"
           },
           "paymentMethodLast4Digits": {
@@ -5437,7 +5712,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "subscriptions"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "subscriptions"
+        ]
       },
       "SubscriptionOfferWithProductsDto": {
         "type": "object",
@@ -5471,7 +5752,11 @@
           },
           "status": {
             "type": "string",
-            "enum": ["ACTIVE", "ARCHIVED", "DRAFT"]
+            "enum": [
+              "ACTIVE",
+              "ARCHIVED",
+              "DRAFT"
+            ]
           },
           "name": {
             "type": "string"
@@ -5497,7 +5782,12 @@
           },
           "trialDurationUnit": {
             "type": "string",
-            "enum": ["DAYS", "WEEKS", "MONTHS", "YEARS"],
+            "enum": [
+              "DAYS",
+              "WEEKS",
+              "MONTHS",
+              "YEARS"
+            ],
             "nullable": true
           },
           "products": {
@@ -5550,7 +5840,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "subscriptionOffers"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "subscriptionOffers"
+        ]
       },
       "CountDto": {
         "type": "object",
@@ -5559,7 +5855,9 @@
             "type": "number"
           }
         },
-        "required": ["count"]
+        "required": [
+          "count"
+        ]
       },
       "SubscriptionContractBillingDeliveryCadencesUpdatePreviewResponseItemLineOptionPreviewDto": {
         "type": "object",
@@ -5579,9 +5877,20 @@
           },
           "currentPrice": {
             "type": "number"
+          },
+          "currencyCode": {
+            "type": "string",
+            "description": "The currency the preview prices are denominated in"
           }
         },
-        "required": ["lineId", "productTitle", "variantTitle", "offerOptionName", "currentPrice"]
+        "required": [
+          "lineId",
+          "productTitle",
+          "variantTitle",
+          "offerOptionName",
+          "currentPrice",
+          "currencyCode"
+        ]
       },
       "SubscriptionContractBillingDeliveryCadencesUpdatePreviewResponseItemDto": {
         "type": "object",
@@ -5591,14 +5900,26 @@
           },
           "billingCadenceUnit": {
             "type": "string",
-            "enum": ["HOUR", "DAY", "MONTH", "WEEK", "YEAR"]
+            "enum": [
+              "HOUR",
+              "DAY",
+              "MONTH",
+              "WEEK",
+              "YEAR"
+            ]
           },
           "deliveryCadenceCount": {
             "type": "number"
           },
           "deliveryCadenceUnit": {
             "type": "string",
-            "enum": ["HOUR", "DAY", "MONTH", "WEEK", "YEAR"]
+            "enum": [
+              "HOUR",
+              "DAY",
+              "MONTH",
+              "WEEK",
+              "YEAR"
+            ]
           },
           "lineOptionUpdatePreview": {
             "$ref": "#/components/schemas/SubscriptionContractBillingDeliveryCadencesUpdatePreviewResponseItemLineOptionPreviewDto"
@@ -5617,7 +5938,13 @@
         "properties": {
           "status": {
             "type": "string",
-            "enum": ["ACTIVE", "PAUSED", "EXPIRED", "CANCELLED", "FAILED"],
+            "enum": [
+              "ACTIVE",
+              "PAUSED",
+              "EXPIRED",
+              "CANCELLED",
+              "FAILED"
+            ],
             "default": "ACTIVE",
             "description": "The status to update the subscription to"
           },
@@ -5626,7 +5953,9 @@
             "description": "The reason for cancelling the subscription. Only applies if status is CANCELLED"
           }
         },
-        "required": ["status"]
+        "required": [
+          "status"
+        ]
       },
       "UpdatePaymentMethodRequestDto": {
         "type": "object",
@@ -5766,7 +6095,10 @@
             "description": "The price shipping option is fixed to in the contract currency. ie 49.99"
           }
         },
-        "required": ["deliveryShippingOptionCode", "priceInContractCurrency"]
+        "required": [
+          "deliveryShippingOptionCode",
+          "priceInContractCurrency"
+        ]
       },
       "UpdateSubscriptionContractOfferOptionInputDTO": {
         "type": "object",
@@ -5775,7 +6107,9 @@
             "type": "string"
           }
         },
-        "required": ["subscriptionOfferOptionId"]
+        "required": [
+          "subscriptionOfferOptionId"
+        ]
       },
       "SubscriptionCustomAttributesRequestDto": {
         "type": "object",
@@ -5791,7 +6125,9 @@
             "description": "When true, merges new custom attributes with existing ones. When false, completely overwrites existing custom attributes. Default is false"
           }
         },
-        "required": ["customAttributes"]
+        "required": [
+          "customAttributes"
+        ]
       },
       "BillingAttemptDto": {
         "type": "object",
@@ -5838,7 +6174,13 @@
           },
           "trigger": {
             "type": "string",
-            "enum": ["RENEWAL_TASK", "ANCHOR_RENEWAL_TASK", "DUNNING_RETRY", "UPDATE_PAYMENT_METHOD", "PROCESS_NOW"],
+            "enum": [
+              "RENEWAL_TASK",
+              "ANCHOR_RENEWAL_TASK",
+              "DUNNING_RETRY",
+              "UPDATE_PAYMENT_METHOD",
+              "PROCESS_NOW"
+            ],
             "nullable": true
           },
           "paymentMethodExternalId": {
@@ -5849,7 +6191,11 @@
           "paymentMethodType": {
             "type": "string",
             "description": "The payment method card type",
-            "enum": ["CustomerCreditCard", "CustomerPaypalBillingAgreement", "CustomerShopPayAgreement"],
+            "enum": [
+              "CustomerCreditCard",
+              "CustomerPaypalBillingAgreement",
+              "CustomerShopPayAgreement"
+            ],
             "nullable": true
           },
           "paymentMethodLast4Digits": {
@@ -5939,7 +6285,10 @@
             "default": true
           }
         },
-        "required": ["nextBillingDate", "nextDeliveryDate"]
+        "required": [
+          "nextBillingDate",
+          "nextDeliveryDate"
+        ]
       },
       "SkipOrderInputDTO": {
         "type": "object",
@@ -5949,7 +6298,9 @@
             "description": "Should skip or unskip the order"
           }
         },
-        "required": ["skip"]
+        "required": [
+          "skip"
+        ]
       },
       "SubscriptionLineCreateThroughContractRequestDto": {
         "type": "object",
@@ -5975,7 +6326,11 @@
             }
           }
         },
-        "required": ["variantId", "quantity", "sellingPlanId"]
+        "required": [
+          "variantId",
+          "quantity",
+          "sellingPlanId"
+        ]
       },
       "SubscriptionCreateRequestDTO": {
         "type": "object",
@@ -5985,14 +6340,26 @@
           },
           "deliveryCadenceUnit": {
             "type": "string",
-            "enum": ["HOUR", "DAY", "MONTH", "WEEK", "YEAR"]
+            "enum": [
+              "HOUR",
+              "DAY",
+              "MONTH",
+              "WEEK",
+              "YEAR"
+            ]
           },
           "billingCadenceCount": {
             "type": "number"
           },
           "billingCadenceUnit": {
             "type": "string",
-            "enum": ["HOUR", "DAY", "MONTH", "WEEK", "YEAR"]
+            "enum": [
+              "HOUR",
+              "DAY",
+              "MONTH",
+              "WEEK",
+              "YEAR"
+            ]
           },
           "customAttributes": {
             "type": "array",
@@ -6103,7 +6470,13 @@
           },
           "status": {
             "type": "string",
-            "enum": ["ACTIVE", "ARCHIVED", "DRAFT", "DELETED", "UNLISTED"]
+            "enum": [
+              "ACTIVE",
+              "ARCHIVED",
+              "DRAFT",
+              "DELETED",
+              "UNLISTED"
+            ]
           },
           "imageUrl": {
             "type": "string",
@@ -6152,11 +6525,18 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": ["PRODUCT_SWAP", "SUBSCRIPTION_ADD_ON", "ONE_TIME_ADD_ON"]
+              "enum": [
+                "PRODUCT_SWAP",
+                "SUBSCRIPTION_ADD_ON",
+                "ONE_TIME_ADD_ON"
+              ]
             }
           }
         },
-        "required": ["variantExternalId", "entryPointVisibility"]
+        "required": [
+          "variantExternalId",
+          "entryPointVisibility"
+        ]
       },
       "SwapAndAddOnOptionDto": {
         "type": "object",
@@ -6183,7 +6563,11 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": ["PRODUCT_SWAP", "SUBSCRIPTION_ADD_ON", "ONE_TIME_ADD_ON"]
+              "enum": [
+                "PRODUCT_SWAP",
+                "SUBSCRIPTION_ADD_ON",
+                "ONE_TIME_ADD_ON"
+              ]
             }
           },
           "variantsEntryPointVisibility": {
@@ -6194,7 +6578,11 @@
           },
           "oneTimeAddOnDiscountModifierType": {
             "type": "string",
-            "enum": ["PERCENTAGE", "AMOUNT", "FIXED_AMOUNT"]
+            "enum": [
+              "PERCENTAGE",
+              "AMOUNT",
+              "FIXED_AMOUNT"
+            ]
           },
           "oneTimeAddOnDiscount": {
             "type": "number"
@@ -6230,7 +6618,11 @@
           },
           "modifierType": {
             "type": "string",
-            "enum": ["PERCENTAGE", "AMOUNT", "FIXED_AMOUNT"],
+            "enum": [
+              "PERCENTAGE",
+              "AMOUNT",
+              "FIXED_AMOUNT"
+            ],
             "description": "Type of discount: PERCENTAGE or FIXED_AMOUNT"
           },
           "discount": {
@@ -6242,7 +6634,12 @@
             "description": "Override price for the variant, denominated in the subscription contract's currency. For merchants whose shop currency equals the contract currency this is the catalog price; on non-USD contracts it is NOT the Shopify catalog price. If specified, this will be used instead of modifierType and discount."
           }
         },
-        "required": ["variantId", "quantity", "subscriptionId", "upcomingOrderDate"]
+        "required": [
+          "variantId",
+          "quantity",
+          "subscriptionId",
+          "upcomingOrderDate"
+        ]
       },
       "UpdateOneTimeAddOnInputDTO": {
         "type": "object",
@@ -6254,7 +6651,10 @@
             "type": "number"
           }
         },
-        "required": ["variantId", "quantity"]
+        "required": [
+          "variantId",
+          "quantity"
+        ]
       },
       "SubscriptionLinesResultDto": {
         "type": "object",
@@ -6283,7 +6683,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "subscriptionLines"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "subscriptionLines"
+        ]
       },
       "SubscriptionLineScheduleCreateDto": {
         "type": "object",
@@ -6297,7 +6703,10 @@
             "description": "How many orders to skip before starting the delivery cadence"
           }
         },
-        "required": ["deliveryInterval", "deliveryStartOffset"]
+        "required": [
+          "deliveryInterval",
+          "deliveryStartOffset"
+        ]
       },
       "SubscriptionLineCreateRequestDto": {
         "type": "object",
@@ -6334,7 +6743,13 @@
             ]
           }
         },
-        "required": ["variantId", "quantity", "sellingPlanId", "subscriptionId", "schedule"]
+        "required": [
+          "variantId",
+          "quantity",
+          "sellingPlanId",
+          "subscriptionId",
+          "schedule"
+        ]
       },
       "SubscriptionLineScheduleUpdateDto": {
         "type": "object",
@@ -6348,7 +6763,10 @@
             "description": "How many orders to skip before starting the delivery cadence"
           }
         },
-        "required": ["deliveryInterval", "deliveryStartOffset"]
+        "required": [
+          "deliveryInterval",
+          "deliveryStartOffset"
+        ]
       },
       "SubscriptionLineCustomAttributesRequestDto": {
         "type": "object",
@@ -6364,7 +6782,9 @@
             "description": "When true, merges new custom attributes with existing ones. When false, completely overwrites existing custom attributes. Default is false. WARNING: If you are setting custom attributes on a subscription line that has a bundle, you must set upsert=true to avoid overwriting the bundle data."
           }
         },
-        "required": ["customAttributes"]
+        "required": [
+          "customAttributes"
+        ]
       },
       "SubscriptionLineSwapRequestDto": {
         "type": "object",
@@ -6376,7 +6796,9 @@
             "type": "string"
           }
         },
-        "required": ["variantId"]
+        "required": [
+          "variantId"
+        ]
       },
       "SubscriptionLinePriceRequestDto": {
         "type": "object",
@@ -6385,7 +6807,9 @@
             "type": "number"
           }
         },
-        "required": ["currentPrice"]
+        "required": [
+          "currentPrice"
+        ]
       },
       "SubscriptionLineUpdateQuantityRequestDto": {
         "type": "object",
@@ -6395,7 +6819,9 @@
             "minimum": 1
           }
         },
-        "required": ["quantity"]
+        "required": [
+          "quantity"
+        ]
       },
       "SubscribersResultDto": {
         "type": "object",
@@ -6424,7 +6850,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "subscribers"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "subscribers"
+        ]
       },
       "ShopifyPaymentInstrumentBillingAddressDto": {
         "type": "object",
@@ -6451,7 +6883,15 @@
             "type": "string"
           }
         },
-        "required": ["address1", "province", "provinceCode", "country", "countryCode", "zip", "city"]
+        "required": [
+          "address1",
+          "province",
+          "provinceCode",
+          "country",
+          "countryCode",
+          "zip",
+          "city"
+        ]
       },
       "ShopifyPaymentInstrumentCreditCardDto": {
         "type": "object",
@@ -6511,7 +6951,13 @@
             "$ref": "#/components/schemas/ShopifyPaymentInstrumentBillingAddressDto"
           }
         },
-        "required": ["__typename", "inactive", "isRevocable", "paypalAccountEmail", "billingAddress"]
+        "required": [
+          "__typename",
+          "inactive",
+          "isRevocable",
+          "paypalAccountEmail",
+          "billingAddress"
+        ]
       },
       "ShopifyPaymentInstrumentShopPayAgreementDto": {
         "type": "object",
@@ -6579,7 +7025,10 @@
             }
           }
         },
-        "required": ["id", "instrument"]
+        "required": [
+          "id",
+          "instrument"
+        ]
       },
       "SubscriberShopifyPaymentMethodResultDto": {
         "type": "object",
@@ -6591,7 +7040,9 @@
             }
           }
         },
-        "required": ["paymentMethods"]
+        "required": [
+          "paymentMethods"
+        ]
       },
       "SubscriberPatchRequestDto": {
         "type": "object",
@@ -6616,7 +7067,13 @@
             "nullable": true
           }
         },
-        "required": ["firstName", "lastName", "email", "phoneCountryCode", "phone"]
+        "required": [
+          "firstName",
+          "lastName",
+          "email",
+          "phoneCountryCode",
+          "phone"
+        ]
       },
       "OrderLineItemDto": {
         "type": "object",
@@ -6657,6 +7114,16 @@
           "discountAllocationTotalAmount": {
             "type": "number"
           },
+          "presentmentPriceTotal": {
+            "type": "number",
+            "nullable": true,
+            "description": "The line item total after discounts, in the presentment currency"
+          },
+          "presentmentCurrencyCode": {
+            "type": "string",
+            "nullable": true,
+            "description": "The presentment currency of the line item amounts"
+          },
           "variant": {
             "$ref": "#/components/schemas/VariantDto"
           },
@@ -6688,6 +7155,8 @@
           "priceTotalDiscounted",
           "priceTotalTaxWithDiscounts",
           "discountAllocationTotalAmount",
+          "presentmentPriceTotal",
+          "presentmentCurrencyCode",
           "variant",
           "productTitle",
           "variantTitle",
@@ -6720,11 +7189,18 @@
           },
           "status": {
             "type": "string",
-            "enum": ["PROCESSED", "REFUNDED", "PARTIALLY_REFUNDED"]
+            "enum": [
+              "PROCESSED",
+              "REFUNDED",
+              "PARTIALLY_REFUNDED"
+            ]
           },
           "type": {
             "type": "string",
-            "enum": ["CHARGED", "PREPAID_FULFILLMENT"]
+            "enum": [
+              "CHARGED",
+              "PREPAID_FULFILLMENT"
+            ]
           },
           "scheduledDate": {
             "format": "date-time",
@@ -6837,7 +7313,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "orders"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "orders"
+        ]
       },
       "OrderLineItemsResultDto": {
         "type": "object",
@@ -6866,7 +7348,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "orderLineItems"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "orderLineItems"
+        ]
       },
       "WebhookCreateRequestDto": {
         "type": "object",
@@ -6896,7 +7384,10 @@
             "default": "subscriptions/created"
           }
         },
-        "required": ["address", "topic"]
+        "required": [
+          "address",
+          "topic"
+        ]
       },
       "WebhookDto": {
         "type": "object",
@@ -6919,7 +7410,13 @@
             "type": "string"
           }
         },
-        "required": ["id", "createdAt", "updatedAt", "address", "topic"]
+        "required": [
+          "id",
+          "createdAt",
+          "updatedAt",
+          "address",
+          "topic"
+        ]
       },
       "WebhooksResultDto": {
         "type": "object",
@@ -6948,7 +7445,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "webhooks"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "webhooks"
+        ]
       },
       "WebhookUpdateRequestDto": {
         "type": "object",
@@ -6959,7 +7462,9 @@
             "default": "https://example.com/webhook"
           }
         },
-        "required": ["address"]
+        "required": [
+          "address"
+        ]
       },
       "ProductsResultDto": {
         "type": "object",
@@ -6988,7 +7493,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "products"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "products"
+        ]
       },
       "BillingAttemptsResultDto": {
         "type": "object",
@@ -7017,7 +7528,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "billingAttempts"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "billingAttempts"
+        ]
       },
       "BillingAttemptCreateDto": {
         "type": "object",
@@ -7026,7 +7543,9 @@
             "type": "string"
           }
         },
-        "required": ["subscriptionId"]
+        "required": [
+          "subscriptionId"
+        ]
       },
       "SubscriptionDiscountCodesResultDto": {
         "type": "object",
@@ -7055,7 +7574,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "subscriptionDiscountCodes"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "subscriptionDiscountCodes"
+        ]
       },
       "ApiTokenDto": {
         "type": "object",
@@ -7068,7 +7593,10 @@
             "nullable": true
           }
         },
-        "required": ["id", "tokenName"]
+        "required": [
+          "id",
+          "tokenName"
+        ]
       },
       "CancellationMetaDataDto": {
         "type": "object",
@@ -7091,7 +7619,12 @@
             "nullable": true
           }
         },
-        "required": ["cancelReason", "cancelReasonComments", "cancellationQuestionId", "lineId"]
+        "required": [
+          "cancelReason",
+          "cancelReasonComments",
+          "cancellationQuestionId",
+          "lineId"
+        ]
       },
       "SubscriptionActivityDto": {
         "type": "object",
@@ -7121,7 +7654,14 @@
           "user": {
             "type": "string",
             "description": "The initiator of the activity",
-            "enum": ["Store Admin", "Customer", "Recurly System", "Prive System", "Shopper", "Bulk Updater"]
+            "enum": [
+              "Store Admin",
+              "Customer",
+              "Recurly System",
+              "Prive System",
+              "Shopper",
+              "Bulk Updater"
+            ]
           },
           "apiToken": {
             "description": "The API token if the activity was triggered by API",
@@ -7231,7 +7771,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "subscriptionActivities"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "subscriptionActivities"
+        ]
       },
       "BaseOrderLineItemDto": {
         "type": "object",
@@ -7329,14 +7875,23 @@
           },
           "status": {
             "type": "string",
-            "enum": ["UPCOMING", "PROCESSED", "DUNNING", "FAILED", "ARCHIVED"]
+            "enum": [
+              "UPCOMING",
+              "PROCESSED",
+              "DUNNING",
+              "FAILED",
+              "ARCHIVED"
+            ]
           },
           "isSkipped": {
             "type": "boolean"
           },
           "type": {
             "type": "string",
-            "enum": ["CHARGED", "PREPAID_FULFILLMENT"]
+            "enum": [
+              "CHARGED",
+              "PREPAID_FULFILLMENT"
+            ]
           },
           "currencyCode": {
             "type": "string",
@@ -7409,7 +7964,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "baseOrders"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "baseOrders"
+        ]
       },
       "BaseOrderLineItemsResultDto": {
         "type": "object",
@@ -7438,7 +7999,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "baseOrderLineItems"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "baseOrderLineItems"
+        ]
       },
       "SwapAndAddOnOptionsResultDto": {
         "type": "object",
@@ -7467,14 +8034,24 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "swapAndAddOnOptions"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "swapAndAddOnOptions"
+        ]
       },
       "IncentiveDto": {
         "type": "object",
         "properties": {
           "discountType": {
             "type": "string",
-            "enum": ["PERCENTAGE", "AMOUNT", "FIXED_AMOUNT"]
+            "enum": [
+              "PERCENTAGE",
+              "AMOUNT",
+              "FIXED_AMOUNT"
+            ]
           },
           "discountValue": {
             "type": "number"
@@ -7553,7 +8130,16 @@
             "nullable": true
           }
         },
-        "required": ["id", "createdAt", "updatedAt", "title", "subtitle", "incentiveType", "incentive", "ctaButtonCopy"]
+        "required": [
+          "id",
+          "createdAt",
+          "updatedAt",
+          "title",
+          "subtitle",
+          "incentiveType",
+          "incentive",
+          "ctaButtonCopy"
+        ]
       },
       "SecondaryCancellationQuestionDto": {
         "type": "object",
@@ -7574,7 +8160,13 @@
           },
           "category": {
             "type": "string",
-            "enum": ["PRICE", "QUANTITY_AND_STOCK", "VARIANT", "QUALITY", "OTHER"]
+            "enum": [
+              "PRICE",
+              "QUANTITY_AND_STOCK",
+              "VARIANT",
+              "QUALITY",
+              "OTHER"
+            ]
           },
           "retentionStrategy": {
             "nullable": true,
@@ -7626,7 +8218,13 @@
           },
           "category": {
             "type": "string",
-            "enum": ["PRICE", "QUANTITY_AND_STOCK", "VARIANT", "QUALITY", "OTHER"]
+            "enum": [
+              "PRICE",
+              "QUANTITY_AND_STOCK",
+              "VARIANT",
+              "QUALITY",
+              "OTHER"
+            ]
           },
           "retentionStrategy": {
             "nullable": true,
@@ -7681,7 +8279,10 @@
             "nullable": true
           }
         },
-        "required": ["subscriptionId", "cancellationQuestionId"]
+        "required": [
+          "subscriptionId",
+          "cancellationQuestionId"
+        ]
       },
       "CancellationSurveyResultDto": {
         "type": "object",
@@ -7709,7 +8310,11 @@
           },
           "surveySetting": {
             "type": "string",
-            "enum": ["standard", "retention_only", "survey"]
+            "enum": [
+              "standard",
+              "retention_only",
+              "survey"
+            ]
           },
           "cancellationReason": {
             "type": "string",
@@ -7750,7 +8355,11 @@
           },
           "status": {
             "type": "string",
-            "enum": ["ACTIVE", "CANCELLED", "PAYMENT_FAILED"]
+            "enum": [
+              "ACTIVE",
+              "CANCELLED",
+              "PAYMENT_FAILED"
+            ]
           },
           "startedAt": {
             "format": "date-time",
@@ -7812,7 +8421,13 @@
             }
           }
         },
-        "required": ["page", "limit", "totalItems", "totalPages", "memberships"]
+        "required": [
+          "page",
+          "limit",
+          "totalItems",
+          "totalPages",
+          "memberships"
+        ]
       },
       "MembershipCreateRequestDto": {
         "type": "object",
@@ -7830,7 +8445,10 @@
             "description": "The start date of the membership. If not provided, it defaults to the current date."
           }
         },
-        "required": ["email", "membershipOfferName"]
+        "required": [
+          "email",
+          "membershipOfferName"
+        ]
       }
     }
   },
